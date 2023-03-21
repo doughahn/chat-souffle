@@ -6,7 +6,7 @@ $(function () {
             "auth": "Basic " + CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse("coikpi:rolzak"))
         };
   
-        ADL.XAPIWrapper.changeConfig(conf);
+        ADL.XAPIWrapper.changeConfig(conf); 
     }
     
     function sendXAPIStatement(statement) {
