@@ -1,0 +1,52 @@
+{
+  "name": "tweego-setup",
+  "version": "3.0.0",
+  "description": "A basic project setup for Tweego with all the trimmings using Node.",
+  "main": "build.js",
+  "scripts": {
+    "start": "cd dist && npx http-server -c0 -o",
+    "compile:src": "node build.js",
+    "compile:twee": "tweego -o dist/index.html -m src/modules/ --head=\"src/head-content.html\" project",
+    "watch:twee": "tweego -o dist/index.html -m src/modules/ --head=\"src/head-content.html\" project -w",
+    "testmode:twee": "tweego -o dist/index.html -m src/modules/ --head=\"src/head-content.html\" project -t",
+    "build": "npm run compile:src && npm run compile:twee",
+    "build:test": "npm run compile:src && npm run testmode:twee"
+  },
+  "keywords": [
+    "twine",
+    "tweego",
+    "twee"
+  ],
+  "author": "Chapel",
+  "license": "Unlicense",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "autoprefixer": "^10.4.7",
+    "clean-css": "^5.3.1",
+    "fs-jetpack": "^4.3.1",
+    "http-server": "^14.1.1",
+    "postcss": "^8.4.14",
+    "terser": "^5.14.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChapelR/tweego-setup.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ChapelR/tweego-setup/issues"
+  },
+  "homepage": "https://github.com/ChapelR/tweego-setup#readme",
+  "private": true,
+  "browserslist": [
+    "> 1%",
+    "last 3 versions",
+    "last 10 Chrome versions",
+    "last 10 Firefox versions",
+    "IE >= 9",
+    "Opera >= 12"
+  ]
+}
