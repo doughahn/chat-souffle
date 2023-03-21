@@ -104,3 +104,7 @@ You can change the story format used to compile your project in the `project/twe
 Note: I suggest donating to [Twine development](https://www.patreon.com/klembot) or [SugarCube development](https://www.patreon.com/thomasmedwards) if you really want to help out, but I'd welcome a few dollars if you feel like it.
 
 [![ko-fi](https://www.ko-fi.com/img/donate_sm.png)](https://ko-fi.com/F1F8IC35)
+
+## Deploying Changes to Githb Pages
+
+I just put the `index.html` file in the root directory. I can't seem to get thins building quite right with go & twee, and I can;t seem to get Github to respect the `/dist` directory. Copying it from there fine for now. 
