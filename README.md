@@ -101,9 +101,9 @@ You can change the story format used to compile your project in the `project/twe
 
 ### Donations
 
-Note: I suggest donating to [Twine development](https://www.patreon.com/klembot) or [SugarCube development](https://www.patreon.com/thomasmedwards) if you really want to help out, but I'd welcome a few dollars if you feel like it.
+Note: ChapelR suggests donating to [Twine development](https://www.patreon.com/klembot) or [SugarCube development](https://www.patreon.com/thomasmedwards) if you really want to help out, but they'd welcome a few dollars if you feel like it. [![ko-fi](https://www.ko-fi.com/img/donate_sm.png)](https://ko-fi.com/F1F8IC35) 
 
-[![ko-fi](https://www.ko-fi.com/img/donate_sm.png)](https://ko-fi.com/F1F8IC35)
+We at Chat Souffle ar enjoying theirt boilerplate!
 
 ## Deploying Changes to Githb Pages
 
