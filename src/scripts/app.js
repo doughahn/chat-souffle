@@ -237,8 +237,8 @@ $(function () {
         "object": {
             "id": "http://example.com/checkbox",
             "definition": {
-                "name": {"en-US": "MC Example"},
-                "description": {"en-US": "MC Example?"},
+                "name": {"en-US": "Check or Unchecked Example"},
+                "description": {"en-US": "Check or Unchecked Example"},
                 "type": "http://example.com/multiple_choice_selection" 
             },
             "objectType": "Activity"
