@@ -1,3 +1,5 @@
+This is cloned from [https://github.com/ChapelR/tweego-setup](https://github.com/ChapelR/tweego-setup)
+
 ## Basic Tweego Setup (v3)
 
 > If you want to use Tweego v1.x, you'll want to switch to the `tweego-1` branch of this repo.
