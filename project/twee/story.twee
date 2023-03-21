@@ -1,5 +1,182 @@
 :: StoryTitle
-Tweego Basic Setup
+Chat Soufflé!
 
 :: Start
-# Hello World!
+# Hello! What would you like to test?
+
+We're just geting started! I want to walk you through the modules I've built for our team. 
+
+The LRS will automatically store which link you choose on each passage. 
+
+- <span id="chooseButtonClick">[[Test a button click|Button Click]]</span>
+- <span id="chooseMultipleChoice">[[Test a Multiple Choice Selection|Multiple Choice]]</span>
+- <span id="chooseInput">[[Test a Single-Line Text Input|Single-Line Text]]</span>
+- <span id="chooseTextArea">[[Test a  Multiline Text Input|Multiline Text]]</span>
+- <span id="chooseCheckbox">[[Test a Checkbox|Checkbox]]</span>
+
+<%
+$(function () {
+    $("#chooseButtonClick a").on("click", function () {
+        s.selectedTestLink = "Click";
+        send_test_selected_link();
+    });
+    $("#chooseMultipleChoice a").on("click", function () {
+        s.selectedTestLink = "Multiple Choice";
+        send_test_selected_link();
+    });
+    $("#chooseInput a").on("click", function () {
+        s.selectedTestLink = "Input";
+        send_test_selected_link();
+    });
+    $("#chooseTextArea a").on("click", function () {
+        s.selectedTestLink = "Text Area";
+        send_test_selected_link();
+    });
+    $("#chooseCheckbox a").on("click", function () {
+        s.selectedTestLink = "Checkbox";
+        send_test_selected_link();
+    });
+});
+%>
+
+:: Button Click
+
+# Here's a Button — Click It!
+
+<i>"Push the button, Frank."</i>
+
+<button type="button" onclick="send_testclick()" id="testButton" class="pure-button pure-button-primary">Test a Button Click</button>
+
+----
+
+### Where to next?
+
+- <span id="chooseMultipleChoice">[[Test a Multiple Choice Selection|Multiple Choice]]</span>
+- <span id="chooseInput">[[Test a Single-Line Text Input|Single-Line Text]]</span>
+- <span id="chooseTextArea">[[Test a  Multiline Text Input|Multiline Text]]</span>
+- <span id="chooseCheckbox">[[Test a Checkbox|Checkbox]]</span>
+
+:: Multiple Choice
+
+# Check Out this Poorly-Designed Multiple Choice Question!
+
+Don't worry, I'm not a learning designer and this is only a test for the LRS.
+
+<form id="multiple-choice-form" class="pure-form">
+    <h2>Which of the following is a fruit?</h2>
+    <label for="checkbox-radio-option-one" class="pure-checkbox">
+        <input type="radio" name="choice" id="checkbox-radio-option-one" value="apple" />Apple
+    </label>
+    <label for="checkbox-radio-option-two" class="pure-checkbox">
+        <input type="radio" name="choice" id="checkbox-radio-option-two" value="carrot" />Carrot
+    </label>
+    <label for="checkbox-radio-option-three" class="pure-checkbox">
+        <input type="radio" name="choice" id="checkbox-radio-option-three" value="broccoli" />Broccoli
+    </label>
+    <label for="checkbox-radio-option-four" class="pure-checkbox">
+        <input type="radio" name="choice" id="checkbox-radio-option-four" value="lettuce" />Lettuce
+    </label>
+    <button type="button" onclick="send_multiple_choice()" class="pure-button pure-button-primary">Submit Your Choice</button>
+</form>
+
+----
+
+### Where to next?
+
+- <span id="chooseButtonClick">[[Test a button click|Button Click]]</span>
+- <span id="chooseInput">[[Test a Single-Line Text Input|Single-Line Text]]</span>
+- <span id="chooseTextArea">[[Test a  Multiline Text Input|Multiline Text]]</span>
+- <span id="chooseCheckbox">[[Test a Checkbox|Checkbox]]</span>
+
+:: Single-Line Text
+
+# Sing me a fragment of song; write me a line of verse.
+
+<em>Your words will live forever in the LRS. (Until I delete them!)</em>
+
+<input id="inputTestArea" type="text" value="<%=s.inputTestArea%>"><button id="inputTestAreaConfirm" class="pure-button pure-button-primary">Send It!</button>
+
+----
+
+### Where to next?
+
+- <span id="chooseButtonClick">[[Test a button click|Button Click]]</span>
+- <span id="chooseMultipleChoice">[[Test a Multiple Choice Selection|Multiple Choice]]</span>
+- <span id="chooseTextArea">[[Test a  Multiline Text Input|Multiline Text]]</span>
+- <span id="chooseCheckbox">[[Test a Checkbox|Checkbox]]</span>
+
+<%
+$(function () {
+  $("#inputTestArea").on("change", function () {
+    s.inputTestArea = $("#inputArea").val();
+  });
+  $("#inputTestAreaConfirm").on("click", function () {
+    s.inputTestArea = $("#inputTestArea").val();
+        send_test_inputArea();
+  });
+});
+%>
+
+:: Multiline Text
+
+# Write me an Interesting  Paragraph
+
+It doesn't need to be *War and Peace*
+<textarea id="textTestArea" type="text" value="<%=s.textTestArea%>"> </textarea><button class="pure-button pure-button-primary" id="textTestAreaConfirm">Confirm</button>
+
+----
+
+### Where to next?
+
+- <span id="chooseButtonClick">[[Test a button click|Button Click]]</span>
+- <span id="chooseMultipleChoice">[[Test a Multiple Choice Selection|Multiple Choice]]</span>
+- <span id="chooseInput">[[Test a Single-Line Text Input|Single-Line Text]]</span>
+- <span id="chooseCheckbox">[[Test a Checkbox|Checkbox]]</span>
+
+<%
+$(function () {
+  $("#textTestArea").on("change", function () {
+    s.textTestArea = $("#textTestArea").val();
+  });
+  $("#textTestAreaConfirm").on("click", function () {
+    s.textTestArea = $("#textTestArea").val();
+        send_test_textarea();
+  });
+});
+%>
+
+:: Checkbox
+
+# Check the box… Uncheck the box…
+They will all be recorded, so don't click too frequently. 
+
+    <label for="checkbox">Check me:</label>
+    <input type="checkbox" id="checkbox">
+    <i><p id="output"></p></i>
+
+### Where to next?
+
+- <span id="chooseButtonClick">[[Test a button click|Button Click]]</span>
+- <span id="chooseMultipleChoice">[[Test a Multiple Choice Selection|Multiple Choice]]</span>
+- <span id="chooseInput">[[Test a Single-Line Text Input|Single-Line Text]]</span>
+- <span id="chooseTextArea">[[Test a  Multiline Text Input|Multiline Text]]</span>
+
+<%
+$(function () {
+    const checkbox = document.getElementById('checkbox');
+    const output = document.getElementById('output');
+    function handleCheckboxChange(event) {
+        if (event.target.checked) {
+            s.checkbox = "Checked!";
+            output.textContent = 'Checkbox is checked';
+            send_checkbox();
+        } else {
+            s.checkbox = "Unchecked!";
+            output.textContent = 'Checkbox is unchecked';
+            send_checkbox();
+        }
+    }
+    checkbox.addEventListener('change', handleCheckboxChange);
+});
+%>
+
