@@ -3,11 +3,11 @@ Chat Soufflé!
 
 :: Start
 
-# Hello! What would you like to test??
+# Hello! What would you like to test?
 
 We're just geting started! I want to walk you through the modules I've built for our team. 
 
-The LRS will automatically store which link you choose on each passage. 
+The LRS will automatically store which link you choose on each passage. Open up your browser's console to see what's loaded, and that statements have been received. Please note that we are still working on interactivity, so the UX lacks some responsiveness. 
 
 - <span id="chooseButtonClick">[[Test a button click|Button Click]]</span>
 - <span id="chooseMultipleChoice">[[Test a Multiple Choice Selection|Multiple Choice]]</span>
