@@ -3,7 +3,11 @@
 const files = {
     // if you choose to include lists of files, only the included files will be compiled!
     js : [
-        "app.js"
+        "dependencies.js", 
+        "xapi-config.js", 
+        "cookie-randomize.js", 
+        "send-statement.js", 
+        "statements.js"
     ],
     css : [
         // if order of files is important, list them here in the correct order
