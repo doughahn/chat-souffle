@@ -41,3 +41,61 @@ Out project's verb list can be found [here](https://docs.google.com/spreadsheets
 ## Deploying Changes to Github Pages
 
 I just put the `index.html` file in the root directory. I can't seem to get thins building quite right with go & twee, and I can;t seem to get Github to respect the `/dist` directory. Copying it from there fine for now. 
+
+## Style Guide
+
+Lots of hand coding here. I want to normalize asa much as I can so we have an easier time.
+
+<details>
+<summary>Multiple-Choice Forms</summary>
+
+replace formName and form-name with the form's names, and options.
+
+```js
+  const formNameChoice = document.querySelector('input[name="mc-self-assess-choice"]:checked').value;
+
+  var statement = {
+    "actor": {
+      "mbox": "mailto:doughahn@gmail.com",
+      "name": actor,
+      "objectType": "Agent"
+    },
+    "verb": {
+      "id": "verb_id",
+      "display": { "en-US": "answered" }
+    },
+    "object": {
+      "id": "https://doughahn.github.io/chat-souffle/function_name",
+      "definition": {
+        "name": { "en-US": "" },
+        "description": { "en-US": "" },
+      },
+      "objectType": "Activity"
+    },
+    "result": {
+      "response": formNameChoice
+    }
+  };
+```
+
+```html
+<form id="form-name" class="pure-form">
+    <label for="form-name-opt-one" class="pure-checkbox">
+        <input type="radio" name="form-name-choice" id="form-name-opt-one" value="No Experience" />No experience: I have never written a multiple choice assessment.
+    </label>
+    <label for="form-name-opt-two" class="pure-checkbox">
+        <input type="radio" name="form-name-choice" id="form-name-opt-two" value="Novice" />Novice: I have sufficient knowledge of developing multiple choice assessments but I have not performed this task.
+    </label>
+    <label for="form-name-opt-three" class="pure-checkbox">
+        <input type="radio" name="form-name-choice" id="form-name-opt-three" value="Beginner" />Beginner: I have performed this task occasionally. 
+    </label>
+    <label for="form-name-opt-four" class="pure-checkbox">
+        <input type="radio" name="form-name-choice" id="form-name-opt-four" value="Intermediate" />Intermediate: This task has been a central part of my work. I have performed it myself routinely without any supervision. 
+    </label>
+    <label for="form-name-opt-five" class="pure-checkbox">
+        <input type="radio" name="form-name-choice" id="form-name-opt-five" value="Advanced" />I have trained others in performance of this task and/or others have consulted me as an expert for assistance in performing this task.
+    </label>
+    <button type="button" onclick="send_form_name()" id="form-name-submit" class="pure-button pure-button-primary">Submit Your Choice</button>
+</form>
+```
+</details>
