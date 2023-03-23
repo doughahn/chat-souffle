@@ -9,7 +9,10 @@ We're just geting started! I want to walk you through the modules I've built for
 
 The LRS will automatically store which link you choose on each passage. Open up your browser's console to see what's loaded, and that statements have been received. Please note that we are still working on interactivity, so the UX lacks some responsiveness. 
 
-*Please note this site stores a cookie in your browser to log you as an Actor. We do not ant to collect any personal info!*
+*This site stores a cookie in your browser to log you as an Actor. We do not want to collect any personal info!*
+
+## Choose an option:
+
 
 - <span id="chooseButtonClick">[[Test a button click|Button Click]]</span>
 - <span id="chooseMultipleChoice">[[Test a Multiple Choice Selection|Multiple Choice]]</span>
