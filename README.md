@@ -32,6 +32,10 @@ There are more commands in the original docs. These are the ones I find useful.
 
 You can add raw code to passages in Snowman with the `<% your_code_here %>` shortcode. We have two externalloibraries: the xAPI 1-11 wrapper hosted on a teammate's digital ocean server, and crypto.js. All the xAPI statements are located in `scripts/js/xapi-statements.`
 
+### Verbs
+
+Out project's verb list can be found [here](https://docs.google.com/spreadsheets/d/1qf47gYZWVAjUKNVpsd0DShU309cwUStDkfxgojpdWrY/edit?usp=sharing).
+
 ## Deploying Changes to Github Pages
 
 I just put the `index.html` file in the root directory. I can't seem to get thins building quite right with go & twee, and I can;t seem to get Github to respect the `/dist` directory. Copying it from there fine for now. 
