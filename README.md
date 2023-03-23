@@ -52,7 +52,7 @@ Lots of hand coding here. I want to normalize asa much as I can so we have an ea
 replace formName and form-name with the form's names, and options.
 
 ```js
-  const formNameChoice = document.querySelector('input[name="mc-self-assess-choice"]:checked').value;
+  const formNameChoice = document.querySelector('input[name="form-name-choice"]:checked').value;
 
   var statement = {
     "actor": {
