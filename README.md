@@ -1,4 +1,6 @@
-This is a Twine project that integrates basic xAPI. It requires [Tweego](https://github.com/tmedwards/tweego) and uses Snowman 2 as it makes extensive use of custom code rather than Twee shortcodes. 
+# Chat Soufflé
+
+This is a Twine project that integrates xAPI. It requires [Tweego](https://github.com/tmedwards/tweego) and uses [Snowman 2](https://videlais.github.io/snowman/#/) as it makes decent use of custom code rather than Twee shortcodes. 
 
 ## Tweego
 
@@ -20,9 +22,9 @@ The `src` contains the JavaScript and CSS. There are several JS files in there, 
 
 ![](https://i.imgur.com/TvhBJzl.png)
 
-### (CLI)
+### CLI
 
-* `npm start`: localhost server; no hot reloading
+There are more commands in the original docs. These are the ones I find useful. 
 * `npm run build`: Compiles everything with Tweego and drops the compiled `index.html` file in the `dist` folder.
 * `npm run build:test`: As `npm run build`, but compiles your story in test mode.
 
@@ -30,6 +32,6 @@ The `src` contains the JavaScript and CSS. There are several JS files in there, 
 
 You can add raw code to passages in Snowman with the `<% your_code_here %>` shortcode. We have two externalloibraries: the xAPI 1-11 wrapper hosted on a teammate's digital ocean server, and crypto.js. All the xAPI statements are located in `scripts/js/xapi-statements.`
 
-## Deploying Changes to Githb Pages
+## Deploying Changes to Github Pages
 
 I just put the `index.html` file in the root directory. I can't seem to get thins building quite right with go & twee, and I can;t seem to get Github to respect the `/dist` directory. Copying it from there fine for now. 
