@@ -9,10 +9,27 @@ $(function () {
         ADL.XAPIWrapper.changeConfig(conf); 
     }
     
-    function sendXAPIStatement(statement) {
-        var result = ADL.XAPIWrapper.sendStatement(statement);
-    }
-    
+    function sendXAPIStatement(statement, elementId) {
+      ADL.XAPIWrapper.sendStatement(statement, function(err, xhr) {
+          if (err && err.status !== 200 && err.status !== 204) {
+              console.log('xAPI statement send error:', err);
+          } else {
+              console.log('xAPI statement sent, response:', err.status);
+              if (err.status === 200 || err.status === 204) {
+                  console.log('Statement successfully received by LRS');
+  
+                  // Add success class to the element with the given ID
+                  var element = document.getElementById(elementId);
+                  if (element) {
+                      element.classList.add('success');
+                  }
+              } else {
+                  console.log('There was an issue with the statement delivery to LRS');
+              }
+          }
+      });
+  }
+  
     // load libraries from external CDNs because it's easier than 
     $.getScript("https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js",
       function (data, textStatus, jqxhr) {
@@ -65,7 +82,7 @@ $(function () {
         }
       }; //end statement definition
   
-      sendXAPIStatement(statement);
+      sendXAPIStatement(statement, 'testButton');
       console.log("clicked the button");
     };
     
