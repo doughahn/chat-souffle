@@ -32,7 +32,7 @@ There are more commands in the original docs. These are the ones I find useful.
 
 You can add raw code to passages in Snowman with the `<% your_code_here %>` shortcode. We have two external libraries: the [ADL xAPI 1-11 wrapper](https://github.com/adlnet/xAPIWrapper) hosted on a teammate's digital ocean server, and [crypto.js](https://github.com/brix/crypto-js), which is a dependency of the ADL wrapper itself. 
 
-All the xAPI statements are located in `scripts/js/xapi-statements.`
+All the xAPI statements are located in `src/scripts/js/xapi-statements.`
 
 ### Verbs
 
