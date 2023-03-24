@@ -17,4 +17,5 @@ function sendXAPIStatement(statement, elementId) {
             }
         }
     });
+    console.log(statement);
 }
