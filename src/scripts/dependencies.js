@@ -10,4 +10,3 @@ $.getScript("https://gmdoug.sfo3.cdn.digitaloceanspaces.com/xapiwrapper-1-11.js"
         console.log('xAPI wrapper file loaded');
     }
 );
-

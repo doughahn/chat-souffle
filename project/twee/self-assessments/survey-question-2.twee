@@ -1,0 +1,25 @@
+:: survey question 2
+
+# Survey questions (2 of 3)
+
+Please help us get to know you by answering the following three survey questions. Your responses will only be shared in aggregate (combined with others’ responses).
+
+Which of the following best describes your experience with developing multiple choice assessments?
+
+<form id="survey-2" class="pure-form">
+    <label for="survey-2-opt-1" class="pure-checkbox">
+        <input type="radio" name="survey-2-choice" id="survey-2-opt-1" value="No Experience" />No experience: No experience: I have never used ChatGPT.
+    </label>
+    <label for="survey-2-opt-2" class="pure-checkbox">
+        <input type="radio" name="survey-2-choice" id="survey-2-opt-2" value="Beginner" />Beginner: I have used chatGPT occasionally.
+    </label>
+    <label for="survey-2-opt-3" class="pure-checkbox">
+        <input type="radio" name="survey-2-choice" id="survey-2-opt-3" value="Intermediate" />Intermediate: Using chatGPT has become a central part of my work; I use it almost daily.
+    </label>
+    <label for="survey-2-opt-4" class="pure-checkbox">
+        <input type="radio" name="survey-2-choice" id="survey-2-opt-4" value="Advanced" />Advanced: I have trained others in using chatGPT and/or others have consulted me as an expert for assistance in using it.
+    </label>
+    <button type="button" onclick="send_survey_2()" id="survey-2-submit" class="pure-button pure-button-primary">Submit Your Choice</button>
+</form>
+
+[[Last Survey Question|survey question 3]]
