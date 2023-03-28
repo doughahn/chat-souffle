@@ -6,6 +6,7 @@ const files = {
         "dependencies.js", 
         "xapi-config.js", 
         "cookie-randomize.js", 
+        "void-statement.js",
         "send-statement.js", 
         "statements.js"
     ],
