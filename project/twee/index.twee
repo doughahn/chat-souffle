@@ -5,7 +5,7 @@ Chat Soufflé!
 
 #  Test area
 
-<button type="button" onclick="send_testclick()" id="testButton" class="pure-button pure-button-primary">Click Twice to Voiding the First Statement</button>
+<button type="button" onclick="send_testclick()" id="testButton" class="pure-button pure-button-primary">Click Twice to Void the First Statement</button>
 
 
 # Welcome!
