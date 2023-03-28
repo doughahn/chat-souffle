@@ -3,9 +3,11 @@ Chat Soufflé!
 
 :: Start
 
-#  Test area
+#  Test 
 
-<button type="button" onclick="send_testclick()" id="testButton" class="pure-button pure-button-primary">Click Twice to Void the First Statement</button>
+<tw-link role="link" onclick="send_testclick()" id="testButton" class="pure-button pure-button-primary" data-passage="disclaimer">Disclaimer</tw-link>
+
+
 
 
 # Welcome!
