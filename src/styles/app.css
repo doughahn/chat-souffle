@@ -21,33 +21,6 @@ hr {
     margin: 3rem 0;
 }
 
-ul {
-    position:relative;
-    list-style: none;
-  }
-  
-  ul li:before{
-    content: '▶';
-    position: absolute;
-    left: 0;
-    border-bottom: 2px solid transparent;
-  }
-
-li {
-    font-family: 'IBM Plex Mono', monospace; 
-}
-
-li a {
-    text-decoration:none;
-    transition: all 100ms linear;
-}
-
-li a:hover {
-    font-weight:bold;
-    color:black;
-    cursor:pointer;
-}
-
 [type=checkbox], [type=radio] {
     line-height:150%;
     width:1rem;

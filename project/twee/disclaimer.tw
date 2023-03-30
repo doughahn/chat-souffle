@@ -12,3 +12,13 @@ Disclaimer(s) around ChatGPT: Please note that ChatGPT is a language model desig
 [[Survey Questions|survey question 1]]
 
 [[back]]
+
+<%
+$(window).on('hidepassage', function(event, passage) {
+	// HTML Element on Start
+	// Passage object otherwise
+	if( !(passage.passage instanceof Element) ) {
+		console.log(passage.passage.name);
+	}
+});
+%>

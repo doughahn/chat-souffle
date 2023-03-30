@@ -20,3 +20,4 @@ function sendXAPIStatement(statement, elementId) {
     console.log(statement);
     return statement.id; 
 }
+

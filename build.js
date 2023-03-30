@@ -8,7 +8,8 @@ const files = {
         "cookie-randomize.js", 
         "void-statement.js",
         "send-statement.js", 
-        "statements.js"
+        "statements.js",
+        "show.js"
     ],
     css : [
         // if order of files is important, list them here in the correct order
