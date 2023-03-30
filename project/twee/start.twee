@@ -16,7 +16,6 @@ In this course, you'll get the opportunity to practice:
 :: JavaScript [script]
 postrender["logPassageTitle"] = function(title, taskName) {
   var passageName=passage();
-  console.log(passageName); 
 
 };
 

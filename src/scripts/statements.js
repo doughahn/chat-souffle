@@ -1,83 +1,45 @@
-// ======================================
-// Nav Items
-// ======================================
+// context obj
 
-const ids = {
-  "history-forward": {
-    name: "Navigation Click Forward",
-    description: "the user clicked the forward button"
-  },
-  "history-backward": {
-    name: "Navigation Click Backward",
-    description: "the user clicked the backward button"
-  },
-  "menu-item-restart": {
-    name: "Navigation Click Restart",
-    description: "the user clicked the restart button"
-  },
-  "menu-item-saves": {
-    name: "Navigation Click Saves",
-    description: "the user clicked the saves button"
-  }
-};
+function getContextWithExperienceLevel() {
+  const selectedExperienceLevel = localStorage.getItem("selectedExperienceLevel");
 
-const passageName = "My Passage Name"; // Define the passageName variable
+  return {
+    "contextActivities": {
+      "category": [
+        {
+          "id": "https://doughahn.github.io/chat-souffle/categories/experience/" + encodeURIComponent(selectedExperienceLevel),
+          "objectType": "Activity",
+          "definition": {
+            "name": {
+              "en-US": selectedExperienceLevel + " Experience Level"
+            },
+            "description": {
+              "en-US": "A category for actors with a " + selectedExperienceLevel + " experience level in multiple choice assessment."
+            }
+          }
+        }
+      ]
+    }
+  };
+}
 
-Object.keys(ids).forEach(function(id) {
-  const element = document.getElementById(id);
-  element.addEventListener("click", function() {
-    var passageName = passage();
-    var navigationDescription = ids[id].description + " from " + passageName;
-    
-    // xAPI stuff
-    setupXAPIConfig();
-  
-    var statement = {
-      "actor": {
-        "mbox": "mailto:doughahn@gmail.com",
-        "name": actor,
-        "objectType": "Agent"
-      },
-      "verb": {
-        "id": "https://w3id.org/xapi/dod-isd/verbs/interacted",
-        "display": { "en-US": "answered" }
-      },
-      "object": {
-        "id": "https://doughahn.github.io/chat-souffle/" + id,
-        "definition": {
-          "name": { "en-US": ids[id].name },
-          "description": { "en-US": ids[id].description },
-        },
-        "objectType": "Activity"
-      },
-      "result": {
-        "response": navigationDescription
-      }
-    };
-  
-    sendXAPIStatement(statement);
-    // end xAPI stuff
-    console.log(navigationDescription);
-  });
-});
+
 
 // ======================================
 // VOID Vars on LOAD
 // ======================================
 // not all statements need these. Surveys do.
 
-var void_test_button_statementID = null;
-
-
-// ======================================
-// TEST BUTTON INTERACTION
-// ======================================
-
-window.send_testclick = function () {
+function sendXAPIStatementWithVoiding(statement, statementCategory) {
   setupXAPIConfig();
-
-  if (void_test_button_statementID) {
-    sendVoidStatement(void_test_button_statementID, function (err, xhr) {
+ 
+  // query the input name and store it as a const for retrieval
+  const survey1Choice = document.querySelector('input[name="survey-1-choice"]:checked').value;
+  
+  var currentStatementId = statementCategory + '_statementID';
+  
+  if (window[currentStatementId]) {
+    sendVoidStatement(window[currentStatementId], function (err, xhr) {
       if (err && err.status !== 200 && err.status !== 204) {
         console.log('xAPI void statement send error:', err);
       } else {
@@ -86,6 +48,18 @@ window.send_testclick = function () {
     });
   }
 
+  var newStatementId = sendXAPIStatement(statement, statementCategory);
+  if (newStatementId) {
+    window[currentStatementId] = newStatementId;
+  }
+}
+
+
+// ======================================
+// TEST BUTTON INTERACTION
+// ======================================
+
+window.send_testclick = function () {
   var statement = {
     "actor": {
       "mbox": "mailto:doughahn@gmail.com",
@@ -106,14 +80,13 @@ window.send_testclick = function () {
     },
     "result": {
       "response": "User successfully clicked the test button."
-    }
+    },
+    "context": getContextWithExperienceLevel() // Include the context with the category
   };
 
-  var newStatementId = sendXAPIStatement(statement, 'testButton');
-  if (newStatementId) {
-    void_test_button_statementID = newStatementId;
-  }
+  sendXAPIStatementWithVoiding(statement, 'testButton');
 };
+
 
 // ======================================
 // SELF ASSESSMENT OF MULTIPLE CHOICE 1
@@ -122,7 +95,7 @@ window.send_survey_1 = function () {
   setupXAPIConfig();
 
   // query the input name and store it as a const for retrieval
-  const mcSelfAssessChoice = document.querySelector('input[name="survey-1-choice"]:checked').value;
+  const survey1Choice = document.querySelector('input[name="survey-1-choice"]:checked').value;
 
   var statement = {
     "actor": {
@@ -137,53 +110,37 @@ window.send_survey_1 = function () {
     "object": {
       "id": "https://doughahn.github.io/chat-souffle/send_survey_1",
       "definition": {
-        "name": { "en-US": "Multiple Choice Design Self-Assessment" },
-        "description": { "en-US": "The USer's Self-Assessment of Mltiple Choice Quesiton Design" },
+        "name": { "en-US": "Experience Self-Assessment" },
+        "description": { "en-US": "The user's self-assessment of experience in multiple choice assessment" },
       },
       "objectType": "Activity"
     },
     "result": {
-      "response": mcSelfAssessChoice
+      "response": survey1Choice
+    },
+    "context": {
+      "contextActivities": {
+        "grouping": [
+          {
+            "id": "https://doughahn.github.io/chat-souffle/groups/" + survey1Choice,
+            "objectType": "Activity",
+            "definition": {
+              "name": {
+                "en-US": survey1Choice + " Group"
+              },
+              "description": {
+                "en-US": "A group for actors with a " + survey1Choice + " experience level in multiple choice assessment."
+              }
+            }
+          }
+        ]
+      }
     }
   };
-
-  sendXAPIStatement(statement, 'survey-1-submit');
+  localStorage.setItem("selectedExperienceLevel", survey1Choice);
+  sendXAPIStatementWithVoiding(statement, 'survey-1-submit');
 };
 
-// ======================================
-// SELF ASSESSMENT OF MULTIPLE CHOICE 2
-// ======================================
-window.send_survey_2 = function () {
-  setupXAPIConfig();
-
-  // query the input name and store it as a const for retrieval
-  const mcSelfAssessChoice = document.querySelector('input[name="survey-2-choice"]:checked').value;
-
-  var statement = {
-    "actor": {
-      "mbox": "mailto:doughahn@gmail.com",
-      "name": actor,
-      "objectType": "Agent"
-    },
-    "verb": {
-      "id": "https://w3id.org/xapi/dod-isd/verbs/chose",
-      "display": { "en-US": "answered" }
-    },
-    "object": {
-      "id": "https://doughahn.github.io/chat-souffle/send_survey_2",
-      "definition": {
-        "name": { "en-US": "Multiple Choice Design Self-Assessment" },
-        "description": { "en-US": "The USer's Self-Assessment of Mltiple Choice Quesiton Design" },
-      },
-      "objectType": "Activity"
-    },
-    "result": {
-      "response": mcSelfAssessChoice
-    }
-  };
-
-  sendXAPIStatement(statement, 'survey-2-submit');
-};
 
 // ======================================
 // SELF ASSESSMENT OF MULTIPLE CHOICE 3

@@ -8,7 +8,7 @@ Which of the following best describes your experience with developing multiple c
 
 <form id="survey-1" class="pure-form">
     <label for="survey-1-opt-1" class="pure-checkbox">
-        <input type="radio" name="survey-1-choice" id="survey-1-opt-1" value="No Experience" />No experience: I have never written a multiple choice assessment.
+        <input type="radio" name="survey-1-choice" id="survey-1-opt-1" value="None" />No experience: I have never written a multiple choice assessment.
     </label>
     <label for="survey-1-opt-2" class="pure-checkbox">
         <input type="radio" name="survey-1-choice" id="survey-1-opt-2" value="Beginner" />Beginner: I have performed this task occasionally. 
