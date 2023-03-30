@@ -1,8 +1,8 @@
 :: Start
 
-<h2>Hello</h2>
+<h2>Send Survey Responses & Void Them</h2>
 
-<button onclick="send_testclick()" id="testButton" class="pure-button pure-button-primary" data-passage="disclaimer">Test Button</button>
+<button onclick="send_testclick()" id="testButton" class="pure-button pure-button-primary" data-passage="disclaimer">Go to next Page</button>
 
 Welcome to this course on using ChatGPT to generate and improve multiple choice assessments. 
 This is geared for instructional designers who already have basic skills in assessment development. (Don’t worry if you don’t have experience with writing assessments – you’ll still be able to learn about it.)

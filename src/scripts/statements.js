@@ -30,16 +30,19 @@ function getContextWithExperienceLevel() {
 // ======================================
 // not all statements need these. Surveys do.
 
-function sendXAPIStatementWithVoiding(statement, statementCategory) {
+var void_test_button_statementID = null;
+var void_test_button_send_survey_1_statementID = null;
+
+
+// ======================================
+// TEST BUTTON INTERACTION
+// ======================================
+
+window.send_testclick = function () {
   setupXAPIConfig();
- 
-  // query the input name and store it as a const for retrieval
-  const survey1Choice = document.querySelector('input[name="survey-1-choice"]:checked').value;
-  
-  var currentStatementId = statementCategory + '_statementID';
-  
-  if (window[currentStatementId]) {
-    sendVoidStatement(window[currentStatementId], function (err, xhr) {
+
+  if (void_test_button_statementID) {
+    sendVoidStatement(void_test_button_statementID, function (err, xhr) {
       if (err && err.status !== 200 && err.status !== 204) {
         console.log('xAPI void statement send error:', err);
       } else {
@@ -48,18 +51,6 @@ function sendXAPIStatementWithVoiding(statement, statementCategory) {
     });
   }
 
-  var newStatementId = sendXAPIStatement(statement, statementCategory);
-  if (newStatementId) {
-    window[currentStatementId] = newStatementId;
-  }
-}
-
-
-// ======================================
-// TEST BUTTON INTERACTION
-// ======================================
-
-window.send_testclick = function () {
   var statement = {
     "actor": {
       "mbox": "mailto:doughahn@gmail.com",
@@ -84,7 +75,10 @@ window.send_testclick = function () {
     "context": getContextWithExperienceLevel() // Include the context with the category
   };
 
-  sendXAPIStatementWithVoiding(statement, 'testButton');
+  var newStatementId = sendXAPIStatement(statement, 'testButton');
+  if (newStatementId) {
+    void_test_button_statementID = newStatementId;
+  }
 };
 
 
@@ -93,6 +87,16 @@ window.send_testclick = function () {
 // ======================================
 window.send_survey_1 = function () {
   setupXAPIConfig();
+
+  if (void_test_button_send_survey_1_statementID) {
+    sendVoidStatement(void_test_button_send_survey_1_statementID, function (err, xhr) {
+      if (err && err.status !== 200 && err.status !== 204) {
+        console.log('xAPI void statement send error:', err);
+      } else {
+        console.log('xAPI void statement sent, response:', err.status);
+      }
+    });
+  }
 
   // query the input name and store it as a const for retrieval
   const survey1Choice = document.querySelector('input[name="survey-1-choice"]:checked').value;
@@ -138,7 +142,10 @@ window.send_survey_1 = function () {
     }
   };
   localStorage.setItem("selectedExperienceLevel", survey1Choice);
-  sendXAPIStatementWithVoiding(statement, 'survey-1-submit');
+  var newStatementId = sendXAPIStatement(statement, 'survey-1-submit');
+  if (newStatementId) {
+    void_test_button_send_survey_1_statementID = newStatementId;
+  }
 };
 
 
