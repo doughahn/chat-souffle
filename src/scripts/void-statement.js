@@ -1,8 +1,8 @@
-function sendVoidStatement(originalStatementId, callback) {
+function sendVoidStatement(actorEmail, actorName, originalStatementId, callback) {
   var voidStatement = {
     "actor": {
-      "mbox": "mailto:doughahn@gmail.com",
-      "name": actor,
+      "mbox": "mailto:" + actorEmail,
+      "name": actorName,
       "objectType": "Agent"
     },
     "verb": {

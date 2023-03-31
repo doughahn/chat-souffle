@@ -30,19 +30,17 @@ function getContextWithExperienceLevel() {
 // ======================================
 // not all statements need these. Surveys do.
 
-var void_test_button_statementID = null;
-var void_test_button_send_survey_1_statementID = null;
-
-
-// ======================================
-// TEST BUTTON INTERACTION
-// ======================================
-
 window.send_testclick = function () {
   setupXAPIConfig();
 
-  if (void_test_button_statementID) {
-    sendVoidStatement(void_test_button_statementID, function (err, xhr) {
+  var actorEmail = "doughahn@gmail.com";
+  var actorName = "your_actor_random_name"; // Replace with the actual random name of the Actor
+
+  // Retrieve the last statement ID from localStorage
+  var lastStatementId = localStorage.getItem("lastTestButtonClickStatementId");
+
+  if (lastStatementId) {
+    sendVoidStatement(actorEmail, actorName, lastStatementId, function (err, xhr) {
       if (err && err.status !== 200 && err.status !== 204) {
         console.log('xAPI void statement send error:', err);
       } else {
@@ -53,8 +51,8 @@ window.send_testclick = function () {
 
   var statement = {
     "actor": {
-      "mbox": "mailto:doughahn@gmail.com",
-      "name": actor,
+      "mbox": "mailto:" + actorEmail,
+      "name": actorName,
       "objectType": "Agent"
     },
     "verb": {
@@ -77,7 +75,8 @@ window.send_testclick = function () {
 
   var newStatementId = sendXAPIStatement(statement, 'testButton');
   if (newStatementId) {
-    void_test_button_statementID = newStatementId;
+    // Store the new statement ID in localStorage
+    localStorage.setItem("lastTestButtonClickStatementId", newStatementId);
   }
 };
 
@@ -85,11 +84,20 @@ window.send_testclick = function () {
 // ======================================
 // SELF ASSESSMENT OF MULTIPLE CHOICE 1
 // ======================================
+
+var void_test_button_send_survey_1_statementID = null;
+
 window.send_survey_1 = function () {
   setupXAPIConfig();
 
-  if (void_test_button_send_survey_1_statementID) {
-    sendVoidStatement(void_test_button_send_survey_1_statementID, function (err, xhr) {
+  var actorEmail = "doughahn@gmail.com";
+  var actorName = "your_actor_random_name"; // Replace with the actual random name of the Actor
+
+  // Retrieve the last statement ID from localStorage
+  var lastStatementId = localStorage.getItem("lastStatementId");
+  
+  if (lastStatementId) {
+    sendVoidStatement(actorEmail, actorName, lastStatementId, function (err, xhr) {
       if (err && err.status !== 200 && err.status !== 204) {
         console.log('xAPI void statement send error:', err);
       } else {
@@ -98,13 +106,14 @@ window.send_survey_1 = function () {
     });
   }
 
+
   // query the input name and store it as a const for retrieval
   const survey1Choice = document.querySelector('input[name="survey-1-choice"]:checked').value;
 
   var statement = {
     "actor": {
-      "mbox": "mailto:doughahn@gmail.com",
-      "name": actor,
+      "mbox": "mailto:" + actorEmail,
+      "name": actorName,
       "objectType": "Agent"
     },
     "verb": {
@@ -144,9 +153,11 @@ window.send_survey_1 = function () {
   localStorage.setItem("selectedExperienceLevel", survey1Choice);
   var newStatementId = sendXAPIStatement(statement, 'survey-1-submit');
   if (newStatementId) {
-    void_test_button_send_survey_1_statementID = newStatementId;
+    // Store the new statement ID in localStorage
+    localStorage.setItem("lastStatementId", newStatementId);
   }
 };
+
 
 
 // ======================================
