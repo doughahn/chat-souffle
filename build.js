@@ -9,6 +9,7 @@ const files = {
         "void-statement.js",
         "send-statement.js", 
         "statements/navigation-clicks.js",
+        "statements/accessed.js",
         "statements.js"
     ],
     css : [
