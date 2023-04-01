@@ -1,4 +1,4 @@
-// this is basically "experienced" too. 
+// this is basically "experienced"actually
 
 $(document).on(':passagedisplay', function(ev) {
   var currentPassage = window.currentPassage || null;

@@ -3,11 +3,11 @@
 const files = {
     // if you choose to include lists of files, only the included files will be compiled!
     js : [
-        "dependencies.js", 
-        "xapi-config.js", 
-        "cookie-randomize.js", 
-        "void-statement.js",
-        "send-statement.js", 
+        "config/dependencies.js", 
+        "config/xapi-config.js", 
+        "helpers/cookie-randomize.js", 
+        "helpers/void-statement.js",
+        "helpers/send-statement.js", 
         "statements/navigation-clicks.js",
         "statements/accessed.js",
         "statements.js"
