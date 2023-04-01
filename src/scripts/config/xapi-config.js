@@ -6,5 +6,3 @@ function setupXAPIConfig() {
 
     ADL.XAPIWrapper.changeConfig(conf);
 }
-
-
