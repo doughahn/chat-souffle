@@ -140,9 +140,13 @@ body {
     margin-top: 1rem;
   }
 
+  .textarea-Wrapper {
+    max-sidth:96%;
+    margin: 0 auto;
+  }
+
   .custom-textarea {
-    width: calc(100vw - 2rem); /* Subtract 1rem from each side */
-    max-width: calc(100vw - 2rem);
+    width: 100%;
     height: 200px;
     background-color: #343541;
     border: 1px solid #2b2b31;
@@ -154,7 +158,10 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: block;
-  }  
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    }
   
   .custom-textarea:focus {
     outline: none;
