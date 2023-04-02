@@ -1,0 +1,7 @@
+:: thank you
+
+## Thanks! Hope to see you in the cohort!
+
+
+
+<button onclick="send_completion()" id="completedButton" class="pure-button pure-button-primary">Mark Complete!</button>

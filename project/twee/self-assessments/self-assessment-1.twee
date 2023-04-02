@@ -1,0 +1,28 @@
+:: self assessment 1
+
+!! Survey questions (1 of 3)
+
+Please help us get to know you by answering the following three survey questions. Your responses will only be shared in aggregate (combined with others’ responses).
+
+Which of the following best describes your experience with developing multiple choice assessments?
+
+<form id="survey-1" class="pure-form">
+    <label for="survey-1-opt-1" class="pure-checkbox">
+        <input type="radio" name="survey-1-choice" id="survey-1-opt-1" value="None" onclick="checkOptionSelected('survey-1')" />No experience: I have never written a multiple choice assessment.
+    </label>
+    <label for="survey-1-opt-2" class="pure-checkbox">
+        <input type="radio" name="survey-1-choice" id="survey-1-opt-2" value="Beginner" onclick="checkOptionSelected('survey-1')" />Beginner: I have performed this task occasionally. 
+    </label>
+    <label for="survey-1-opt-3" class="pure-checkbox">
+        <input type="radio" name="survey-1-choice" id="survey-1-opt-3" value="Intermediate" onclick="checkOptionSelected('survey-1')" />Intermediate: This task has been a central part of my work. I have performed it myself routinely without any supervision. 
+    </label>
+    <label for="survey-1-opt-4" class="pure-checkbox">
+        <input type="radio" name="survey-1-choice" id="survey-1-opt-4" value="Advanced" onclick="checkOptionSelected('survey-1')" />I have trained others in performance of this task and/or others have consulted me as an expert for assistance in performing this task.
+    </label>
+    <button type="button" onclick="sendFormXAPIStatement('survey-1'); checkOptionSelected('survey-1'); handleButtonSurvey1to2(); customButtonHandler('self assessment 2')" id="survey-1-submit" class="pure-button pure-button-primary" disabled>Submit Your Choice</button>
+
+</form>
+
+
+
+

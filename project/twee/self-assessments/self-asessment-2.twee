@@ -1,0 +1,26 @@
+:: self assessment 2
+
+!! Survey questions (2 of 3)
+
+Please help us get to know you by answering the following three survey questions. Your responses will only be shared in aggregate (combined with others’ responses).
+
+Which of the following best describes your experience with developing multiple choice assessments?
+
+<form id="survey-2" class="pure-form">
+    <label for="survey-2-opt-1" class="pure-checkbox">
+        <input type="radio" name="survey-2-choice" id="survey-2-opt-1" value="No Experience" onclick="checkOptionSelected('survey-2')" />No experience: No experience: I have never used ChatGPT.
+    </label>
+    <label for="survey-2-opt-2" class="pure-checkbox">
+        <input type="radio" name="survey-2-choice" id="survey-2-opt-2" value="Beginner" onclick="checkOptionSelected('survey-2')" />Beginner: I have used chatGPT occasionally.
+    </label>
+    <label for="survey-2-opt-3" class="pure-checkbox">
+        <input type="radio" name="survey-2-choice" id="survey-2-opt-3" value="Intermediate" onclick="checkOptionSelected('survey-2')" />Intermediate: Using chatGPT has become a central part of my work; I use it almost daily.
+    </label>
+    <label for="survey-2-opt-4" class="pure-checkbox">
+        <input type="radio" name="survey-2-choice" id="survey-2-opt-4" value="Advanced" onclick="checkOptionSelected('survey-2')" />Advanced: I have trained others in using chatGPT and/or others have consulted me as an expert for assistance in using it.
+    </label>
+    <button type="button" onclick="sendFormXAPIStatement('survey-2'); checkOptionSelected('survey-2'); handleButtonSurvey2to3(); customButtonHandler('self assessment 3')" id="survey-2-submit" class="pure-button pure-button-primary" disabled>Submit Your Choice</button>
+</form>
+
+
+

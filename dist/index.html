@@ -12,25 +12,110 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
       <style>
-         .pure-g {
-            width:96%;
-            margin:0 auto;
-         }
-         .pure-button {
-            display:inline-block;
-            text-align:center;
-            position: relative;
-            left: 50%; 
-            transform: translateX(-50%);
+    body {
+      margin: 0;
+      font-family: 'IBM Plex Serif', serif;
+      background-color: #1e1e1e;
+      color: #f0f0f0;
+    }
 
-         }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .container,
+    footer {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .container {
+      flex: 1;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start
+    }
+
+    header {
+      text-align: center;
+      padding: 1rem;
+      font-family: 'IBM Plex Mono', monospace;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-family: 'IBM Plex Sans Condensed', sans-serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    ul {
+      margin-left: 1.5rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: #f0f0f0;
+      background-color: #57d855;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      font-weight: 700;
+      display: inline-block;
+      margin-top: 1rem;
+      align-self: center;
+      transition: background-color 0.2s;
+      color: black;
+      cursor:pointer;
+    }
+
+    a:hover {
+      background-color: white;
+      color: black;
+    }
+
+    footer {
+      font-size: 0.8rem;
+      padding: 1rem;
+      background-color: #1e1e1e;
+    }
+
+    em {
+      font-style: italic;
+    }
       </style>
   </head>
   <body>
-      <div class="pure-g">
-         <div class="pure-u-5-5">
-            <a class="pure-button pure-button-primary" href="souffle.html">Launch Game</a>
+      <div class="wrapper">
+         <header>
+            <h1>Chat Souffl&eacute;
+         </header>
+         <div class="container">
+            <h2>Information collected and disclaimer</h2>
+            <p>Our team needs to collect a minimum amount of information about you and your interactions with this course in order to share back with the xAPI cohort. We want to be transparent with you about what we’re collecting:</p>
+            <ul>
+               <li>Each click (e.g. “Next” buttons)</li>
+               <li>Survey responses (in the next few slides)</li>
+            </ul>
+
+            <p>To achieve this we'll set a cookie with an anonymous identifier in your browser to track you as an Actor. This way we can gather date on individual learners without collecting any personally identifiable information. When you click <em>Launch Game</em> we will se that cookie.</p>
+            
+            <a class="" href="souffle.html">Launch Game</a>
          </div>
+         <footer>
+            <p><em>Disclaimer(s) around ChatGPT: Please note that ChatGPT is a language model designed to simulate human-like conversations, but it may not always provide accurate or appropriate responses. It should not be used as a primary source of information in any educational setting and should be used with caution.<em></p>
+         </footer>
       </div>
   </body>
 </html>

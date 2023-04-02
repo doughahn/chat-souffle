@@ -9,8 +9,11 @@ const files = {
         "helpers/void-statement.js",
         "helpers/send-statement.js", 
         "helpers/sugar-cube-macros.js",
-        "statements/navigation-clicks.js",
         "statements/accessed.js",
+        "statements/interacted.js",
+        "statements/preferred.js",
+        "statements/answered.js",
+        "statements/completed.js",
         "statements.js"
     ],
     css : [

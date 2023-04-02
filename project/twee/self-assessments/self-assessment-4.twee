@@ -1,0 +1,15 @@
+:: self assessment exit or feedback
+
+!! Anything else you want to add?
+
+We're still learning! While we work on the course, we'd love your feedback — especially if it can give us more insight into how you feel aboutAI, or improvements we can make to this little Twine game. More soon!
+
+<html>
+    <div>
+        <a id="self-assess-early-exit" class="anchor-nav " onclick="customLinkHandler('thank you')">I don't have anything more to say.</a>
+    </div>
+
+    <div>
+    <a id="self-assess-more-feedback" class="anchor-nav " onclick="customLinkHandler('self assessment general feedback')">Yean, I have more to say!</a>
+    </div>
+</html>
