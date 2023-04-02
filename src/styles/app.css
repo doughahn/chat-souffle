@@ -4,6 +4,10 @@ body {
     color: #ececf1;
   }
   
+  #passages {
+    max-width:100%;
+  }
+
   h1 {
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 500;
@@ -54,7 +58,7 @@ body {
 
   @media screen and (max-width: 767px) {
     .pure-button {
-      font-size: 75%; 
+      font-size: 75% !important; 
     }
   }
 
