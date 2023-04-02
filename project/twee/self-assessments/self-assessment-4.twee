@@ -10,6 +10,6 @@ We're still learning! While we work on the course, we'd love your feedback — e
     </div>
 
     <div>
-    <a id="self-assess-more-feedback" class="anchor-nav " onclick="customLinkHandler('self assessment general feedback')">Yean, I have more to say!</a>
+    <a id="self-assess-more-feedback" class="anchor-nav " onclick="customLinkHandler('self assessment general feedback')">Yeah, I have more to say!</a>
     </div>
 </html>
