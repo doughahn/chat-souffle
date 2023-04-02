@@ -1,3 +1,5 @@
+// Old statements. Need to convert these to a cookbook. Probs good for the chat-GPT
+
 // context obj
 
 function getContextWithExperienceLevel() {
@@ -60,7 +62,7 @@ window.send_testclick = function () {
       "display": { "en-US": "interacted" }
     },
     "object": {
-      "id": "https://doughahn.github.io/chat-souffle/send_testclick",
+      "id": "https://doughahn.github.io/chat-souffle/testButton",
       "definition": {
         "name": { "en-US": "Button Click Test" },
         "description": { "en-US": "User Interacted with the Test Button." },

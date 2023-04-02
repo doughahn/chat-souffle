@@ -45,14 +45,14 @@ function sendFormXAPIStatement(formId) {
         "contextActivities": {
           "grouping": [
             {
-              "id": "https://doughahn.github.io/chat-souffle/groups/" + formChoice,
+              "id": "https://doughahn.github.io/chat-souffle/groups/" + formId + formChoice,
               "objectType": "Activity",
               "definition": {
                 "name": {
                   "en-US": formChoice + " Group"
                 },
                 "description": {
-                  "en-US": "A group for actors with a " + formChoice + " experience level in multiple choice assessment."
+                  "en-US": "A group for actors who chose " + formChoice + " on " + formId
                 }
               }
             }

@@ -8,6 +8,7 @@ const files = {
         "helpers/cookie-randomize.js", 
         "helpers/void-statement.js",
         "helpers/send-statement.js", 
+        "helpers/context.js",
         "helpers/sugar-cube-macros.js",
         "statements/accessed.js",
         "statements/interacted.js",
