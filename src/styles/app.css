@@ -58,7 +58,8 @@ body {
 
   @media screen and (max-width: 767px) {
     .pure-button {
-      font-size: .8rem !important; 
+      font-size: .75rem !important; 
+      max-width:96%;
     }
   }
 
@@ -139,7 +140,7 @@ body {
     margin-top: 1rem;
   }
 
-  textarea {
+  .custom-textarea {
     width: calc(100vw - 2rem); /* Subtract 1rem from each side */
     max-width: calc(100vw - 2rem);
     height: 200px;
@@ -155,7 +156,7 @@ body {
     display: block;
   }  
   
-  textarea:focus {
+  .custom-textarea:focus {
     outline: none;
     border-color: #f9e5a2;
     box-shadow: none;

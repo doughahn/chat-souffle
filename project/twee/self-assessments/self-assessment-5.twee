@@ -4,6 +4,6 @@
 
 Let us know what you think about ChatGPT, any bugs you found demoing this twine game, or other thoughts related to this project. 
 
-<textarea id="self-assessment-general-feedback" type="text" value="" oninput="checkTextareaNotEmpty('self-assessment-general-feedback', 'send-self-assessment-general-feedback')"></textarea>
+<textarea class="custom-textarea" id="self-assessment-general-feedback" type="text" value="" oninput="checkTextareaNotEmpty('self-assessment-general-feedback', 'send-self-assessment-general-feedback')"></textarea>
 <button class="pure-button pure-button-primary" id="send-self-assessment-general-feedback" onclick="sendTextareaXAPIStatement('self-assessment-general-feedback', 'send-self-assessment-general-feedback'); customButtonHandler('thank you')">Send Your Thoughts</button>
 
