@@ -52,6 +52,12 @@ body {
     background-color: #ececf1;
   }
 
+  @media screen and (max-width: 767px) {
+    .pure-button {
+      font-size: 75%; 
+    }
+  }
+
   #ui-dialog-titlebar {
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 500;
@@ -151,4 +157,5 @@ body {
     border-color: #f9e5a2;
     box-shadow: none;
   }
+  
   
