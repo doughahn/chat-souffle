@@ -129,14 +129,14 @@ body {
     -webkit-appearance: radio;
     appearance: radio;
     margin-right: 0.5rem;
-    width: 16px;
-    height: 16px;
+    line-height: 1;
+    -ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Chrome, Safari, Opera */
+    transform: scale(1);
   }
-  
-  .pure-form label.pure-checkbox {
-    display: flex;
-    align-items: center;
-  }
+
+
+
   
   .pure-button {
     margin-top: 1rem;
