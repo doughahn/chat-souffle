@@ -115,6 +115,8 @@ body {
   }
   
   .pure-form input[type="radio"] {
+    -webkit-appearance: radio;
+    appearance: radio;
     margin-right: 0.5rem;
   }
   
@@ -129,6 +131,7 @@ body {
 
   textarea {
     width: 100%;
+    max-width: 96%;
     height: 200px;
     background-color: #343541;
     border: 1px solid #2b2b31;
@@ -137,7 +140,11 @@ body {
     box-sizing: border-box;
     resize: vertical;
     font-family: 'IBM Plex Mono', monospace;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
+  
   
   textarea:focus {
     outline: none;
