@@ -130,9 +130,9 @@ body {
     appearance: radio;
     margin-right: 0.5rem;
     line-height: 1;
-    -ms-transform: scale(1); /* IE 9 */
-    -webkit-transform: scale(1); /* Chrome, Safari, Opera */
-    transform: scale(1);
+    -ms-transform: scale(1); 
+    -webkit-transform: scale(1); 
+    transform: scale(1); 
   }
 
 
