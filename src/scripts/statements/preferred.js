@@ -20,6 +20,8 @@ function sendFormXAPIStatement(formId) {
     // Query the input name and store it as a const for retrieval
     const formChoice = document.querySelector('input[name="' + formId + '-choice"]:checked').value;
   
+    let formChoiceToURI = formChoice.toLowerCase().replace(/\s+/g, '-');
+
     var statement = {
       "actor": {
         "mbox": "mailto:" + actorEmail,
@@ -45,7 +47,7 @@ function sendFormXAPIStatement(formId) {
         "contextActivities": {
           "grouping": [
             {
-              "id": "https://doughahn.github.io/chat-souffle/groups/" + formId + formChoice,
+              "id": "https://doughahn.github.io/chat-souffle/groups/" +  formId + "/" + formChoiceToURI,
               "objectType": "Activity",
               "definition": {
                 "name": {
@@ -60,7 +62,7 @@ function sendFormXAPIStatement(formId) {
         }
       }
     };
-    localStorage.setItem("selectedExperienceLevel", formChoice);
+    localStorage.setItem("selectedCategoryGroup", formChoice);
     var newStatementId = sendXAPIStatement(statement, formId + '-submit');
     
     if (newStatementId) {

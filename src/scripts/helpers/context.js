@@ -1,18 +1,18 @@
 function getContextWithExperienceLevel() {
-    const selectedExperienceLevel = localStorage.getItem("selectedExperienceLevel");
+    const selectedCategoryGroup = localStorage.getItem("selectedCategoryGroup");
   
     return {
       "contextActivities": {
         "category": [
           {
-            "id": "https://doughahn.github.io/chat-souffle/categories/experience/" + encodeURIComponent(selectedExperienceLevel),
+            "id": "https://doughahn.github.io/chat-souffle/categories/experience/" + encodeURIComponent(selectedCategoryGroup),
             "objectType": "Activity",
             "definition": {
               "name": {
-                "en-US": selectedExperienceLevel + " Experience Level"
+                "en-US": selectedCategoryGroup 
               },
               "description": {
-                "en-US": "A category for actors with a " + selectedExperienceLevel + " experience level in multiple choice assessment."
+                "en-US": "A category for actors with a " + selectedCategoryGroup 
               }
             }
           }
