@@ -68,3 +68,45 @@ textarea {
     display: block;
 }
 
+/* Cookie Consent modal */
+
+/* Add this to your game's CSS file */
+.modal {
+    display: none; /* Hide the modal by default */
+    position: fixed; /* Position it fixed over the page */
+    z-index: 1; /* Set a high z-index so it appears on top of other content */
+    left: 0;
+    top: 0;
+    width: 100%; /* Set the width and height to cover the entire page */
+    height: 100%;
+    overflow: auto; /* Enable scrolling */
+    background-color: rgba(0, 0, 0, 0.4); /* Add a semi-transparent black background */
+  }
+  
+  .modal-content {
+    background-color: #fefefe; /* Set a white background for the modal content */
+    margin: 10% auto; /* Center it vertically and horizontally */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Set the width of the modal content */
+    text-align: center;
+  }
+  
+  #consent-yes, #consent-no {
+    background-color: #4CAF50; /* Set a green background for the "Yes" button */
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 4px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #consent-no {
+    background-color: #f44336; /* Set a red background for the "No" button */
+  }
+  
+  #consent-yes:hover, #consent-no:hover {
+    opacity: 0.8; /* Add a hover effect to the buttons */
+  }
+  

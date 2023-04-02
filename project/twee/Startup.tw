@@ -1,6 +1,0 @@
-<script>
-$(document).on(':passagerender', function() {
-  var currentPassageTitle = passage().title;
-  console.log(currentPassageTitle); // Output the title of the current passage
-});
-</script>
