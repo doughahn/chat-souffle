@@ -141,7 +141,7 @@ body {
   }
 
   .textarea-Wrapper {
-    max-sidth:96%;
+    max-width:96%;
     margin: 0 auto;
   }
 
@@ -168,5 +168,12 @@ body {
     border-color: #f9e5a2;
     box-shadow: none;
   }
+
+  .passage input[type="text"],
+  textarea {
+    width: 100%;
+    min-width: 50px;
+    max-width:100%;
+}
   
   
