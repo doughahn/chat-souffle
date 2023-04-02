@@ -129,6 +129,8 @@ body {
     -webkit-appearance: radio;
     appearance: radio;
     margin-right: 0.5rem;
+    width: 16px;
+    height: 16px;
   }
   
   .pure-form label.pure-checkbox {
