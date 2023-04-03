@@ -1,8 +1,15 @@
 function setupXAPIConfig() {
-    var conf = {
+    // test data LRS
+    var devConf = {
         "endpoint": "https://sample-lrs-befogih.lrs.io/xapi/",
         "auth": "Basic " + CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse("coikpi:rolzak"))
     };
 
-    ADL.XAPIWrapper.changeConfig(conf);
+    // prod LRS
+    var conf = {
+        "endpoint": "https://chat-souffle.lrs.io/xapi/",
+        "auth": "Basic " + CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse("gaodun:ujgizo"))
+    };
+    
+    ADL.XAPIWrapper.changeConfig(devConf);
 }
