@@ -2,9 +2,7 @@
 
 !! Survey questions (2 of 3)
 
-Please help us get to know you by answering the following three survey questions. Your responses will only be shared in aggregate (combined with others’ responses).
-
-Which of the following best describes your experience with developing multiple choice assessments?
+Which of the following best describes your experience using ChatGPT?
 
 <form id="survey-2" class="pure-form">
     <label for="survey-2-opt-1" class="pure-checkbox">
