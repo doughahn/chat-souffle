@@ -35,7 +35,7 @@ window.sendPassageLoadedStatement = function (currentPassageTitle, passageTitle)
               "name": {"en-US": passageTitle},
               "description": {"en-US": "Twine game passage: " + passageTitle},
           },
-          "objectType": "Activity"
+          "objectType": "Activity"  
       },
       "result": {
           "response": currentPassageTitle ?

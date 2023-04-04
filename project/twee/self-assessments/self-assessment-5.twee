@@ -2,7 +2,7 @@
 
 !! Open Feedback
 
-Let us know what you think about ChatGPT, any bugs you found demoing this twine game, or other thoughts related to this project. 
+Let us know what you think about ChatGPT, any bugs you found demoing this twine survey, or other thoughts related to this project. 
 
 <div class="textarea-Wrapper">
 <textarea class="custom-textarea" id="self-assessment-general-feedback" type="text" value="" oninput="checkTextareaNotEmpty('self-assessment-general-feedback', 'send-self-assessment-general-feedback')"></textarea>

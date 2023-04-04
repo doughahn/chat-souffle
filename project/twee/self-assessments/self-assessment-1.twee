@@ -20,7 +20,7 @@ Which of the following best describes your experience with developing multiple c
         <input type="radio" name="survey-1-choice" id="survey-1-opt-4" value="Advanced" onclick="checkOptionSelected('survey-1')" />I have trained others in performance of this task and/or others have consulted me as an expert for assistance in performing this task.
     </label>
     <button type="button" onclick="sendFormXAPIStatement('survey-1'); checkOptionSelected('survey-1'); handleButtonSurvey1to2(); customButtonHandler('self assessment 2')" id="survey-1-submit" class="pure-button pure-button-primary" disabled>Submit Your Choice</button>
-
+ 
 </form>
 
 
