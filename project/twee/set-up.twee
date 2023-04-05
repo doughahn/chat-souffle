@@ -14,6 +14,6 @@
     <p>Lastly, you may want to install <a id="shareGPT-external-link" class="external-link" href="https://sharegpt.com/" target="blank">ShareGPT</a>, an open-source Chrome Extension, to share your ChatGPT conversations easily.</p>
     <hr>
     <div>
-        <a id="self-assess-early-exit" class="anchor-nav " onclick="customLinkHandler('test drive chatgpt')">Test Drive ChatGPT</a>
+        <a id="self-assess-early-exit" class="anchor-nav " onclick="customLinkHandler('test drive chatgpt')">Test Drive ChatGPT<i class="fas fa-arrow-right"></i></a>
     </div>
 </html>

@@ -1,10 +1,11 @@
 :: complete assessment
 
 !! Set up ChatGPT, or Start testing?
+You can choose a tracvk here. Don&rsquo;t  worry, you can loop back to do both.
+<html>
 <hr>
     <div>
         <a id="set-up-chat-gpt" class="anchor-nav " onclick="customLinkHandler('set up chatgpt')">Set up ChatGPT<i class="fas fa-arrow-right"></i></a>
-    </div>
-    <div>
         <a id="test-drive-chat-gpt-skip-setup" class="anchor-nav " onclick="customLinkHandler('test drive chatgpt')">Test Drive ChatGPT<i class="fas fa-arrow-right"></i></a>
     </div>
+</html>

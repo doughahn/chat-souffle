@@ -56,7 +56,7 @@ Try entering each of these prompts in sequence just to see how ChatGPT’s respo
 
 <hr>
     <div>
-        <a id="self-assess-early-exit" class="anchor-nav " onclick="customLinkHandler('writing assessments')">Writing Assessments</a>
+        <a id="self-assess-early-exit" class="anchor-nav " onclick="customLinkHandler('writing assessments')">Writing Assessments<i class="fas fa-arrow-right"></i></a>
     </div>
 </html>
 <script>

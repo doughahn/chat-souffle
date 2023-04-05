@@ -28,6 +28,6 @@ Below are some guidelines for ensuring quality distractors. Use the criteria bel
 </div>
 <hr>
     <div>
-        <a id="self-assess-early-exit" class="anchor-nav " onclick="customLinkHandler('improve an assessment')">Improve an Assessment</a>
+        <a id="self-assess-early-exit" class="anchor-nav " onclick="customLinkHandler('improve an assessment')">Improve an Assessment<i class="fas fa-arrow-right"></i></a>
     </div>
 </html>
