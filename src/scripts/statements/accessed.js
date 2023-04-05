@@ -30,7 +30,7 @@ window.sendPassageLoadedStatement = function (currentPassageTitle, passageTitle)
           "display": {"en-US": "accessed"}
       },
       "object": {
-          "id": "https://yourdomain.com/twine-game/passages/" + encodeURIComponent(passageTitle),
+          "id": "https://doughahn.github.io/chat-souffle/" + encodeURIComponent(passageTitle),
           "definition": {
               "name": {"en-US": passageTitle},
               "description": {"en-US": "Twine game passage: " + passageTitle},

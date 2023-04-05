@@ -1,5 +1,6 @@
 // Function to send the xAPI statement
 function sendTextareaXAPIStatement(textareaId, buttonId, activityId) {
+    console.log("activityId: ", activityId);
     setupXAPIConfig();
   
     var actorEmail = "doughahn@gmail.com";
@@ -19,7 +20,7 @@ function sendTextareaXAPIStatement(textareaId, buttonId, activityId) {
         "display": { "en-US": "answered" }
       },
       "object": {
-        "id": activityId,
+        "id": "https://doughahn.github.io/chat-souffle/" + activityId,
         "definition": {
           "name": { "en-US": "Textarea Sample" },
           "description": { "en-US": "Input Area Sample" },

@@ -15,7 +15,7 @@ const files = {
         "statements/preferred.js",
         "statements/answered.js",
         "statements/completed.js",
-        "statements.js"
+        "statements/link.js"
     ],
     css : [
         // if order of files is important, list them here in the correct order

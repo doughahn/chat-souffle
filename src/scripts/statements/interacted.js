@@ -132,7 +132,7 @@ window.handleButtonSurvey1to2 = function () {
     sendButtonClickStatement('survey-2-submit');
 };
 
-  window.handleButtonSurvey3toText = function () {
+window.handleButtonSurvey3toText = function () {
     sendButtonClickStatement('survey-3-submit');
 };
 

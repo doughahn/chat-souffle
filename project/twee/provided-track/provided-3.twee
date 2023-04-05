@@ -1,0 +1,64 @@
+:: provided assessment track 3
+
+!! Refine Part 3
+<html>
+<p>Now test a prompt that applies prompt engineering techniques explained in the article 
+<a id="mega-prompts-external-link" class="external-link" href="https://drphilippahardman.substack.com/p/introducing-chatgpt-edu-mega-prompts?utm_source=profile&utm_medium=reader2" target="blank">“Introducing: ChatGPT Edu-Mega-Prompts”</a> by Dr Philippa Hardman.</p>
+<p>The prompt specifies AI&rsquo;s role, describes the subject the and learner, identifies the instructional strategy, provides context and an example. It clearly outline the task and the desired outputs.</p>
+
+<h3>Copy the entire prompt and paste it to ChatGPT to see what assessment it will produce</h3>
+<div class="prompt-text-area"> 
+    <div class="prompt-text-header">
+        <h3><span class="light-gray-text">Prompt Text</span></h3>
+        <button class="copyButton" title="Copy to Clipboard">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clipboard">
+                <path d="M8 4H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10l-4-4h-6zM8 4h6v2H8V4zM8 6v2h6V6H8z"/>
+            </svg>
+            Copy
+        </button>
+        <span class="copiedMessage">Copied!</span>
+    </div>
+    <div class="prompt-text-content">
+        <pre class="monospaced-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</pre>
+    </div>
+</div>
+<h3>Which of the following best describes your experience using ChatGPT?</h3>
+    <form id="provided-track-3" class="pure-form">
+        <label for="provided-track-3-opt-1" class="pure-checkbox">
+            <input type="radio" name="provided-track-3-choice" id="provided-track-3-opt-1" value="Worse" onclick="checkOptionSelected('provided-track-3')" />Worse.
+        </label>
+        <label for="provided-track-3-opt-2" class="pure-checkbox">
+            <input type="radio" name="provided-track-3-choice" id="provided-track-3-opt-2" value="Equal" onclick="checkOptionSelected('provided-track-3')" />Equal 
+        </label>
+        <label for="provided-track-3-opt-3" class="pure-checkbox">
+            <input type="radio" name="provided-track-3-choice" id="provided-track-3-opt-3" value="Better" onclick="checkOptionSelected('provided-track-3')" />Better
+        </label>
+        <button type="button" onclick="sendFormXAPIStatement('provided-track-3'); checkOptionSelected('provided-track-3'); customButtonHandler('provided assessment track 3 freeform')" id="provided-track-3-submit" class="pure-button pure-button-primary" disabled>Submit Your Choice</button>
+    </form>
+</html>
+
+<script>
+setTimeout(function() {
+    const copyButtons = document.querySelectorAll(".copyButton");
+
+    copyButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            const text = this.parentElement.nextElementSibling.innerText;
+            navigator.clipboard.writeText(text)
+                .then(() => {
+                    console.log("Text copied to clipboard");
+                    const copiedMessage = this.nextElementSibling;
+                    setTimeout(() => {
+                        copiedMessage.classList.remove("show");
+                    }, 1000);
+                    this.innerText = "Copied";
+                    this.classList.add("copied");
+                })
+                .catch(err => {
+                    console.error("Error copying text: ", err);
+                });
+        });
+    });
+}, 100);
+
+</script>

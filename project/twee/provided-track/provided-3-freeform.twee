@@ -1,0 +1,11 @@
+:: provided assessment track 3 freeform
+!! Reflect Part 3
+Reflect: why do you think the new version changed the way it did or mostly stayed the same?
+<html>
+<html>
+<div class="textarea-Wrapper">
+<div class="textarea-Wrapper">
+  <textarea class="custom-textarea" id="provided-track-3-freeform" type="text" value="" oninput="checkTextareaNotEmpty('provided-track-3-freeform', 'send-provided-track-3-freeform', '/track-1-textarea')"></textarea>
+</div>
+<button class="pure-button pure-button-primary" id="send-provided-track-3-freeform" onclick="sendTextareaXAPIStatement('provided-track-3-freeform', 'send-provided-track-3-freeform', 'provided-track-3-textarea'); customButtonHandler('provided assessment track 4')">Send Your Thoughts</button>
+</html>
