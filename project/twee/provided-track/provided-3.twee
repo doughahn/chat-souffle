@@ -25,7 +25,7 @@
 <h3>Which of the following best describes your experience using ChatGPT?</h3>
     <form id="provided-track-3" class="pure-form" data-parent="provided-example-track">
         <label for="provided-track-3-opt-1" class="pure-checkbox">
-            <input type="radio" name="provided-track-3-choice" id="provided-track-3-opt-1" value="Worse" onclick="checkOptionSelected('provided-track-3')" />Worse.
+            <input type="radio" name="provided-track-3-choice" id="provided-track-3-opt-1" value="Worse" onclick="checkOptionSelected('provided-track-3')" />Worse
         </label>
         <label for="provided-track-3-opt-2" class="pure-checkbox">
             <input type="radio" name="provided-track-3-choice" id="provided-track-3-opt-2" value="Equal" onclick="checkOptionSelected('provided-track-3')" />Equal 

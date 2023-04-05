@@ -6,7 +6,7 @@
 <p>Evaluate it based on the criteria for effective distractors (<a id="review-criteria-from-proivided-prompt-part-2" onclick="customLinkHandler('criteria for effective distractors')">review criteria</a>). Is the new version is worse/equal/better than the original?</p>
     <form id="provided-track-2" class="pure-form" data-parent="provided-example-track">
         <label for="provided-track-2-opt-1" class="pure-checkbox">
-            <input type="radio" name="provided-track-2-choice" id="provided-track-2-opt-1" value="Worse" onclick="checkOptionSelected('provided-track-2')" />Worse.
+            <input type="radio" name="provided-track-2-choice" id="provided-track-2-opt-1" value="Worse" onclick="checkOptionSelected('provided-track-2')" />Worse
         </label>
         <label for="provided-track-2-opt-2" class="pure-checkbox">
             <input type="radio" name="provided-track-2-choice" id="provided-track-2-opt-2" value="Equal" onclick="checkOptionSelected('provided-track-2')" />Equal 

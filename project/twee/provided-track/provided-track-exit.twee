@@ -4,7 +4,7 @@
 
 <html>
     <div>
-        <a id="start-provided-assessment-over" class="anchor-nav" onclick="customLinkHandler('provided assessment track 1')">I want to do the track again for practive</a>
+        <a id="start-provided-assessment-over" class="anchor-nav" onclick="customLinkHandler('provided assessment track 1')">I want to do the track again for practice</a>
     </div>
 
     <div>
