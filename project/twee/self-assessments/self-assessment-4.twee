@@ -1,14 +1,10 @@
 :: self assessment exit or feedback
 
 !! Anything else you want to add?
-
-We want to give learners the chance to voice other opinions about this technology. Would you like to add anything?
-
-More soon!
-
 <html>
+<h3>We want to give learners the chance to voice other opinions about this technology. Would you like to add anything?</h3>
     <div>
-        <a id="self-assess-early-exit" class="anchor-nav " onclick="customLinkHandler('thank you')">I don&rsquo;t have anything more to say.</a>
+        <a id="self-assess-early-exit" class="anchor-nav " onclick="customLinkHandler('complete assessment')">I don&rsquo;t have anything more to say.</a>
     </div>
 
     <div>

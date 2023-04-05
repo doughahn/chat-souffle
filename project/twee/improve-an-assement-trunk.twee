@@ -12,8 +12,4 @@
     <div>
         <a id="chose-custom-assessment-track" class="anchor-nav" onclick="customLinkHandler('')">Use one of your own assessments [track 2]</a>
     </div>
-
-
-[[Use a provided assessment|provided assessment track 1]]
-
-[[Use a your own assessment|own assessment track 1]]
+</html>

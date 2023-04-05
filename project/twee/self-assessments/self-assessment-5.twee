@@ -5,12 +5,5 @@ Let us know what you think about ChatGPT, in your own words.
 <div class="textarea-Wrapper">
 <textarea class="custom-textarea" id="self-assessment-general-feedback" type="text" value="" oninput="checkTextareaNotEmpty('self-assessment-general-feedback', 'send-self-assessment-general-feedback')"></textarea>
 </div>
-<button class="pure-button pure-button-primary" id="send-self-assessment-general-feedback" onclick="sendTextareaXAPIStatement('self-assessment-general-feedback', 'send-self-assessment-general-feedback'); customButtonHandler('thank you')">Send Your Thoughts</button>
-<hr>
-    <div>
-        <a id="set-up-chat-gpt" class="anchor-nav " onclick="customLinkHandler('set up chatgpt')">Set up ChatGPT</a>
-    </div>
-    <div>
-        <a id="test-drive-chat-gpt-skip-setup" class="anchor-nav " onclick="customLinkHandler('test drive chatgpt')">Test Drive ChatGPT</a>
-    </div>
+<button class="pure-button pure-button-primary" id="send-self-assessment-general-feedback" onclick="sendTextareaXAPIStatement('self-assessment-general-feedback', 'send-self-assessment-general-feedback'); customButtonHandler('complete assessment')">Send Your Thoughts</button>
 </html>
