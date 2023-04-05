@@ -2,10 +2,11 @@ body {
     font-family: 'IBM Plex Serif', serif;
     background-color: #343541;
     color: #ececf1;
+    font-weight:600;
   }
   
   #passages {
-    max-width:100%;
+    max-width: 60rem;
   }
 
   h1 {
@@ -220,17 +221,18 @@ body {
 /* blockquopte */
 
 blockquote {
-  font-size: 1.4em;
-  width:60%;
-  margin:50px 0;
+  font-size: 1.2em;
+  width:calc(100%;-4rem);
+  margin:1.5rem 0;
   font-family:Open Sans;
   font-style:italic;
   color: #2b2b31;
-  padding:1.2em 30px 1.2em 75px;
+  padding:1.2rem 2rem 1.2rem 2rem;
   border-left:8px solid #2b2b31 ;
   line-height:1.6;
   position: relative;
   background:#EDEDED;
+  border-radius: 5px;
 }
 
 blockquote p {

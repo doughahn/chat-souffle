@@ -24,9 +24,9 @@
 </div>
 <hr>
 <h3>Which of the following best describes your experience using ChatGPT?</h3>
-    <form id="provided-track-1" class="pure-form">
+    <form id="provided-track-1" class="pure-form" data-parent="provided-example-track">
         <label for="provided-track-1-opt-1" class="pure-checkbox">
-            <input type="radio" name="provided-track-1-choice" id="provided-track-1-opt-1" value="Worse" onclick="checkOptionSelected('provided-track-1')" />Worse.
+            <input type="radio" name="provided-track-1-choice" id="provided-track-1-opt-1" value="Worse" onclick="checkOptionSelected('provided-track-1')" />Worse 
         </label>
         <label for="provided-track-1-opt-2" class="pure-checkbox">
             <input type="radio" name="provided-track-1-choice" id="provided-track-1-opt-2" value="Equal" onclick="checkOptionSelected('provided-track-1')" />Equal 
@@ -36,6 +36,7 @@
         </label>
         <button type="button" onclick="sendFormXAPIStatement('provided-track-1'); checkOptionSelected('provided-track-1'); customButtonHandler('provided assessment track 1 freeform')" id="provided-track-1-submit" class="pure-button pure-button-primary" disabled>Submit Your Choice</button>
     </form>
+
 </html>
 
 <script>
@@ -61,5 +62,8 @@ setTimeout(function() {
         });
     });
 }, 100);
-
 </script>
+
+
+
+

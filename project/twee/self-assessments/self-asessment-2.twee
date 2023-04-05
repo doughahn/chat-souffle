@@ -4,7 +4,7 @@
 
 <html>
 <h3>Which of the following best describes your experience using ChatGPT?</h3>
-    <form id="survey-2" class="pure-form">
+    <form id="survey-2" class="pure-form" data-parent="self-assessment-track">
         <label for="survey-2-opt-1" class="pure-checkbox">
             <input type="radio" name="survey-2-choice" id="survey-2-opt-1" value="No Experience" onclick="checkOptionSelected('survey-2')" />No experience: No experience: I have never used ChatGPT.
         </label>

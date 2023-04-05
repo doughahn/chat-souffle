@@ -3,6 +3,10 @@ function sendFormXAPIStatement(formId) {
   
     var actorEmail = "doughahn@gmail.com";
     var actorName = actor;
+
+    // Read the parent path name from the form's data attribute
+    const formElement = document.getElementById(formId);
+    const parentPath = formElement.dataset.parent;
   
     // Retrieve the last statement ID from localStorage
     var lastStatementId = localStorage.getItem("last" + formId + "StatementId");
@@ -45,6 +49,16 @@ function sendFormXAPIStatement(formId) {
       },
       "context": {
         "contextActivities": {
+          "parent": [
+            {
+              "id": "https://doughahn.github.io/chat-souffle/paths/" + parentPath,
+              "objectType": "Activity",
+              "definition": {
+                "name": { "en-US": parentPath },
+                "description": { "en-US": "The parent path of the current activity" }
+              }
+            }
+          ],
           "grouping": [
             {
               "id": "https://doughahn.github.io/chat-souffle/groups/" +  formId + "/" + formChoiceToURI,

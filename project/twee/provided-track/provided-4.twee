@@ -5,7 +5,7 @@
 <p>Now, without using ChatGPT, take the best elements from the different iterations of the multiple choice question, combining them into the best possible assessment question. Avoid adding new material other than correcting for grammar and fluidity.</p>
 <p>Evaluate this human-edited version based on the criteria for effective distractors (<a id="review-criteria-from-proivided-prompt-part-4" onclick="customLinkHandler('criteria for effective distractors')">review criteria</a>).</p> 
 <h3>Is the new version worse/equal/better than the original? </h3>
-    <form id="provided-track-4" class="pure-form">
+    <form id="provided-track-4" class="pure-form" data-parent="provided-example-track">
         <label for="provided-track-4-opt-1" class="pure-checkbox">
             <input type="radio" name="provided-track-4-choice" id="provided-track-4-opt-1" value="Worse" onclick="checkOptionSelected('provided-track-4')" />Worse
         </label>

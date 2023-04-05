@@ -5,7 +5,7 @@
 <h3>Overall, how do you feel about the increased use of artificial intelligence in computer programs in daily life?</h3>
 
 <form id="survey-3" class="pure-form">
-    <label for="survey-3-opt-1" class="pure-checkbox">
+    <label for="survey-3-opt-1" class="pure-checkbox"  data-parent="self-assessment-track">
         <input type="radio" name="survey-3-choice" id="survey-3-opt-1" value="More concerned than excited" onclick="checkOptionSelected('survey-3')" />More concerned than excited
     </label>
     <label for="survey-3-opt-2" class="pure-checkbox">

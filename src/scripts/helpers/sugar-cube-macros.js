@@ -45,3 +45,16 @@ window.setupClipboardCopy = function() {
       });
   });
 }
+
+// This function updates the visit count display for a given element ID and passage name
+window.updateVisitCount = function(elementId, passageName) {
+    var visitCount = passageName ? visited(passageName) : visited();
+    var targetElement = document.getElementById(elementId);
+
+    if (targetElement) {
+        targetElement.textContent = visitCount;
+    } else {
+        console.warn('Element with ID "' + elementId + '" not found.');
+    }
+};
+

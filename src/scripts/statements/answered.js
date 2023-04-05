@@ -8,6 +8,9 @@ function sendTextareaXAPIStatement(textareaId, buttonId, activityId) {
   
     // Query the textarea element and store its value as a const for retrieval
     const textareaValue = document.getElementById(textareaId).value;
+
+    const textareaWrapper = document.getElementById(textareaId).parentNode;
+    const parentPath = textareaWrapper.dataset.parent;    
   
     var statement = {
       "actor": {
@@ -22,14 +25,28 @@ function sendTextareaXAPIStatement(textareaId, buttonId, activityId) {
       "object": {
         "id": "https://doughahn.github.io/chat-souffle/" + activityId,
         "definition": {
-          "name": { "en-US": "Textarea Sample" },
-          "description": { "en-US": "Input Area Sample" },
+          "name": { "en-US": activityId },
+          "description": { "en-US": "Answered " + activityId },
         },
         "objectType": "Activity"
       },
       "result": {
         "response": textareaValue
-      }
+      },
+      "context": {
+        "contextActivities": {
+          "grouping": [
+            {
+              "id": "https://doughahn.github.io/chat-souffle/paths/" + parentPath,
+              "objectType": "Activity",
+              "definition": {
+                "name": { "en-US": parentPath },
+                "description": { "en-US": "The parent path of the current activity" }
+              }
+            }
+          ]
+        }
+      }      
     };
   
     sendXAPIStatement(statement, buttonId);
