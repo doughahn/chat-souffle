@@ -4,14 +4,14 @@
 
 <html>
     <div>
-        <a id="start-provided-assessment-over" class="anchor-nav" onclick="customLinkHandler('provided assessment track 1')">I want to do the track again for practice</a>
+        <a id="start-provided-assessment-over" class="anchor-nav" onclick="customLinkHandler('provided assessment track 1')">I want to do the track again for practice<i class="fas fa-arrow-right"></i></a>
     </div>
 
     <div>
-        <a id="start-custom-assessment-track" class="anchor-nav" onclick="customLinkHandler('custom assessment track 1')">I want to try writing my own assessments</a>
+        <a id="start-custom-assessment-track" class="anchor-nav" onclick="customLinkHandler('custom assessment track 1')">I want to try writing my own assessments<i class="fas fa-arrow-right"></i></a>
     </div>
 
     <div>
-        <a id="finish-move-to-exit-from-assessment-track" class="anchor-nav" onclick="customLinkHandler('thank you)">I want to complete the course</a>
+        <a id="finish-move-to-exit-from-assessment-track" class="anchor-nav" onclick="customLinkHandler('thank you)">I want to complete the course<i class="fas fa-arrow-right"></i></a>
     </div>
 </html>

@@ -84,8 +84,15 @@ body {
     text-decoration: none;
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 700;
+    text-decoration: none;
+    line-height:2;
   }
+
   
+  .anchor-nav .fa-arrow-right {
+    margin-left: 4px; /* Adjust the space between the link text and the arrow icon */
+  }
+
   .anchor-nav::before {
     content: '';
     position: absolute;
@@ -322,4 +329,18 @@ blockquote span {
 .tip-title {
   margin: 0;
   font-family: 'IBM Plex Mono', monospace;
+}
+
+
+/* link arrows */
+
+
+
+.passage-link:hover {
+  color: #0056b3; /* Adjust the link hover color as needed */
+  text-decoration: underline;
+}
+
+.passage-link .fa-arrow-right {
+  margin-left: 4px; /* Adjust the space between the link text and the arrow icon */
 }
