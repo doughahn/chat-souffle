@@ -26,7 +26,7 @@
 </div>
 <div>
 <hr>
-<a id="self-assess-early-exit" class="anchor-nav " onclick="customLinkHandler('provided assessment track 2')">On to Part 2!<i class="fas fa-arrow-right"></i></a>
+    <a id="provided-criteria" class="anchor-nav" onclick="customLinkHandler('provided assessment track 2')">On to Part 2!<i class="fas fa-arrow-right"></i></a>
 </div>
 </html>
 

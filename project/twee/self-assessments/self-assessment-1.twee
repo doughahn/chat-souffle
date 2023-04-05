@@ -21,6 +21,3 @@
     <button type="button" onclick="sendFormXAPIStatement('survey-1'); checkOptionSelected('survey-1'); handleButtonSurvey1to2(); customButtonHandler('self assessment 2')" id="survey-1-submit" class="pure-button pure-button-primary" disabled>Submit Your Choice</button>
 </form>
 </html>
-
-
-

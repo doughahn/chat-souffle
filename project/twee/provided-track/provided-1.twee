@@ -36,7 +36,6 @@
         </label>
         <button type="button" onclick="sendFormXAPIStatement('provided-track-1'); checkOptionSelected('provided-track-1'); customButtonHandler('provided assessment track 1 freeform')" id="provided-track-1-submit" class="pure-button pure-button-primary" disabled>Submit Your Choice</button>
     </form>
-
 </html>
 
 <script>
@@ -64,6 +63,6 @@ setTimeout(function() {
 }, 100);
 </script>
 
-
-
-
+<<run setup.trackStarts++>>
+<<run setup.currentIterationId = "provided_assessment_track_" + (setup.trackStarts)>>
+<<run setup.iterationActivities[setup.currentIterationId] = []>>

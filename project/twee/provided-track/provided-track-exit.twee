@@ -15,3 +15,8 @@
         <a id="finish-move-to-exit-from-assessment-track" class="anchor-nav" onclick="customLinkHandler('thank you)">I want to complete the course<i class="fas fa-arrow-right"></i></a>
     </div>
 </html>
+
+<<script>>
+    setup.trackCompletions++;
+    console.log("Track completions: " + setup.trackCompletions);
+<</script>>
