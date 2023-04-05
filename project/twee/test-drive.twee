@@ -5,10 +5,10 @@ Before we get into assessment best practices, let’s talk about how to tell Cha
 Try entering each of these prompts in sequence just to see how ChatGPT’s responses differ as you provide more specific instruction.
 <html>
 <h3><i>Possible examples:</i></h3>
-<ul>
-    <li>
-        <b>Prompt 1:</b>
-        <span class="copyable">What should I have for dinner?</span>
+
+<div class="prompt-text-area">
+    <div class="prompt-text-header">
+        <h3><span class="light-gray-text">Prompt 1</span></h3>
         <button class="copyButton" title="Copy to Clipboard">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clipboard">
                 <path d="M8 4H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10l-4-4h-6zM8 4h6v2H8V4zM8 6v2h6V6H8z"/>
@@ -16,10 +16,15 @@ Try entering each of these prompts in sequence just to see how ChatGPT’s respo
             Copy
         </button>
         <span class="copiedMessage">Copied!</span>
-    </li>
-    <li>
-        <b>Prompt 2:</b>
-        <span class="copyable">What should I have for dinner if I want a unique dining experience in San Francisco, CA?</span>
+    </div>
+    <div class="prompt-text-content">
+        <pre class="monospaced-text">What should I have for dinner?</pre>
+    </div>
+</div>
+<br />
+<div class="prompt-text-area">
+    <div class="prompt-text-header">
+        <h3><span class="light-gray-text">Prompt 2</span></h3>
         <button class="copyButton" title="Copy to Clipboard">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clipboard">
                 <path d="M8 4H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10l-4-4h-6zM8 4h6v2H8V4zM8 6v2h6V6H8z"/>
@@ -27,10 +32,15 @@ Try entering each of these prompts in sequence just to see how ChatGPT’s respo
             Copy
         </button>
         <span class="copiedMessage">Copied!</span>
-    </li>
-    <li>
-        <b>Prompt 3:</b>
-        <span class="copyable">What should I have for dinner if I want a unique dining experience in San Francisco, CA? I'm vegetarian, and I'm on a budget?</span>
+    </div>
+    <div class="prompt-text-content">
+        <pre class="monospaced-text">What should I have for dinner if I want a unique dining experience in San Francisco, CA?</pre>
+    </div>
+</div>
+<br />
+<div class="prompt-text-area">
+    <div class="prompt-text-header">
+        <h3><span class="light-gray-text">Prompt 3</span></h3>
         <button class="copyButton" title="Copy to Clipboard">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clipboard">
                 <path d="M8 4H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10l-4-4h-6zM8 4h6v2H8V4zM8 6v2h6V6H8z"/>
@@ -38,14 +48,38 @@ Try entering each of these prompts in sequence just to see how ChatGPT’s respo
             Copy
         </button>
         <span class="copiedMessage">Copied!</span>
-    </li>
-</ul>
+    </div>
+    <div class="prompt-text-content">
+        <pre class="monospaced-text">What should I have for dinner if I want a unique dining experience in San Francisco, CA? I'm vegetarian, and I'm on a budget?</pre>
+    </div>
+</div>
+
 <hr>
     <div>
         <a id="self-assess-early-exit" class="anchor-nav " onclick="customLinkHandler('writing assessments')">Writing Assessments</a>
     </div>
 </html>
 <script>
-setupClipboardCopy();
+setTimeout(function() {
+    const copyButtons = document.querySelectorAll(".copyButton");
 
+    copyButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            const text = this.parentElement.nextElementSibling.innerText;
+            navigator.clipboard.writeText(text)
+                .then(() => {
+                    console.log("Text copied to clipboard");
+                    const copiedMessage = this.nextElementSibling;
+                    setTimeout(() => {
+                        copiedMessage.classList.remove("show");
+                    }, 1000);
+                    this.innerText = "Copied";
+                    this.classList.add("copied");
+                })
+                .catch(err => {
+                    console.error("Error copying text: ", err);
+                });
+        });
+    });
+}, 100);
 </script>

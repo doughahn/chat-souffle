@@ -279,20 +279,9 @@ blockquote span {
 .copyButton > svg {
   width: 1em;
   height: 1em;
-  margin-right: 0.25em;
+  margin: 0 0 .1rem 0;
   vertical-align: middle;
 }
-
-/* .copiedMessage {
-  display: none;
-  font-size: 0.8em;
-  color: green;
-  margin-left: 1em;
-}
-
-.copiedMessage.show {
-  display: inline;
-} */
 
 .monospaced-text {
   font-family: 'IBM Plex Serif', monospace;
