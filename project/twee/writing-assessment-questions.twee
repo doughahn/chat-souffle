@@ -12,14 +12,20 @@ Below are some guidelines for ensuring quality distractors. Use the criteria bel
 - Use plausible but incorrect distractors.
 - Use only truly correct answers.
 - Avoid negative phrasing.
-
-*Optional*: review assessment writing best practices at these external resources before moving on:
-
 <html>
-<ul>
-    <li><a id="vanderbilt-external-link" class="external-link" href="https://cft.vanderbilt.edu/guides-sub-pages/writing-good-multiple-choice-test-questions/" target="blank">Writing Good Multiple Choice Test Questions - Vanderbilt University Center for Teaching</a></li>
-    <li><a id="conneticut-external-link" class="external-link" href="https://kb.ecampus.uconn.edu/2020/09/30/writing-effective-multiple-choice-questions-2/" target="blank">Writing Effective Multiple Choice Questions - University of Connecticut Knowledge Base</a></li>
-</ul>
+<div class="tip-box">
+    <div class="tip-icon">
+        <i class="fas fa-pen"></i>
+    </div>
+    <div class="tip-content">
+        <h3 class="tip-title">Optional</h3>
+        <p>Review assessment writing best practices at these external resources before moving on:</p>
+        <ul>
+            <li><a id="vanderbilt-external-link" class="external-link" href="https://cft.vanderbilt.edu/guides-sub-pages/writing-good-multiple-choice-test-questions/" target="blank">Writing Good Multiple Choice Test Questions - Vanderbilt University Center for Teaching</a></li>
+            <li><a id="conneticut-external-link" class="external-link" href="https://kb.ecampus.uconn.edu/2020/09/30/writing-effective-multiple-choice-questions-2/" target="blank">Writing Effective Multiple Choice Questions - University of Connecticut Knowledge Base</a></li>
+        </ul>
+    </div>
+</div>
 <hr>
     <div>
         <a id="self-assess-early-exit" class="anchor-nav " onclick="customLinkHandler('improve an assessment')">Improve an Assessment</a>
