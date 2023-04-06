@@ -54,7 +54,7 @@
 
 <hr>
     <div>
-        <a id="self-assess-early-exit" class="anchor-nav " onclick="customLinkHandler('writing assessments')">Write effective distractors<i class="fas fa-arrow-right"></i></a>
+        <a id="self-assess-early-exit" class="anchor-nav " onclick="customLinkHandler('writing assessments')">Write effective distractors <i class="fas fa-arrow-right"></i></a>
     </div>
 </html>
 <script>

@@ -2,7 +2,7 @@
 <html><h5>Refining a provided prompt <i class="fas fa-caret-right"></i></h5></html>
 !! Part 1
 <html>
-<h3>Copy the prompt below that asks ChatGPT to refine the multiple choice question.</h3>
+<h3>Copy the prompt below that asks ChatGPT to refine the multiple choice question. (Review the criteria below if needed.)</h3>
 <div class="prompt-text-area">
     <div class="prompt-text-header">
         <h3><span class="light-gray-text">Prompt Text</span></h3>
@@ -15,8 +15,8 @@
         <span class="copiedMessage">Copied!</span>
     </div>
     <div class="prompt-text-content">
-        <pre class="monospaced-text">You are a teacher of cooking class. You teach middle school students the basics of healthy and safe cooking. The age of your students is 12-16.
-        Your task: Using the information above, generate a multiple choice assessment which helps the learners described above to correctly understand core foundational knowledge relating to cooking healthy meals.</pre>
+<pre class="monospaced-text">You are a teacher of cooking class. You teach middle school students the basics of healthy and safe cooking. The age of your students is 12-16.
+Your task: Using the information above, generate a multiple choice assessment which helps the learners described above to correctly understand core foundational knowledge relating to cooking healthy meals.</pre>
     </div>
 </div><br />
 <div class="dropdown-container">
@@ -53,13 +53,13 @@
 <h3>Which of the following best describes your experience using ChatGPT?</h3>
     <form id="provided-track-1" class="pure-form" data-parent="provided-example-track">
         <label for="provided-track-1-opt-1" class="pure-checkbox">
-            <input type="radio" name="provided-track-1-choice" id="provided-track-1-opt-1" value="worse-experience-using-chatGPT-with-first-copy-of-prompt" onclick="checkOptionSelected('provided-track-1')" />Worse 
+            <input type="radio" name="provided-track-1-choice" id="provided-track-1-opt-1" value="unacceptable-using-chatGPT-with-first-copy-of-prompt" onclick="checkOptionSelected('provided-track-1')" />Unacceptable 
         </label>
         <label for="provided-track-1-opt-2" class="pure-checkbox">
-            <input type="radio" name="provided-track-1-choice" id="provided-track-1-opt-2" value="equal-experience-using-chatGPT-with-first-copy-of-prompt" onclick="checkOptionSelected('provided-track-1')" />Equal 
+            <input type="radio" name="provided-track-1-choice" id="provided-track-1-opt-2" value="adequate-experience-using-chatGPT-with-first-copy-of-prompt" onclick="checkOptionSelected('provided-track-1')" />Adequate 
         </label>
         <label for="provided-track-1-opt-3" class="pure-checkbox">
-            <input type="radio" name="provided-track-1-choice" id="provided-track-1-opt-3" value="better-experience-using-chatGPT-with-first-copy-of-prompt" onclick="checkOptionSelected('provided-track-1')" />Better
+            <input type="radio" name="provided-track-1-choice" id="provided-track-1-opt-3" value="excellent-experience-using-chatGPT-with-first-copy-of-prompt" onclick="checkOptionSelected('provided-track-1')" />Excellent
         </label>
         <button type="button" onclick="sendFormXAPIStatementNoVoid('provided-track-1'); checkOptionSelected('provided-track-1'); customButtonHandler('provided assessment track 1 freeform')" id="provided-track-1-submit" class="pure-button pure-button-primary" disabled>Submit your choice</button>
     </form>
