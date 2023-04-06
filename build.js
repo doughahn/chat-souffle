@@ -12,7 +12,7 @@ const files = {
         "helpers/sugar-cube-macros.js",
         "statements/accessed.js",
         "statements/interacted.js",
-        "statements/preferred.js",
+        "statements/chose.js",
         "statements/answered.js",
         "statements/completed.js",
         "statements/link.js"
