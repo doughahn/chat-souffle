@@ -1,8 +1,8 @@
 :: provided assessment track 3 freeform
 <html><h5>Refining a provided prompt <i class="fas fa-caret-right"></i></h5></html>
-!! Reflect Part 3
+!! Reflect on Part 3
 <html>
-<p>Reflect: why do you think the new version changed the way it did or mostly stayed the same?</p>
+<h3>Why do you think the new version changed the way it did or mostly stayed the same?</h3>
 <div class="textarea-Wrapper" data-parent="provided-example-track">
   <textarea class="custom-textarea" id="provided-track-3-freeform" type="text" value="" oninput="checkTextareaNotEmpty('provided-track-3-freeform', 'send-provided-track-3-freeform', '/track-1-textarea')"></textarea>
 </div>

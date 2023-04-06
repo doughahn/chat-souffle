@@ -5,8 +5,7 @@
 <p>Now test a prompt that applies prompt engineering techniques explained in the article 
 <a id="mega-prompts-external-link-procided-3" class="external-link" href="https://drphilippahardman.substack.com/p/introducing-chatgpt-edu-mega-prompts?utm_source=profile&utm_medium=reader2" target="blank">&ldquo;Introducing: ChatGPT Edu-Mega-Prompts&rdquo;</a> by Dr Philippa Hardman.</p>
 <p>The prompt specifies AI&rsquo;s role, describes the subject the and learner, identifies the instructional strategy, provides context and an example. It clearly outline the task and the desired outputs.</p>
-
-<h3>Copy the entire prompt and paste it to ChatGPT to see what assessment it will produce</h3>
+<p>Copy the entire prompt and paste it to ChatGPT to see what assessment it will produce:</p>
 <div class="prompt-text-area"> 
     <div class="prompt-text-header">
         <h3><span class="light-gray-text">Prompt Text</span></h3>

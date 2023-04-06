@@ -2,8 +2,8 @@
 <html><h5>Refining a provided prompt <i class="fas fa-caret-right"></i></h5></html>
 !! Refine Part 4
 <html>
-<p>Now, without using ChatGPT, take the best elements from the different iterations of the multiple choice question, combining them into the best possible assessment question. Avoid adding new material other than correcting for grammar and fluidity.</p>
-<p>Evaluate this human-edited version based on the criteria for effective distractors (<a id="review-criteria-from-proivided-prompt-part-4" onclick="customLinkHandler('criteria for effective distractors')">review criteria</a>).</p> 
+<p>Now, <b><i>without using ChatGPT</i></b>, take the best elements from the different iterations of the multiple choice question, combining them into the best possible assessment question. Avoid adding new material other than correcting for grammar and fluidity.</p>
+<p>Evaluate this human-edited version based on the criteria for effective distractors (review effective criteria below if needed).</p> 
 <h3>Is the new version worse/equal/better than the original? </h3>
     <form id="provided-track-4" class="pure-form" data-parent="provided-example-track">
         <label for="provided-track-4-opt-1" class="pure-checkbox">
@@ -16,5 +16,49 @@
             <input type="radio" name="provided-track-4-choice" id="provided-track-4-opt-3" value="better-prompt-after-human-edited" onclick="checkOptionSelected('provided-track-4')" />Better
         </label>
         <button type="button" onclick="sendFormXAPIStatement('provided-track-4'); checkOptionSelected('provided-track-4'); customButtonHandler('provided assessment track 4 freeform')" id="provided-track-4-submit" class="pure-button pure-button-primary" disabled>Submit your choice</button>
-    </form>
+    </form><br />
+<div class="dropdown-container">
+  <div class="dropdown-header" onclick="toggleContent()">
+    <h3><span class="light-gray-text">Review the criteria</span></h3>
+    <span class="arrow">&#9662;</span>
+  </div>
+  <div id="provided-track-4-a-content-dropdown" class="dropdown-text-content" style="display: none;">
+    <p>Use the criteria below to evaluate ChatGPT&rsquo;s assessment questions.</p>
+    <div class="tip-box">
+        <div class="tip-icon">
+            <i class="fas fa-pen"></i>
+        </div>
+        <div class="tip-content">
+            <h3 class="tip-title">Evaluation criteria</h3>
+                <ul>
+                <li>Write options that are congruent in length.</li>
+                <li>Write options that use parallel grammatical structure (e.g. if answer(s) start with a verb, so should the distractors).</li>
+                <li>Avoid &ldquo;True/False,&rdquo; “All of the Above,” or “Both A and B Only” (or other such combinations).</li>
+                <li>Use plausible but incorrect distractors.</li>
+                <li>Use only truly correct answers.</li>
+                <li>Avoid negative phrasing.</li>
+            </ul>
+        </div>
+    </div>
+    <p>Review assessment writing best practices at these external resources before moving on:</p>
+    <ul>
+        <li><a id="vanderbilt-external-link-review-1" class="external-link" href="https://cft.vanderbilt.edu/guides-sub-pages/writing-good-multiple-choice-test-questions/" target="blank">Writing Good Multiple Choice Test Questions - Vanderbilt University Center for Teaching</a></li>
+        <li><a id="conneticut-external-link-review-1" class="external-link" href="https://kb.ecampus.uconn.edu/2020/09/30/writing-effective-multiple-choice-questions-2/" target="blank">Writing Effective Multiple Choice Questions - University of Connecticut Knowledge Base</a></li>
+    </ul>
+  </div>
+</div>
 </html>
+<script>
+function toggleContent() {
+  const content = document.getElementById('provided-track-4-a-content-dropdown');
+  const arrow = document.querySelector('.arrow');
+
+  if (content.style.display === 'none') {
+    content.style.display = 'block';
+    arrow.classList.add('arrow-up');
+  } else {
+    content.style.display = 'none';
+    arrow.classList.remove('arrow-up');
+  }
+}
+</script>
