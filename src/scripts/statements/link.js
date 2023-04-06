@@ -39,18 +39,13 @@ window.sendExternalLinkClickStatement = function(externalLinkID) {
   function attachExternalLinkEventListener() {
     var externalLinks = $('.external-link');
   
-    console.log('Found', externalLinks.length, 'external links');
-  
     externalLinks.each(function() {
       $(this).on("click", function(event) {
         event.preventDefault();
         var linkID = $(this).attr('id');
   
-        console.log('Link clicked:', linkID);
-  
         window.sendExternalLinkClickStatement(linkID);
   
-        console.log('sendExternalLinkClickStatement called for', linkID);
         window.open($(this).attr('href'), '_blank');
       });
     });

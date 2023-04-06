@@ -39,8 +39,7 @@ window.incrementTrackCompletions = function(iterationId) {
       };
 
       // Send the xAPI statement
-      ADL.XAPIWrapper.sendStatement(statement);
-      console.log(statement);
+      sendXAPIStatement(statement);
   }
 };
 

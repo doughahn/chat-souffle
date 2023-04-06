@@ -39,8 +39,8 @@ function sendFormXAPIStatement(formId) {
       "object": {
         "id": "https://doughahn.github.io/chat-souffle/" + formId,
         "definition": {
-          "name": { "en-US": "Experience Self-Assessment" },
-          "description": { "en-US": "The user's self-assessment of experience in multiple choice assessment" },
+          "name": { "en-US": formId },
+          "description": { "en-US": "the user's choice on " + formId },
         },
         "objectType": "Activity"
       },
@@ -132,8 +132,8 @@ function sendFormXAPIStatementNoVoid(formId) {
       "object": {
           "id": "https://doughahn.github.io/chat-souffle/" + formId,
           "definition": {
-              "name": { "en-US": "Experience Self-Assessment" },
-              "description": { "en-US": "The user's self-assessment of experience in multiple choice assessment" },
+              "name": { "en-US": formId },
+              "description": { "en-US": "the user's choice on " + formId },
           },
           "objectType": "Activity"
       },
