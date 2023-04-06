@@ -18,7 +18,32 @@
         <span class="copiedMessage">Copied!</span>
     </div>
     <div class="prompt-text-content">
-        <pre class="monospaced-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</pre>
+        <pre class="monospaced-text">You are a teacher of cooking class . You teach middle school students the basics of healthy and safe cooking. The age of your students is 12-16.
+
+Without the ability to recall & process accurate foundational information, the learning process is futile. You want to support your learners to recall and process accurate foundational information without using quizzes which are proven to only enable short term recall rather than long term memorisation.
+
+Instead, you want to use two instructional strategies proven to increased the effective memorisation of foundational knowledge. The first strategy you will use is known as Undoing.
+
+Topic: Undoing Instructional Strategy
+
+Research shows that learners learn better &amp; more quickly when the learning experience intentionally challenges commonly mistaken foundational ideas and assumptions and encourages new ways of thinking. The highest impact learning experiences are designed to identify and correct foundational misconceptions before memorisation occurs.
+
+Undoing activities are particularly helpful when used at the start of the learning process by identifying and then correcting gaps in knowledge, misconceptions and misplaced reasoning. Undoing activities often ask learners to predict the outcome of a scenario.
+
+An example of a well formed undoing activity goes as follows:
+
+Sharna is watching a candle burn. Once it’s burned down, she wonders what happened to the wax. She has 4 ideas - which do you agree with most, and why?
+
+A. XXXX - common misconception
+B. XXXX - a common misconception
+C. XXXX - the correct answer
+D. XXXX - a common misconception
+
+Your task: Using the information above, generate an undoing activity which helps the learners described above to correctly understand core foundational knowledge relating to cooking healthy meals.
+
+Write feedback for each potential response. The feedback should be succinct and explain the difference between the student's response and the correct answer. It should replace the misconception with an alternative conception, explaining what the alternative, correct way of thinking about the scenario is and how it differs from the student's misconception.
+
+Finally, suggest a resource for the defined learner type to look at which will help them to learn the correct version of the foundational knowledge.</pre>
     </div>
 </div>
 <h3>Which of the following best describes your experience using ChatGPT?</h3>

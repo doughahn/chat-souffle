@@ -14,3 +14,6 @@ var actor = localStorage.getItem("courseUserName") || courseUser;
 
 // Construct the actor's email address by appending the 'actor' value to the base email domain.
 var actorMbox = "mailto:" + actor + "@doughahn.github.io"
+
+// Set the 'actor' key in localStorage
+localStorage.setItem("actor", actor);
