@@ -565,13 +565,13 @@ setTimeout(function() {
 &lt;h3&gt;How likely are you to use ChatGPT to develop multiple choice assessments as a result of this activity?&lt;/h3&gt;
     &lt;form id=&quot;survey-1&quot; class=&quot;pure-form&quot; data-parent=&quot;post-survey&quot;&gt;
         &lt;label for=&quot;survey-1-opt-1&quot; class=&quot;pure-checkbox&quot;&gt;
-            &lt;input data-lpignore=&quot;true&quot; type=&quot;radio&quot; name=&quot;survey-1-choice&quot; id=&quot;survey-1-opt-1&quot; value=&quot;more-likely-to-user-chatgpt&quot; onclick=&quot;checkOptionSelected(&#39;survey-1&#39;)&quot; /&gt;More Likely
+            &lt;input type=&quot;radio&quot; name=&quot;survey-1-choice&quot; id=&quot;survey-1-opt-1&quot; value=&quot;more-likely-to-user-chatgpt&quot; onclick=&quot;checkOptionSelected(&#39;survey-1&#39;)&quot; /&gt;More Likely
         &lt;/label&gt;
         &lt;label for=&quot;survey-1-opt-2&quot; class=&quot;pure-checkbox&quot;&gt;
-            &lt;input data-lpignore=&quot;true&quot; type=&quot;radio&quot; name=&quot;survey-1-choice&quot; id=&quot;survey-1-opt-2&quot; value=&quot;equally-likely-to-user-chawtgpt&quot; onclick=&quot;checkOptionSelected(&#39;survey-1&#39;)&quot; /&gt;Equally Likely 
+            &lt;input type=&quot;radio&quot; name=&quot;survey-1-choice&quot; id=&quot;survey-1-opt-2&quot; value=&quot;equally-likely-to-user-chatgpt&quot; onclick=&quot;checkOptionSelected(&#39;survey-1&#39;)&quot; /&gt;Equally Likely 
         &lt;/label&gt;
         &lt;label for=&quot;survey-1-opt-3&quot; class=&quot;pure-checkbox&quot;&gt;
-            &lt;input data-lpignore=&quot;true&quot; type=&quot;radio&quot; name=&quot;survey-1-choice&quot; id=&quot;survey-1-opt-3&quot; value=&quot;less-likely-to-user-chatgpt&quot; onclick=&quot;checkOptionSelected(&#39;survey-1&#39;)&quot; /&gt;Less Likely
+            &lt;input type=&quot;radio&quot; name=&quot;survey-1-choice&quot; id=&quot;survey-1-opt-3&quot; value=&quot;less-likely-to-user-chatgpt&quot; onclick=&quot;checkOptionSelected(&#39;survey-1&#39;)&quot; /&gt;Less Likely
         &lt;/label&gt;
         &lt;button type=&quot;button&quot; onclick=&quot;sendFormXAPIStatementNoVoid(&#39;survey-1&#39;); checkOptionSelected(&#39;survey-1&#39;); customButtonHandler(&#39;post survey 2&#39;)&quot; id=&quot;survey-1-submit&quot; class=&quot;pure-button pure-button-primary&quot; disabled&gt;Submit your choice&lt;/button&gt;
     &lt;/form&gt;
@@ -1064,16 +1064,16 @@ function toggleContent() {
 &lt;p&gt;Please help us get to know you by answering the following three survey questions. Your responses will only be shared in aggregate (combined with others&amp;rsquor; responses).&lt;/p&gt;
 &lt;h3&gt;Which of the following best describes your experience with developing multiple choice assessments?&lt;/h3&gt;
 &lt;form id=&quot;survey-1&quot; class=&quot;pure-form&quot; data-parent=&quot;self-assessment-track&quot;&gt;
-    &lt;label for=&quot;survey-1-opt-1&quot; class=&quot;pure-checkbox&quot;&gt;
+    &lt;label data-lpignore=&quot;true&quot; for=&quot;survey-1-opt-1&quot; class=&quot;pure-checkbox&quot;&gt;
         &lt;input type=&quot;radio&quot; name=&quot;survey-1-choice&quot; id=&quot;survey-1-opt-1&quot; value=&quot;no-experience-with-assessments&quot; onclick=&quot;checkOptionSelected(&#39;survey-1&#39;)&quot; /&gt;No experience: I have never written a multiple choice assessment.
     &lt;/label&gt;
-    &lt;label for=&quot;survey-1-opt-2&quot; class=&quot;pure-checkbox&quot;&gt;
+    &lt;label data-lpignore=&quot;true&quot; for=&quot;survey-1-opt-2&quot; class=&quot;pure-checkbox&quot;&gt;
         &lt;input type=&quot;radio&quot; name=&quot;survey-1-choice&quot; id=&quot;survey-1-opt-2&quot; value=&quot;beginner-experience-with-assessments&quot; onclick=&quot;checkOptionSelected(&#39;survey-1&#39;)&quot; /&gt;Beginner: I have performed this task occasionally. 
     &lt;/label&gt;
-    &lt;label for=&quot;survey-1-opt-3&quot; class=&quot;pure-checkbox&quot;&gt;
+    &lt;label data-lpignore=&quot;true&quot; for=&quot;survey-1-opt-3&quot; class=&quot;pure-checkbox&quot;&gt;
         &lt;input type=&quot;radio&quot; name=&quot;survey-1-choice&quot; id=&quot;survey-1-opt-3&quot; value=&quot;intermediate-experience-with-assessments&quot; onclick=&quot;checkOptionSelected(&#39;survey-1&#39;)&quot; /&gt;Intermediate: This task has been a central part of my work. I have performed it myself routinely without any supervision. 
     &lt;/label&gt;
-    &lt;label for=&quot;survey-1-opt-4&quot; class=&quot;pure-checkbox&quot; data-parent=&quot;self-assessment-track&quot;&gt;
+    &lt;label data-lpignore=&quot;true&quot; for=&quot;survey-1-opt-4&quot; class=&quot;pure-checkbox&quot; data-parent=&quot;self-assessment-track&quot;&gt;
         &lt;input type=&quot;radio&quot; name=&quot;survey-1-choice&quot; id=&quot;survey-1-opt-4&quot; value=&quot;advanced-experience-with-assessments&quot; onclick=&quot;checkOptionSelected(&#39;survey-1&#39;)&quot; /&gt;Advanced: I have trained others in performance of this task and/or others have consulted me as an expert for assistance in performing this task.
     &lt;/label&gt;
     &lt;button type=&quot;button&quot; onclick=&quot;sendFormXAPIStatement(&#39;survey-1&#39;); checkOptionSelected(&#39;survey-1&#39;); handleButtonSurvey1to2(); customButtonHandler(&#39;self assessment 2&#39;)&quot; id=&quot;survey-1-submit&quot; class=&quot;pure-button pure-button-primary&quot; disabled&gt;Submit your choice&lt;/button&gt;

@@ -6,13 +6,13 @@
 <h3>How likely are you to use ChatGPT to develop multiple choice assessments as a result of this activity?</h3>
     <form id="survey-1" class="pure-form" data-parent="post-survey">
         <label for="survey-1-opt-1" class="pure-checkbox">
-            <input data-lpignore="true" type="radio" name="survey-1-choice" id="survey-1-opt-1" value="more-likely-to-user-chatgpt" onclick="checkOptionSelected('survey-1')" />More Likely
+            <input type="radio" name="survey-1-choice" id="survey-1-opt-1" value="more-likely-to-user-chatgpt" onclick="checkOptionSelected('survey-1')" />More Likely
         </label>
         <label for="survey-1-opt-2" class="pure-checkbox">
-            <input data-lpignore="true" type="radio" name="survey-1-choice" id="survey-1-opt-2" value="equally-likely-to-user-chawtgpt" onclick="checkOptionSelected('survey-1')" />Equally Likely 
+            <input type="radio" name="survey-1-choice" id="survey-1-opt-2" value="equally-likely-to-user-chatgpt" onclick="checkOptionSelected('survey-1')" />Equally Likely 
         </label>
         <label for="survey-1-opt-3" class="pure-checkbox">
-            <input data-lpignore="true" type="radio" name="survey-1-choice" id="survey-1-opt-3" value="less-likely-to-user-chatgpt" onclick="checkOptionSelected('survey-1')" />Less Likely
+            <input type="radio" name="survey-1-choice" id="survey-1-opt-3" value="less-likely-to-user-chatgpt" onclick="checkOptionSelected('survey-1')" />Less Likely
         </label>
         <button type="button" onclick="sendFormXAPIStatementNoVoid('survey-1'); checkOptionSelected('survey-1'); customButtonHandler('post survey 2')" id="survey-1-submit" class="pure-button pure-button-primary" disabled>Submit your choice</button>
     </form>
