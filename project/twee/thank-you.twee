@@ -13,9 +13,9 @@
 <p>Share about your experience with others in the Slack channel <a id="slack-channel-link" class="external-link" href="#" target="blank">#assessments-with-chatgpt</a>. Get <a id="shareGPT-external-link-from-thank-you" class="external-link" href="https://sharegpt.com/" target="blank">ShareGPT</a> to easily share your conversations.
 <hr>
     <div>
-        <a id="start-provided-assessment-track-from-thankyou" class="anchor-nav complete-track-1" onclick="customLinkHandler('custom assessment track 1'); handleXAPIClick(event);">I want to try working with a provided assessment agian<i class="fas fa-arrow-right"></i></a>
+        <a id="start-provided-assessment-track-from-thankyou" class="anchor-nav complete-track-1" onclick="customLinkHandler('custom assessment track 1'); handleXAPIClick(event);">I want to try working with the provided assessment agian<i class="fas fa-arrow-right"></i></a>
     </div>
     <div>
         <a id="start-custom-assessment-track-from-thankyou" class="anchor-nav complete-track-1" onclick="customLinkHandler('custom assessment track 1'); handleXAPIClick(event);">I want to try writing my own assessments again<i class="fas fa-arrow-right"></i></a>
     </div>
-</html>
+</html> 
