@@ -58,6 +58,22 @@ ul {
   font-size: 1rem;
 }
 
+ol {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight:500;
+  counter-reset: item;
+  padding-left: 1.33rem;;
+}
+ol li {
+  font-family: 'IBM Plex Serif', serif;
+}
+ol li::marker {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight:700;
+  content: counter(item) " ";
+}
+
+
 a,
 .anchor-nav {
   font-size: 1rem;
@@ -69,8 +85,16 @@ label {
 }
 
 p {
-  font-family: 'IBM Plex Serif', serif;
+  font-family: 'IBM Plex Serif', sans-serif;
   font-weight:500;
+}
+
+p b {
+  font-weight:700;
+}
+
+p i {
+  font-style:italic;
 }
 
 textarea,

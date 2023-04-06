@@ -2,8 +2,8 @@
 <html><h5>Self assessment <i class="fas fa-caret-right"></i></h5></html>
 !! Survey questions (1 of 3)
 <html>
-<p>Please help us get to know you by answering the following three survey questions. Your responses will only be shared in aggregate (combined with others’ responses).</p>
-<p>Which of the following best describes your experience with developing multiple choice assessments?</p>
+<p>Please help us get to know you by answering the following three survey questions. Your responses will only be shared in aggregate (combined with others&rsquor; responses).</p>
+<h3>Which of the following best describes your experience with developing multiple choice assessments?</h3>
 <form id="survey-1" class="pure-form" data-parent="self-assessment-track">
     <label for="survey-1-opt-1" class="pure-checkbox">
         <input type="radio" name="survey-1-choice" id="survey-1-opt-1" value="no-experience-with-assessments" onclick="checkOptionSelected('survey-1')" />No experience: I have never written a multiple choice assessment.

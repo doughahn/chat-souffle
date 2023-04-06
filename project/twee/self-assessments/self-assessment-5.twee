@@ -1,8 +1,8 @@
 :: self assessment general feedback
 <html><h5>Self assessment <i class="fas fa-caret-right"></i></h5></html>
 !! Open Feedback
-Let us know what you think about ChatGPT, in your own words. 
 <html>
+<h3>Let us know what you think about ChatGPT, in your own words.</h3>
 <div class="textarea-Wrapper" data-parent="self-assessment-track">
 <textarea class="custom-textarea" id="self-assessment-general-feedback" type="text" value="" data-activity-id="self-assessment-general-feedback-activity" oninput="checkTextareaNotEmpty('self-assessment-general-feedback', 'send-self-assessment-general-feedback')"></textarea>
 </div>
