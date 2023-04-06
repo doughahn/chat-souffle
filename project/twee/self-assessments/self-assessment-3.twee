@@ -14,6 +14,6 @@
     <label for="survey-3-opt-3" class="pure-checkbox">
         <input type="radio" name="survey-3-choice" id="survey-3-opt-3" value="More excited than concerned" onclick="checkOptionSelected('survey-3')" />More excited than concerned
     </label>
-    <button type="button" onclick="sendFormXAPIStatement('survey-3'); checkOptionSelected('survey-3'); handleButtonSurvey3toText(); customButtonHandler('self assessment exit or feedback')" id="survey-3-submit" class="pure-button pure-button-primary" disabled>Submit Your Choice</button>
+    <button type="button" onclick="sendFormXAPIStatement('survey-3'); checkOptionSelected('survey-3'); handleButtonSurvey3toText(); customButtonHandler('self assessment exit or feedback')" id="survey-3-submit" class="pure-button pure-button-primary" disabled>Submit your choice</button>
 </form> 
  </html>

@@ -1,11 +1,15 @@
 :: complete assessment
 
 !! Set up ChatGPT, or Start testing?
-You can choose a tracvk here. Don&rsquo;t  worry, you can loop back to do both.
+
 <html>
+<p>Before you start using ChatGPT to refine assessments, you need to get access and give it a test drive.</p>
+<p>If you&rsquo;ve already got access, give it a test drive (guided prompt engineering).</p>
 <hr>
     <div>
         <a id="set-up-chat-gpt" class="anchor-nav " onclick="customLinkHandler('set up chatgpt')">Set up ChatGPT<i class="fas fa-arrow-right"></i></a>
-        <a id="test-drive-chat-gpt-skip-setup" class="anchor-nav " onclick="customLinkHandler('test drive chatgpt')">Test Drive ChatGPT<i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div>
+        <a id="test-drive-chat-gpt-skip-setup" class="anchor-nav " onclick="customLinkHandler('test drive chatgpt')">Test drive ChatGPT<i class="fas fa-arrow-right"></i></a>
     </div>
 </html>

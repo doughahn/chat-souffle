@@ -5,5 +5,5 @@ Reflect: why do you think the new version changed the way it did or mostly staye
 <div class="textarea-Wrapper" data-parent="provided-example-track">
   <textarea class="custom-textarea" id="provided-track-3-freeform" type="text" value="" oninput="checkTextareaNotEmpty('provided-track-3-freeform', 'send-provided-track-3-freeform', '/track-1-textarea')"></textarea>
 </div>
-<button class="pure-button pure-button-primary" id="send-provided-track-3-freeform" onclick="sendTextareaXAPIStatement('provided-track-3-freeform', 'send-provided-track-3-freeform', 'provided-track-3-textarea'); customButtonHandler('provided assessment track 4')">Send Your Thoughts</button>
+<button class="pure-button pure-button-primary" id="send-provided-track-3-freeform" onclick="sendTextareaXAPIStatement('provided-track-3-freeform', 'send-provided-track-3-freeform', 'provided-track-3-textarea'); customButtonHandler('provided assessment track 4')">Send your thoughts</button>
 </html>

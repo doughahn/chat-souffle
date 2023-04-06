@@ -1,33 +1,33 @@
 :: writing assessments
 
 !! Writing assessment questions
-
-Assessment is a huge topic. In this module, we&rsquo;ll narrow our focus to writing effective distractors for multiple choice questions.
-
-Below are some guidelines for ensuring quality distractors. Use the criteria below to evaluate ChatGPT’s assessment questions.
-
-- Write options that are congruent in length.
-- Write options that use parallel grammatical structure (e.g. if answer(s) start with a verb, so should the distractors).
-- Avoid “True/False,” “All of the Above,” or “Both A and B Only” (or other such combinations).
-- Use plausible but incorrect distractors.
-- Use only truly correct answers.
-- Avoid negative phrasing.
 <html>
+<p>Assessment is a huge topic. In this module, we&rsquo;ll narrow our focus to writing effective distractors for multiple choice questions.</p>
+
+<p>Below are some guidelines for ensuring quality distractors. Use the criteria below to evaluate ChatGPT&rsquo;s assessment questions.</p>
 <div class="tip-box">
     <div class="tip-icon">
         <i class="fas fa-pen"></i>
     </div>
     <div class="tip-content">
-        <h3 class="tip-title">Optional</h3>
-        <p>Review assessment writing best practices at these external resources before moving on:</p>
-        <ul>
-            <li><a id="vanderbilt-external-link" class="external-link" href="https://cft.vanderbilt.edu/guides-sub-pages/writing-good-multiple-choice-test-questions/" target="blank">Writing Good Multiple Choice Test Questions - Vanderbilt University Center for Teaching</a></li>
-            <li><a id="conneticut-external-link" class="external-link" href="https://kb.ecampus.uconn.edu/2020/09/30/writing-effective-multiple-choice-questions-2/" target="blank">Writing Effective Multiple Choice Questions - University of Connecticut Knowledge Base</a></li>
+        <h3 class="tip-title">Evaluation criteria</h3>
+            <ul>
+            <li>Write options that are congruent in length.</li>
+            <li>Write options that use parallel grammatical structure (e.g. if answer(s) start with a verb, so should the distractors).</li>
+            <li>Avoid &ldquo;True/False,&rdquo; “All of the Above,” or “Both A and B Only” (or other such combinations).</li>
+            <li>Use plausible but incorrect distractors.</li>
+            <li>Use only truly correct answers.</li>
+            <li>Avoid negative phrasing.</li>
         </ul>
     </div>
 </div>
+<p>Review assessment writing best practices at these external resources before moving on:</p>
+<ul>
+    <li><a id="vanderbilt-external-link" class="external-link" href="https://cft.vanderbilt.edu/guides-sub-pages/writing-good-multiple-choice-test-questions/" target="blank">Writing Good Multiple Choice Test Questions - Vanderbilt University Center for Teaching</a></li>
+    <li><a id="conneticut-external-link" class="external-link" href="https://kb.ecampus.uconn.edu/2020/09/30/writing-effective-multiple-choice-questions-2/" target="blank">Writing Effective Multiple Choice Questions - University of Connecticut Knowledge Base</a></li>
+</ul>
 <hr>
     <div>
-        <a id="self-assess-early-exit" class="anchor-nav " onclick="customLinkHandler('improve an assessment')">Improve an Assessment<i class="fas fa-arrow-right"></i></a>
+        <a id="self-assess-early-exit" class="anchor-nav " onclick="customLinkHandler('improve an assessment')">Improve an assessment<i class="fas fa-arrow-right"></i></a>
     </div>
 </html>

@@ -1,11 +1,9 @@
 :: test drive chatgpt
 
 !! Test Drive
-Before we get into assessment best practices, let’s talk about how to tell ChatGPT what you want (called “prompt engineering”).
-Try entering each of these prompts in sequence just to see how ChatGPT’s responses differ as you provide more specific instruction.
 <html>
-<h3><i>Possible examples:</i></h3>
-
+<p>Before we get into assessment best practices, let&rsquo;s talk about how to tell ChatGPT what you want (called &ldquo;prompt engineering&rdquo;).</p>
+<p>Try entering each of these prompts in sequence just to see how ChatGPT&rsquo;s responses differ as you provide more specific instruction.</P.
 <div class="prompt-text-area">
     <div class="prompt-text-header">
         <h3><span class="light-gray-text">Prompt 1</span></h3>
@@ -56,7 +54,7 @@ Try entering each of these prompts in sequence just to see how ChatGPT’s respo
 
 <hr>
     <div>
-        <a id="self-assess-early-exit" class="anchor-nav " onclick="customLinkHandler('writing assessments')">Writing Assessments<i class="fas fa-arrow-right"></i></a>
+        <a id="self-assess-early-exit" class="anchor-nav " onclick="customLinkHandler('writing assessments')">Write effective distractors<i class="fas fa-arrow-right"></i></a>
     </div>
 </html>
 <script>

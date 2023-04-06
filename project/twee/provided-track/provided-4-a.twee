@@ -15,6 +15,6 @@
         <label for="provided-track-4-opt-3" class="pure-checkbox">
             <input type="radio" name="provided-track-4-choice" id="provided-track-4-opt-3" value="Better" onclick="checkOptionSelected('provided-track-4')" />Better
         </label>
-        <button type="button" onclick="sendFormXAPIStatement('provided-track-4'); checkOptionSelected('provided-track-4'); customButtonHandler('provided assessment track 4 freeform')" id="provided-track-4-submit" class="pure-button pure-button-primary" disabled>Submit Your Choice</button>
+        <button type="button" onclick="sendFormXAPIStatement('provided-track-4'); checkOptionSelected('provided-track-4'); customButtonHandler('provided assessment track 4 freeform')" id="provided-track-4-submit" class="pure-button pure-button-primary" disabled>Submit your choice</button>
     </form>
 </html>

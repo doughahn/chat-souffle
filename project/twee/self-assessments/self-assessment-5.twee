@@ -5,7 +5,7 @@ Let us know what you think about ChatGPT, in your own words.
 <div class="textarea-Wrapper" data-parent="self-assessment-track">
 <textarea class="custom-textarea" id="self-assessment-general-feedback" type="text" value="" data-activity-id="self-assessment-general-feedback-activity" oninput="checkTextareaNotEmpty('self-assessment-general-feedback', 'send-self-assessment-general-feedback')"></textarea>
 </div>
-<button class="pure-button pure-button-primary" id="send-self-assessment-general-feedback" onclick="sendTextareaXAPIStatement('self-assessment-general-feedback', 'send-self-assessment-general-feedback', 'self-assessment-general-feedback-activity'); customButtonHandler('complete assessment')">Send Your Thoughts</button>
+<button class="pure-button pure-button-primary" id="send-self-assessment-general-feedback" onclick="sendTextareaXAPIStatement('self-assessment-general-feedback', 'send-self-assessment-general-feedback', 'self-assessment-general-feedback-activity'); customButtonHandler('complete assessment')">Send your thoughts</button>
 
 </html>
 
