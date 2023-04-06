@@ -4,5 +4,5 @@
 <html>
 <h3>We&rsquo;ve kept you anonymous so far. This is a chance to leave us feedback about the course… and a way to get in touch!</h3>
 <p>If you leave your email, we may follow up with you for clarifications.</p>
-<button onclick="window.location.href='https://yljg97xdvs4.typeform.com/to/ZPXZEfoC'" type="button" class="pure-button pure-button-primary">Go to typeform</button>
+<button onclick="window.open('https://yljg97xdvs4.typeform.com/to/ZPXZEfoC', '_blank')" type="button" class="pure-button pure-button-primary">Go to typeform</button>
 </html>
