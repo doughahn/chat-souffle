@@ -7,7 +7,7 @@
 <p>For this activity, you can use either your own assessment or one we provide. (You can always come back and choose a different track.) We recommend trying the first option if you are new to ChatGPT.</p>
 <hr>
     <div>
-        <a id="chose-rovided-assessment-track" class="anchor-nav" onclick="customLinkHandler('provided assessment track 1')">Use our provided assessment [track 1]<i class="fas fa-arrow-right"></i></a>
+        <a id="chose-provided-assessment-track" class="anchor-nav" onclick="customLinkHandler('provided assessment track 1')">Use our provided assessment [track 1]<i class="fas fa-arrow-right"></i></a>
     </div>
     <div>
         <a id="chose-custom-assessment-track" class="anchor-nav" onclick="customLinkHandler('custom assessment track 1')">Use one of your own assessments [track 2]<i class="fas fa-arrow-right"></i></a>

@@ -514,3 +514,7 @@ a.link-external {
   border-radius: 0 0 5px 5px;
   animation: fadeIn 0.3s ease-in-out; 
 }
+
+#menu-item-saves {
+  display:none;
+}
