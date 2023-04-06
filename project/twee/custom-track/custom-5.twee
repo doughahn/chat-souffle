@@ -2,7 +2,7 @@
 <html><h5>Custom assessment <i class="fas fa-caret-right"></i></h5></html>
 !! Conclusion
 <html>
-<p>Congrats on completing a track! You can go back to different points in this module:</p>
+<h3>Congrats on completing a track! You can go back to different points in this module:</h3>
 <hr>
     <div>
         <a id="start-custom-assessment-track" class="anchor-nav" onclick="customLinkHandler('custom assessment track 1'); handleXAPIClickTrack2(event);">I want to run this track again<i class="fas fa-arrow-right"></i></a>
