@@ -17,6 +17,5 @@
 </html>
 
 <<script>>
-    setup.trackCompletions++;
-    console.log("Track completions: " + setup.trackCompletions);
+    window.incrementTrackCompletions(setup.currentIterationId);
 <</script>>

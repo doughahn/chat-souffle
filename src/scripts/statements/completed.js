@@ -15,29 +15,42 @@ Config.saves.onLoad = function (save) {
     }
 };
 
-window.incrementTrackCompletions = function() {
-    setup.trackCompletions++;
-    console.log("Track completions: " + setup.trackCompletions);
+window.incrementTrackCompletions = function(iterationId) {
+  setup.trackCompletions++;
+  console.log("Track completions: " + setup.trackCompletions);
 
-    // Build the xAPI statement
-    var statement = {
-        "actor": {
-            "mbox": "mailto:learner@example.com"
-        },
-        "verb": {
-            "id": "https://w3id.org/xapi/adb/verbs/completed",
-            "display": {"en-US": "completed"}
-        },
-        "object": {
-            "id": "https://example.com/tracks/" + setup.currentIterationId,
-            "definition": {
-                "name": {"en-US": "Track " + setup.currentIterationId},
-                "description": {"en-US": "Loop " + setup.trackCompletions + " completed"}
-            }
-        }
-    };
+  if (iterationId) {
+      // Build the xAPI statement
+      var statement = {
+          "actor": {
+              "mbox": "mailto:learner@example.com"
+          },
+          "verb": {
+              "id": "https://w3id.org/xapi/adb/verbs/completed",
+              "display": {"en-US": "completed"}
+          },
+          "object": {
+              "id": "https://example.com/tracks/" + iterationId,
+              "definition": {
+                  "name": {"en-US": "Track " + iterationId},
+                  "description": {"en-US": "Loop # " + setup.trackCompletions + " completed"}
+              }
+          }
+      };
 
-    // Send the xAPI statement
-    ADL.XAPIWrapper.sendStatement(statement);
-    console.log(statement);
+      // Send the xAPI statement
+      ADL.XAPIWrapper.sendStatement(statement);
+      console.log(statement);
+  }
+};
+
+
+window.addCompleteTrackListener = function() {
+  var button = document.getElementById("completeTrackBtn");
+  if (button) {
+      button.addEventListener("click", function() {
+          setup.currentIterationId = "iteration_" + (setup.trackStarts + 1);
+          window.incrementTrackCompletions(setup.currentIterationId);
+      });
+  }
 };
