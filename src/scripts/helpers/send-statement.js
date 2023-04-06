@@ -17,6 +17,6 @@ function sendXAPIStatement(statement, elementId) {
             }
         }
     });
-    console.log(statement);
+    console.log(JSON.stringify(statement,null,'\t'));
     return statement.id; 
 }
