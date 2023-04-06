@@ -6,16 +6,16 @@
 <p>Which of the following best describes your experience with developing multiple choice assessments?</p>
 <form id="survey-1" class="pure-form" data-parent="self-assessment-track">
     <label for="survey-1-opt-1" class="pure-checkbox">
-        <input type="radio" name="survey-1-choice" id="survey-1-opt-1" value="None" onclick="checkOptionSelected('survey-1')" />No experience: I have never written a multiple choice assessment.
+        <input type="radio" name="survey-1-choice" id="survey-1-opt-1" value="no-experience-with-assessments" onclick="checkOptionSelected('survey-1')" />No experience: I have never written a multiple choice assessment.
     </label>
     <label for="survey-1-opt-2" class="pure-checkbox">
-        <input type="radio" name="survey-1-choice" id="survey-1-opt-2" value="Beginner" onclick="checkOptionSelected('survey-1')" />Beginner: I have performed this task occasionally. 
+        <input type="radio" name="survey-1-choice" id="survey-1-opt-2" value="beginner-experience-with-assessments" onclick="checkOptionSelected('survey-1')" />Beginner: I have performed this task occasionally. 
     </label>
     <label for="survey-1-opt-3" class="pure-checkbox">
-        <input type="radio" name="survey-1-choice" id="survey-1-opt-3" value="Intermediate" onclick="checkOptionSelected('survey-1')" />Intermediate: This task has been a central part of my work. I have performed it myself routinely without any supervision. 
+        <input type="radio" name="survey-1-choice" id="survey-1-opt-3" value="intermediate-experience-with-assessments" onclick="checkOptionSelected('survey-1')" />Intermediate: This task has been a central part of my work. I have performed it myself routinely without any supervision. 
     </label>
     <label for="survey-1-opt-4" class="pure-checkbox" data-parent="self-assessment-track">
-        <input type="radio" name="survey-1-choice" id="survey-1-opt-4" value="Advanced" onclick="checkOptionSelected('survey-1')" />Advanced: I have trained others in performance of this task and/or others have consulted me as an expert for assistance in performing this task.
+        <input type="radio" name="survey-1-choice" id="survey-1-opt-4" value="advanced-experience-with-assessments" onclick="checkOptionSelected('survey-1')" />Advanced: I have trained others in performance of this task and/or others have consulted me as an expert for assistance in performing this task.
     </label>
     <button type="button" onclick="sendFormXAPIStatement('survey-1'); checkOptionSelected('survey-1'); handleButtonSurvey1to2(); customButtonHandler('self assessment 2')" id="survey-1-submit" class="pure-button pure-button-primary" disabled>Submit your choice</button>
 </form>

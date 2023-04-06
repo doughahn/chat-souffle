@@ -57,3 +57,4 @@ window.updateVisitCount = function(elementId, passageName) {
         console.warn('Element with ID "' + elementId + '" not found.');
     }
 };
+

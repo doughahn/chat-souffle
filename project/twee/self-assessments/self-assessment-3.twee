@@ -6,13 +6,13 @@
 
 <form id="survey-3" class="pure-form" data-parent="self-assessment-track">
     <label for="survey-3-opt-1" class="pure-checkbox"  data-parent="self-assessment-track">
-        <input type="radio" name="survey-3-choice" id="survey-3-opt-1" value="More concerned than excited" onclick="checkOptionSelected('survey-3')" />More concerned than excited
+        <input type="radio" name="survey-3-choice" id="survey-3-opt-1" value="more-concerned-than-excited-about-ai" onclick="checkOptionSelected('survey-3')" />More concerned than excited
     </label>
     <label for="survey-3-opt-2" class="pure-checkbox">
-        <input type="radio" name="survey-3-choice" id="survey-3-opt-2" value="Equally concerned and excited" onclick="checkOptionSelected('survey-3')" />Equally concerned and excited
+        <input type="radio" name="survey-3-choice" id="survey-3-opt-2" value="equally-concerned-and-excited-about-ai" onclick="checkOptionSelected('survey-3')" />Equally concerned and excited
     </label>
     <label for="survey-3-opt-3" class="pure-checkbox">
-        <input type="radio" name="survey-3-choice" id="survey-3-opt-3" value="More excited than concerned" onclick="checkOptionSelected('survey-3')" />More excited than concerned
+        <input type="radio" name="survey-3-choice" id="survey-3-opt-3" value="more-excited-than-concerned-about-ai" onclick="checkOptionSelected('survey-3')" />More excited than concerned
     </label>
     <button type="button" onclick="sendFormXAPIStatement('survey-3'); checkOptionSelected('survey-3'); handleButtonSurvey3toText(); customButtonHandler('self assessment exit or feedback')" id="survey-3-submit" class="pure-button pure-button-primary" disabled>Submit your choice</button>
 </form> 

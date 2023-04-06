@@ -7,13 +7,13 @@
 <br >
     <form id="custom-track-1" class="pure-form" data-parent="custom-track">
         <label for="custom-track-1-opt-1" class="pure-checkbox">
-            <input type="radio" name="custom-track-1-choice" id="custom-track-1-opt-1" value="Worse" onclick="checkOptionSelected('custom-track-1')" />Worse 
+            <input type="radio" name="custom-track-1-choice" id="custom-track-1-opt-1" value="human-did-worse-on-distractor-criteria" onclick="checkOptionSelected('custom-track-1')" />Worse 
         </label>
         <label for="custom-track-1-opt-2" class="pure-checkbox">
-            <input type="radio" name="custom-track-1-choice" id="custom-track-1-opt-2" value="Equal" onclick="checkOptionSelected('custom-track-1')" />Equal 
+            <input type="radio" name="custom-track-1-choice" id="custom-track-1-opt-2" value="human-did-equal-on-distractor-criteria" onclick="checkOptionSelected('custom-track-1')" />Equal 
         </label>
         <label for="custom-track-1-opt-3" class="pure-checkbox">
-            <input type="radio" name="custom-track-1-choice" id="custom-track-1-opt-3" value="Better" onclick="checkOptionSelected('custom-track-1')" />Better
+            <input type="radio" name="custom-track-1-choice" id="custom-track-1-opt-3" value="human-did-better-on-distractor-criteria" onclick="checkOptionSelected('custom-track-1')" />Better
         </label>
         <button type="button" onclick="sendFormXAPIStatementNoVoid('custom-track-1'); checkOptionSelected('custom-track-1'); customButtonHandler('custom assessment track 1 freeform')" id="custom-track-1-submit" class="pure-button pure-button-primary" disabled>Submit your choice</button>
     </form>

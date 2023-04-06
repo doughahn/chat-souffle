@@ -5,19 +5,19 @@
 <h3>As a result of this activity, I&rsquo;m confident in ChatGPT&rsquo;s ability to compose effective assessments with prompt engineering.</h3>
     <form id="survey-2" class="pure-form" data-parent="post-survey">
         <label for="survey-2-opt-1" class="pure-checkbox">
-            <input type="radio" name="survey-2-choice" id="survey-2-opt-1" value="Much more confident" onclick="checkOptionSelected('survey-2')" />Much more confident
+            <input type="radio" name="survey-2-choice" id="survey-2-opt-1" value="much-more-cofident-in-chat-gpt" onclick="checkOptionSelected('survey-2')" />Much more confident
         </label>
         <label for="survey-2-opt-2" class="pure-checkbox">
-            <input type="radio" name="survey-2-choice" id="survey-2-opt-2" value="Slightly more confident" onclick="checkOptionSelected('survey-2')" />Slightly more confident
+            <input type="radio" name="survey-2-choice" id="survey-2-opt-2" value="slightly-more-cofident-in-chat-gpt" onclick="checkOptionSelected('survey-2')" />Slightly more confident
         </label>
         <label for="survey-2-opt-3" class="pure-checkbox">
-            <input type="radio" name="survey-2-choice" id="survey-2-opt-3" value="Equally confident" onclick="checkOptionSelected('survey-2')" />Equally confident
+            <input type="radio" name="survey-2-choice" id="survey-2-opt-3" value="equally-more-cofident-in-chat-gpt" onclick="checkOptionSelected('survey-2')" />Equally confident
         </label>
         <label for="survey-2-opt-4" class="pure-checkbox">
-            <input type="radio" name="survey-2-choice" id="survey-2-opt-4" value="Slightly less confident" onclick="checkOptionSelected('survey-2')" />Slightly less confident
+            <input type="radio" name="survey-2-choice" id="survey-2-opt-4" value="slightly-less-cofident-in-chat-gpt" onclick="checkOptionSelected('survey-2')" />Slightly less confident
         </label>
         <label for="survey-2-opt-5" class="pure-checkbox">
-            <input type="radio" name="survey-2-choice" id="survey-2-opt-5" value="Much less confident" onclick="checkOptionSelected('survey-2')" />Much less confident
+            <input type="radio" name="survey-2-choice" id="survey-2-opt-5" value="much-less-cofident-in-chat-gpt" onclick="checkOptionSelected('survey-2')" />Much less confident
         </label>
         <button type="button" onclick="sendFormXAPIStatementNoVoid('survey-2'); checkOptionSelected('survey-2'); customButtonHandler('post survey 3 freeform')" id="survey-2-submit" class="pure-button pure-button-primary" disabled>Submit your choice</button>
     </form>
