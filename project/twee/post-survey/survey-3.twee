@@ -2,11 +2,7 @@
 <html><h5>Survey <i class="fas fa-caret-right"></i></h5></html>
 !! Other Thoughts
 <html>
-<h3>Please share any other thoughts.</h3>
-<div class="textarea-Wrapper" data-parent="post-survey">
-  <textarea class="custom-textarea" id="survey-3-freeform" type="text" value="" oninput="checkTextareaNotEmpty('survey-3-freeform', 'send-survey-3-freeform', '/track-1-textarea')"></textarea>
-</div>
-<button class="pure-button pure-button-primary" id="send-survey-3-freeform" onclick="sendTextareaXAPIStatement('survey-3-freeform', 'send-survey-3-freeform', 'survey-3-textarea'); customButtonHandler('thank you')">Send your thoughts</button>
+<h3>We&rsquo;ve kept you anonymous so far. This is a chance to leave us feedback about the course… and a way to get in touch!</h3>
+<p>If you leave your email, we may follow up with you for clarifications.</p>
+<button onclick="window.location.href='https://yljg97xdvs4.typeform.com/to/ZPXZEfoC'" type="button" class="pure-button pure-button-primary">Go to typeform</button>
 </html>
-
-
