@@ -1,11 +1,7 @@
 :: provided assessment track 1
-
-!! Refine Part 1
+<html><h5>Refining a provided prompt <i class="fas fa-caret-right"></i></h5></html>
+!! Part 1
 <html>
-<blockquote> 
-    <p>You are a teacher of cooking class. You teach middle school students the basics of healthy and safe cooking. The age of your students is 12-16.</p>
-    <p>Your task: Using the information above, generate a multiple choice assessment which helps the learners described above to correctly understand core foundational knowledge relating to cooking healthy meals.</p>
-</blockquote>
 <h3>Copy the prompt below that asks ChatGPT to refine the multiple choice question.</h3>
 <div class="prompt-text-area">
     <div class="prompt-text-header">
@@ -19,8 +15,39 @@
         <span class="copiedMessage">Copied!</span>
     </div>
     <div class="prompt-text-content">
-        <pre class="monospaced-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</pre>
+        <pre class="monospaced-text">You are a teacher of cooking class. You teach middle school students the basics of healthy and safe cooking. The age of your students is 12-16.
+        Your task: Using the information above, generate a multiple choice assessment which helps the learners described above to correctly understand core foundational knowledge relating to cooking healthy meals.</pre>
     </div>
+</div><br />
+<div class="dropdown-container">
+  <div class="dropdown-header" onclick="toggleContent()">
+    <h3><span class="light-gray-text">Review the criteria</span></h3>
+    <span class="arrow">&#9662;</span>
+  </div>
+  <div id="provided-track-1-content-dropdown" class="dropdown-text-content" style="display: none;">
+    <p>Use the criteria below to evaluate ChatGPT&rsquo;s assessment questions.</p>
+    <div class="tip-box">
+        <div class="tip-icon">
+            <i class="fas fa-pen"></i>
+        </div>
+        <div class="tip-content">
+            <h3 class="tip-title">Evaluation criteria</h3>
+                <ul>
+                <li>Write options that are congruent in length.</li>
+                <li>Write options that use parallel grammatical structure (e.g. if answer(s) start with a verb, so should the distractors).</li>
+                <li>Avoid &ldquo;True/False,&rdquo; “All of the Above,” or “Both A and B Only” (or other such combinations).</li>
+                <li>Use plausible but incorrect distractors.</li>
+                <li>Use only truly correct answers.</li>
+                <li>Avoid negative phrasing.</li>
+            </ul>
+        </div>
+    </div>
+    <p>Review assessment writing best practices at these external resources before moving on:</p>
+    <ul>
+        <li><a id="vanderbilt-external-link-review-1" class="external-link" href="https://cft.vanderbilt.edu/guides-sub-pages/writing-good-multiple-choice-test-questions/" target="blank">Writing Good Multiple Choice Test Questions - Vanderbilt University Center for Teaching</a></li>
+        <li><a id="conneticut-external-link-review-1" class="external-link" href="https://kb.ecampus.uconn.edu/2020/09/30/writing-effective-multiple-choice-questions-2/" target="blank">Writing Effective Multiple Choice Questions - University of Connecticut Knowledge Base</a></li>
+    </ul>
+  </div>
 </div>
 <hr>
 <h3>Which of the following best describes your experience using ChatGPT?</h3>
@@ -61,6 +88,21 @@ setTimeout(function() {
         });
     });
 }, 100);
+</script>
+
+<script>
+function toggleContent() {
+  const content = document.getElementById('provided-track-1-content-dropdown');
+  const arrow = document.querySelector('.arrow');
+
+  if (content.style.display === 'none') {
+    content.style.display = 'block';
+    arrow.classList.add('arrow-up');
+  } else {
+    content.style.display = 'none';
+    arrow.classList.remove('arrow-up');
+  }
+}
 </script>
 
 <<run setup.trackStarts++>>

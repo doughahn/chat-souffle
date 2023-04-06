@@ -1,9 +1,7 @@
 :: set up chatgpt
-
+<html><h5>Introduction <i class="fas fa-caret-right"></i></h5></html>
 !! Set up ChatGPT
-
 <html>
-
     <ol>
         <li>Go to <a id="openai-external-link" class="external-link" href="https://chat.openai.com/chat" target="blank">chat.OpenAi.com</a> and register for an account with an email address, or a Google or Microsoft account.</li> 
         <li>If you haven&rsquo;t created an account, click on Sign Up. Otherwise, log in with your OpenAI credentials.</li>

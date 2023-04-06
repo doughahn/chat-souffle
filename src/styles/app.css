@@ -19,6 +19,21 @@ body {
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     font-weight: 700;
   }
+
+  h2 {
+    margin-top:0;
+  }
+
+  h5 {
+    margin-bottom:0;
+    line-height:1;
+    padding-bottom:0;
+  }
+
+  h5 + br {
+    display:none; 
+    /* hacky shit */
+  }
   
   ul, ol {
     font-family: 'IBM Plex Serif', serif;
@@ -334,8 +349,6 @@ blockquote span {
 
 /* link arrows */
 
-
-
 .passage-link:hover {
   color: #0056b3; /* Adjust the link hover color as needed */
   text-decoration: underline;
@@ -343,4 +356,49 @@ blockquote span {
 
 .passage-link .fa-arrow-right {
   margin-left: 4px; /* Adjust the space between the link text and the arrow icon */
+}
+
+/* Dropdon reveal */
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #343541;
+  border-radius: 5px 5px 0 0;
+  font-size: .8rem;
+  padding: 0 1.5rem;
+  cursor: pointer;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+.arrow {
+  font-size:1.2rem;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.arrow-up {
+  transform: rotate(180deg);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-text-content {
+  background: #000000;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 0 0 5px 5px;
+  animation: fadeIn 0.3s ease-in-out; 
 }

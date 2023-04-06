@@ -1,0 +1,12 @@
+:: post survey 3 freeform
+<html><h5>Survey <i class="fas fa-caret-right"></i></h5></html>
+!! Other Thoughts
+<html>
+<h3>Please share any other thoughts.</h3>
+<div class="textarea-Wrapper" data-parent="post-survey">
+  <textarea class="custom-textarea" id="survey-3-freeform" type="text" value="" oninput="checkTextareaNotEmpty('survey-3-freeform', 'send-survey-3-freeform', '/track-1-textarea')"></textarea>
+</div>
+<button class="pure-button pure-button-primary" id="send-survey-3-freeform" onclick="sendTextareaXAPIStatement('survey-3-freeform', 'send-survey-3-freeform', 'survey-3-textarea'); customButtonHandler('thank you')">Send your thoughts</button>
+</html>
+
+

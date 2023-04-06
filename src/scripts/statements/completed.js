@@ -3,6 +3,7 @@ setup.trackStarts = 0;
 setup.trackCompletions = 0;
 setup.iterationActivities = {};
 setup.currentIterationId = null;
+setup.trackStartsTrack2 = 0;
 
 // Save and load custom data in metadata
 Config.saves.onSave = function (save) {
@@ -15,7 +16,18 @@ Config.saves.onLoad = function (save) {
     }
 };
 
-window.incrementTrackCompletions = function(iterationId) {
+window.handleXAPIClick = function(event) {
+  var buttonId = event.target.id;
+  window.handleButtonClick(buttonId);
+};
+
+window.handleButtonClick = function(buttonId) {
+  setup.currentIterationId = "iteration_" + (setup.trackStarts + 1);
+  window.incrementTrackCompletions(setup.currentIterationId, buttonId);
+};
+
+
+window.incrementTrackCompletions = function(iterationId, buttonId) {
   setup.trackCompletions++;
   console.log("Track completions: " + setup.trackCompletions);
 
@@ -30,9 +42,9 @@ window.incrementTrackCompletions = function(iterationId) {
               "display": {"en-US": "completed"}
           },
           "object": {
-              "id": "https://example.com/tracks/" + iterationId,
+              "id": "https://example.com/tracks/" + iterationId + "/button/" + buttonId,
               "definition": {
-                  "name": {"en-US": "Track " + iterationId},
+                  "name": {"en-US": "Track " + iterationId + " - Button " + buttonId},
                   "description": {"en-US": "Loop # " + setup.trackCompletions + " completed"}
               }
           }
@@ -45,11 +57,27 @@ window.incrementTrackCompletions = function(iterationId) {
 
 
 window.addCompleteTrackListener = function() {
-  var button = document.getElementById("completeTrackBtn");
-  if (button) {
-      button.addEventListener("click", function() {
-          setup.currentIterationId = "iteration_" + (setup.trackStarts + 1);
-          window.incrementTrackCompletions(setup.currentIterationId);
+  // Target buttons with the shared class
+  var buttons = document.getElementsByClassName("complete-track-1");
+
+  // Add event listeners to each button
+  for (var i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener("click", function(event) {
+          var buttonId = event.target.id;
+          window.handleButtonClick(buttonId);
       });
   }
+};
+
+
+// Second track
+
+window.handleButtonClickTrack2 = function(buttonId) {
+  setup.currentIterationId = "iteration_track2_" + (setup.trackStarts + 1);
+  window.incrementTrackCompletions(setup.currentIterationId, buttonId);
+};
+
+window.handleXAPIClickTrack2 = function(event) {
+  var buttonId = event.target.id;
+  window.handleButtonClickTrack2(buttonId);
 };

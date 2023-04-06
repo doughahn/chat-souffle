@@ -1,0 +1,19 @@
+:: post survey 1
+<html><h5>Survey <i class="fas fa-caret-right"></i></h5></html>
+!! Post-survey (1 of 2)
+<html>
+<p>Thanks for participating! Please take our 2-question survey about your experience.</p>
+<h3>How likely are you to use ChatGPT to develop multiple choice assessments as a result of this activity?</h3>
+    <form id="survey-1" class="pure-form" data-parent="post-survey">
+        <label for="survey-1-opt-1" class="pure-checkbox">
+            <input type="radio" name="survey-1-choice" id="survey-1-opt-1" value="More likely" onclick="checkOptionSelected('survey-1')" />More Likely
+        </label>
+        <label for="survey-1-opt-2" class="pure-checkbox">
+            <input type="radio" name="survey-1-choice" id="survey-1-opt-2" value="Equally Likely" onclick="checkOptionSelected('survey-1')" />Equally Likely 
+        </label>
+        <label for="survey-1-opt-3" class="pure-checkbox">
+            <input type="radio" name="survey-1-choice" id="survey-1-opt-3" value="Less Likely" onclick="checkOptionSelected('survey-1')" />Less Likely
+        </label>
+        <button type="button" onclick="sendFormXAPIStatementNoVoid('survey-1'); checkOptionSelected('survey-1'); customButtonHandler('post survey 2')" id="survey-1-submit" class="pure-button pure-button-primary" disabled>Submit your choice</button>
+    </form>
+</html>

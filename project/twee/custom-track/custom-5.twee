@@ -1,0 +1,17 @@
+:: custom track 5
+<html><h5>Custom assessment <i class="fas fa-caret-right"></i></h5></html>
+!! Conclusion
+<html>
+<p>Congrats on completing a track! You can go back to different points in this module:</p>
+<hr>
+    <div>
+        <a id="start-custom-assessment-track" class="anchor-nav" onclick="customLinkHandler('custom assessment track 1'); handleXAPIClickTrack2(event);">I want to run this track again<i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div>
+        <a id="start-provided-assessment-over" class="anchor-nav" onclick="customLinkHandler('provided assessment track 1'); handleXAPIClickTrack2(event);">I want to do the provided assessment track<i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div>
+        <a id="finish-move-to-exit-from-assessment-track" class="anchor-nav" onclick="customLinkHandler('post survey 1'); handleXAPIClickTrack2(event);">Or, go on to complete this module by taking our survey.<i class="fas fa-arrow-right"></i></a>
+    </div>
+<p>You&rsquo;ll also get a chance to share more chatGPT experiments with other learners in a designated slack channel.</p>
+</html>

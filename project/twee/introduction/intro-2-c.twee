@@ -1,5 +1,5 @@
 :: improve an assessment
-
+<html><h5>Introduction <i class="fas fa-caret-right"></i></h5></html>
 !! Improve an Assessment 
 <html>
 <p>Now you&rsquo;re ready to start using ChatGPT to generate and improve a multiple choice assessment!</p>
@@ -10,6 +10,6 @@
         <a id="chose-rovided-assessment-track" class="anchor-nav" onclick="customLinkHandler('provided assessment track 1')">Use our provided assessment [track 1]<i class="fas fa-arrow-right"></i></a>
     </div>
     <div>
-        <a id="chose-custom-assessment-track" class="anchor-nav" onclick="customLinkHandler('')">Use one of your own assessments [track 2]<i class="fas fa-arrow-right"></i></a>
+        <a id="chose-custom-assessment-track" class="anchor-nav" onclick="customLinkHandler('custom assessment track 1')">Use one of your own assessments [track 2]<i class="fas fa-arrow-right"></i></a>
     </div>
 </html>

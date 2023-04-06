@@ -1,0 +1,10 @@
+:: custom assessment track 1 freeform
+<html><h5>Custom assessment <i class="fas fa-caret-right"></i></h5></html>
+!! Reflect on Part 1
+<html>
+<p>Reflect: why do you think the new version changed the way it did or mostly stayed the same?</p>
+<div class="textarea-Wrapper" data-parent="custom-track">
+  <textarea class="custom-textarea" id="custom-track-1-freeform" type="text" value="" oninput="checkTextareaNotEmpty('custom-track-1-freeform', 'send-custom-track-1-freeform', '/track-1-textarea')"></textarea>
+</div>
+<button class="pure-button pure-button-primary" id="send-custom-track-1-freeform" onclick="sendTextareaXAPIStatement('custom-track-1-freeform', 'send-custom-track-1-freeform', 'provided-track-1-textarea'); customButtonHandler('custom assessment track 2')">Send your thoughts</button>
+</html>

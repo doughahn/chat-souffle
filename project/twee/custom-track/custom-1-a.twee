@@ -1,0 +1,71 @@
+:: custom assessment track 1
+<html><h5>Custom assessment <i class="fas fa-caret-right"></i></h5></html>
+!! Refine part 1
+<html>
+<p>Now, <b>without using ChatGPT</b>, take the best elements from the different iterations of the multiple choice question, combining them into the best possible assessment question. Avoid adding new material other than correcting for grammar and fluidity.</p>
+<p>Evaluate this human-edited version based on the criteria for effective distractors (review criteria below if needed). Is the new version worse/equal/better than the original?</p>
+<br >
+    <form id="custom-track-1" class="pure-form" data-parent="custom-track">
+        <label for="custom-track-1-opt-1" class="pure-checkbox">
+            <input type="radio" name="custom-track-1-choice" id="custom-track-1-opt-1" value="Worse" onclick="checkOptionSelected('custom-track-1')" />Worse 
+        </label>
+        <label for="custom-track-1-opt-2" class="pure-checkbox">
+            <input type="radio" name="custom-track-1-choice" id="custom-track-1-opt-2" value="Equal" onclick="checkOptionSelected('custom-track-1')" />Equal 
+        </label>
+        <label for="custom-track-1-opt-3" class="pure-checkbox">
+            <input type="radio" name="custom-track-1-choice" id="custom-track-1-opt-3" value="Better" onclick="checkOptionSelected('custom-track-1')" />Better
+        </label>
+        <button type="button" onclick="sendFormXAPIStatementNoVoid('custom-track-1'); checkOptionSelected('custom-track-1'); customButtonHandler('custom assessment track 1 freeform')" id="custom-track-1-submit" class="pure-button pure-button-primary" disabled>Submit your choice</button>
+    </form>
+<br />
+<div class="dropdown-container">
+  <div class="dropdown-header" onclick="toggleContent()">
+    <h3><span class="light-gray-text">Review criteria</span></h3>
+    <span class="arrow">&#9662;</span>
+  </div>
+  <div id="custom-track-1-content-dropdown" class="dropdown-text-content" style="display: none;">
+    <p>Use the criteria below to evaluate ChatGPT&rsquo;s assessment questions.</p>
+    <div class="tip-box">
+        <div class="tip-icon">
+            <i class="fas fa-pen"></i>
+        </div>
+        <div class="tip-content">
+            <h3 class="tip-title">Evaluation criteria</h3>
+                <ul>
+                <li>Write options that are congruent in length.</li>
+                <li>Write options that use parallel grammatical structure (e.g. if answer(s) start with a verb, so should the distractors).</li>
+                <li>Avoid &ldquo;True/False,&rdquo; “All of the Above,” or “Both A and B Only” (or other such combinations).</li>
+                <li>Use plausible but incorrect distractors.</li>
+                <li>Use only truly correct answers.</li>
+                <li>Avoid negative phrasing.</li>
+            </ul>
+        </div>
+    </div>
+    <p>Review assessment writing best practices at these external resources before moving on:</p>
+    <ul>
+        <li><a id="vanderbilt-external-link-review-custom-1" class="external-link" href="https://cft.vanderbilt.edu/guides-sub-pages/writing-good-multiple-choice-test-questions/" target="blank">Writing Good Multiple Choice Test Questions - Vanderbilt University Center for Teaching</a></li>
+        <li><a id="conneticut-external-link-review-custom-1" class="external-link" href="https://kb.ecampus.uconn.edu/2020/09/30/writing-effective-multiple-choice-questions-2/" target="blank">Writing Effective Multiple Choice Questions - University of Connecticut Knowledge Base</a></li>
+    </ul>
+</div>
+</html>
+
+<script>
+function toggleContent() {
+  const content = document.getElementById('custom-track-1-content-dropdown');
+  const arrow = document.querySelector('.arrow');
+
+  if (content.style.display === 'none') {
+    content.style.display = 'block';
+    arrow.classList.add('arrow-up');
+  } else {
+    content.style.display = 'none';
+    arrow.classList.remove('arrow-up');
+  }
+}
+</script>
+
+<<run setup.trackStartsTrack2++>>
+<<run setup.currentIterationIdTrack2 = "custom_assessment_track_loop_" + (setup.trackStartsTrack2)>>
+<<run setup.iterationActivities[setup.currentIterationIdTrack2] = []>>
+
+
