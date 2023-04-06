@@ -1,32 +1,59 @@
 // xapi-config.js
 
-// Use jQuery's $.when() method to ensure both the CryptoJS and xAPIWrapper libraries are loaded
-// before executing the setupXAPIConfig() function.
+// Use $.when() to ensure both libraries are loaded before executing setupXAPIConfig()
 $.when(loadCryptoJS, loadXAPIWrapper).done(function () {
     setupXAPIConfig();
 });
 
-// This function sets up the xAPI configuration based on the environment ('development' or 'production').
 function setupXAPIConfig() {
-    // Test data LRS (Learning Record Store) configuration for the development environment.
+    // Test data LRS
     const devConf = {
         "endpoint": "https://sample-lrs-befogih.lrs.io/xapi/",
         "auth": "Basic " + CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse("coikpi:rolzak"))
     };
 
-    // Production data LRS configuration for the production environment.
+    // Production data LRS
     const prodConf = {
         "endpoint": "https://chat-souffle.lrs.io/xapi/",
         "auth": "Basic " + CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse("gaodun:ujgizo"))
     };
 
-    // Set the environment variable to either 'development' or 'production'.
-    const environment = 'development';
+    // Set environment to 'development' or 'production'
+    setupXAPIConfig.environment = 'development';
 
-    // Change the xAPI configuration based on the environment variable.
-    if (environment === 'development') {
-        ADL.XAPIWrapper.changeConfig(devConf); // Use the development configuration.
+    // Change the configuration based on the environment
+    if (setupXAPIConfig.environment === 'development') {
+        ADL.XAPIWrapper.changeConfig(devConf);
     } else {
-        ADL.XAPIWrapper.changeConfig(prodConf); // Use the production configuration.
+        ADL.XAPIWrapper.changeConfig(prodConf);
     }
 }
+
+
+function displayDevWarningBanner() {
+    var warningBannerText = "Using Dev LRS";
+    var environment = setupXAPIConfig.environment;
+
+    if (environment === 'development') {
+        var warningBanner = document.createElement('div');
+        warningBanner.innerHTML = warningBannerText;
+        warningBanner.style.backgroundColor = 'yellow';
+        warningBanner.style.color = 'black';
+        warningBanner.style.textAlign = 'center';
+        warningBanner.style.fontWeight = 'bold';
+        warningBanner.style.padding = '1rem';
+        warningBanner.style.position = 'fixed';
+        warningBanner.style.bottom = '0';
+        warningBanner.style.left = '0';
+        warningBanner.style.width = '100%';
+        warningBanner.style.zIndex = '1000';
+
+        document.body.appendChild(warningBanner);
+    }
+}
+
+$(document).on(':passagedisplay', function (event) {
+    setTimeout(displayDevWarningBanner, 0);
+});
+
+
