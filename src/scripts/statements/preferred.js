@@ -1,6 +1,12 @@
+// ======================================
+// With Void
+// ======================================
+
 function sendFormXAPIStatement(formId) {
+    // Sets up the xAPI configuration
     setupXAPIConfig();
   
+    // Define actor email and name
     var actorEmail = "doughahn@gmail.com";
     var actorName = actor;
 
@@ -11,31 +17,39 @@ function sendFormXAPIStatement(formId) {
     // Retrieve the last statement ID from localStorage
     var lastStatementId = localStorage.getItem("last" + formId + "StatementId");
   
+    // If there is a last statement ID, send a void statement for it
     if (lastStatementId) {
       sendVoidStatement(actorEmail, actorName, lastStatementId, function (err, xhr) {
+        // Log an error if the status code is not 200 or 204
         if (err && err.status !== 200 && err.status !== 204) {
           console.log('xAPI void statement send error:', err);
         } else {
+          // Log the success status code
           console.log('xAPI void statement sent, response:', err.status);
         }
       });
     }
   
-    // Query the input name and store it as a const for retrieval
+    // Retrieve the selected form choice
     const formChoice = document.querySelector('input[name="' + formId + '-choice"]:checked').value;
   
+    // Convert form choice to a URI-compatible format
     let formChoiceToURI = formChoice.toLowerCase().replace(/\s+/g, '-');
 
+    // Create xAPI statement object with actor, verb, object, result, and context details
     var statement = {
+      // Actor information
       "actor": {
         "mbox": "mailto:" + actorEmail,
         "name": actorName,
         "objectType": "Agent"
       },
+      // Verb information
       "verb": {
         "id": "https://w3id.org/xapi/dod-isd/verbs/chose",
         "display": { "en-US": "answered" }
       },
+      // Object information
       "object": {
         "id": "https://doughahn.github.io/chat-souffle/" + formId,
         "definition": {
@@ -44,9 +58,11 @@ function sendFormXAPIStatement(formId) {
         },
         "objectType": "Activity"
       },
+      // Result information
       "result": {
         "response": formChoice
       },
+      // Context information
       "context": {
         "contextActivities": {
           "parent": [
@@ -102,7 +118,9 @@ function sendFormXAPIStatement(formId) {
   // Assign the function to the global scope
 window.sendFormXAPIStatement = sendFormXAPIStatement;
 
-// No void
+// ======================================
+// Without Void
+// ======================================
 
 function sendFormXAPIStatementNoVoid(formId) {
   setupXAPIConfig();

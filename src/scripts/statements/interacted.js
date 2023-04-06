@@ -2,6 +2,10 @@
 // Nav Items
 // ======================================
 
+// This section handles the click events for navigation items like forward, backward, restart, and saves buttons.
+// It defines an object named ids containing the IDs, names, and descriptions for each navigation item.
+// It iterates through the object keys, adds a click event listener to each element, and sends an xAPI statement when the user clicks the navigation item.
+
 const ids = {
     "history-forward": {
       name: "Navigation Click Forward",
@@ -66,7 +70,8 @@ const ids = {
 // Buttons
 // ======================================  
 
-// take the button ID as an argument, and reuse it for different buttons. 
+// This section defines a generic sendButtonClickStatement function that takes the button ID as an argument and sends an xAPI statement when the button is clicked.
+// It also defines functions for handling specific button click events (e.g., handleButtonStartSurvey1, handleButtonSurvey1to2, etc.) that call the generic function with the corresponding button ID.
 
 function sendButtonClickStatement(buttonId) {
     setupXAPIConfig();
@@ -136,13 +141,12 @@ window.handleButtonSurvey3toText = function () {
     sendButtonClickStatement('survey-3-submit');
 };
 
-
-
 // ======================================
 // Links
 // ======================================
 
-// take the link ID as an argument, and reuse it for different buttons. 
+// This section defines a generic sendLinkClickStatement function that takes the link ID as an argument and sends an xAPI statement when the link is clicked.
+// It also adds event listeners to specific link elements (e.g., self-assess-more-feedback, self-assess-early-exit, etc.) and calls the generic function with the corresponding link ID when the link is clicked.
 
 function sendLinkClickStatement(linkId) {
     setupXAPIConfig();
@@ -210,7 +214,12 @@ function sendLinkClickStatement(linkId) {
     });
   });
   
-  // Buttons
+// ======================================
+// Completed Button
+// ======================================
+
+// This section defines the send_completion function that sends an xAPI statement when the user clicks the "completed" button.
+// It sets the verb display to "completed" to indicate that the user has completed the self-assessment and disables the button after sending the xAPI statement.
 
   window.send_completion = function () {
     setupXAPIConfig();

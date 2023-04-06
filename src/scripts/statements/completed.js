@@ -16,17 +16,19 @@ Config.saves.onLoad = function (save) {
     }
 };
 
+// Handle xAPI clicks
 window.handleXAPIClick = function(event) {
   var buttonId = event.target.id;
   window.handleButtonClick(buttonId);
 };
 
+// Increment track completions and send xAPI statement
 window.handleButtonClick = function(buttonId) {
   setup.currentIterationId = "iteration_" + (setup.trackStarts + 1);
   window.incrementTrackCompletions(setup.currentIterationId, buttonId);
 };
 
-
+// Increment track completions and build xAPI statement
 window.incrementTrackCompletions = function(iterationId, buttonId) {
   setup.trackCompletions++;
   console.log("Track completions: " + setup.trackCompletions);
@@ -55,7 +57,7 @@ window.incrementTrackCompletions = function(iterationId, buttonId) {
   }
 };
 
-
+// Add event listener for completion tracking
 window.addCompleteTrackListener = function() {
   // Target buttons with the shared class
   var buttons = document.getElementsByClassName("complete-track-1");
@@ -69,14 +71,15 @@ window.addCompleteTrackListener = function() {
   }
 };
 
-
 // Second track
 
+// Handle button click for the second track
 window.handleButtonClickTrack2 = function(buttonId) {
   setup.currentIterationId = "iteration_track2_" + (setup.trackStarts + 1);
   window.incrementTrackCompletions(setup.currentIterationId, buttonId);
 };
 
+// Handle xAPI click for the second track
 window.handleXAPIClickTrack2 = function(event) {
   var buttonId = event.target.id;
   window.handleButtonClickTrack2(buttonId);
