@@ -177,8 +177,9 @@ code {
 }
 
   
-.anchor-nav {
-  color: #ececf1;
+.anchor-nav,
+.anchor-nav-external {
+  color: #ececf1 !important;
   font-size: 120%;
   position: relative;
   display: inline-block;
@@ -191,11 +192,13 @@ code {
 }
 
   
-.anchor-nav .fa-arrow-right {
+.anchor-nav .fa-arrow-right,
+.anchor-nav-external .fa-arrow-right {
   margin-left: 4px; /* Adjust the space between the link text and the arrow icon */
 }
 
-.anchor-nav::before {
+.anchor-nav::before,
+.anchor-nav-external::before {
   content: '';
   position: absolute;
   width: 0;
@@ -207,11 +210,14 @@ code {
   transition: all 100ms ease-in-out;
 }
   
-.anchor-nav:hover {
+.anchor-nav:hover,
+.anchor-nav-external:hover {
   text-decoration: none;
+  color:#8af !important;
 }
 
-.anchor-nav:hover::before {
+.anchor-nav:hover::before,
+.anchor-nav-external:hover::before {
   visibility: visible;
   width: 100%;
 }
