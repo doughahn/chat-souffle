@@ -1,15 +1,14 @@
-:: self assessment general feedback
+:: complete assessment
 <html><h5>Self assessment <i class="fas fa-caret-right"></i></h5></html>
-!! Open Feedback
+!! Set up ChatGPT, or Start testing?
 <html>
-<h3>Let us know what you think about ChatGPT, in your own words.</h3>
-<div class="textarea-Wrapper" data-parent="self-assessment-track">
-<textarea class="custom-textarea" id="self-assessment-general-feedback" type="text" value="" data-activity-id="self-assessment-general-feedback-activity" oninput="checkTextareaNotEmpty('self-assessment-general-feedback', 'send-self-assessment-general-feedback')"></textarea>
-</div>
-<button class="pure-button pure-button-primary" id="send-self-assessment-general-feedback" onclick="sendTextareaXAPIStatement('self-assessment-general-feedback', 'send-self-assessment-general-feedback', 'self-assessment-general-feedback-activity'); customButtonHandler('complete assessment')" disabled>Send your thoughts</button>
+<p>Before you start using ChatGPT to refine assessments, you need to get access and give it a test drive.</p>
+<p>If you&rsquo;ve already got access, give it a test drive (guided prompt engineering).</p>
 <hr>
-  <div>
-      <a id="skip-self-assessment-general-feedback" class="anchor-nav" onclick="customLinkHandler('complete assessment')">Or, skip <i class="fas fa-arrow-right"></i></a>
-  </div>
+    <div>
+        <a id="set-up-chat-gpt" class="anchor-nav " onclick="customLinkHandler('set up chatgpt')">Set up ChatGPT<i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div>
+        <a id="test-drive-chat-gpt-skip-setup" class="anchor-nav " onclick="customLinkHandler('test drive chatgpt')">Test drive ChatGPT<i class="fas fa-arrow-right"></i></a>
+    </div>
 </html>
-
