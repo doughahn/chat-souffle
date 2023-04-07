@@ -69,7 +69,7 @@ ol li {
 ol li::marker {
   font-family: 'IBM Plex Mono', monospace;
   font-weight:700;
-  content: counter(item) " ";
+
 }
 
 
