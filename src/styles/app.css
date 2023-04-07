@@ -60,7 +60,6 @@ ul {
 
 ol {
   font-family: 'IBM Plex Mono', monospace;
-  font-weight:500;
   counter-reset: item;
   padding-left: 1.33rem;;
 }
@@ -69,7 +68,7 @@ ol li {
 }
 ol li::marker {
   font-family: 'IBM Plex Mono', monospace;
-  font-weight:700;
+  font-weight:500;
   content: counter(item) " ";
 }
 
