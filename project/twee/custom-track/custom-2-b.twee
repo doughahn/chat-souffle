@@ -6,5 +6,9 @@
 <div class="textarea-Wrapper" data-parent="custom-track">
   <textarea class="custom-textarea" id="custom-track-1-freeform" type="text" value="" oninput="checkTextareaNotEmpty('custom-track-1-freeform', 'send-custom-track-1-freeform', '/track-1-textarea')"></textarea>
 </div>
-<button class="pure-button pure-button-primary" id="send-custom-track-1-freeform" onclick="sendTextareaXAPIStatement('custom-track-1-freeform', 'send-custom-track-1-freeform', 'custom-track-2-textarea'); customButtonHandler('custom assessment track 3')">Send your thoughts</button>
+<button class="pure-button pure-button-primary" id="send-custom-track-1-freeform" onclick="sendTextareaXAPIStatement('custom-track-1-freeform', 'send-custom-track-1-freeform', 'custom-track-2-textarea'); customButtonHandler('custom assessment track 3')" disabled>Send your thoughts</button>
+<hr>
+  <div>
+      <a id="skip-custom-track-2-freeform" class="anchor-nav" onclick="customLinkHandler('custom assessment track 3')">Or, skip <i class="fas fa-arrow-right"></i></a>
+  </div>
 </html>
