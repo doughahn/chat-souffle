@@ -2,7 +2,7 @@
 <html><h5>Introduction <i class="fas fa-caret-right"></i></h5></html>
 !! Set up ChatGPT
 <html>
-    <ol>
+    <ol start="1">
         <li>Go to <a id="openai-external-link" class="external-link" href="https://chat.openai.com/chat" target="blank">chat.OpenAi.com</a> and register for an account with an email address, or a Google or Microsoft account. The paid upgrade is not required for this course.</li> 
         <li>If you haven&rsquo;t created an account, click on <b>Sign Up</b>. Otherwise, log in with your OpenAI credentials.</li>
         <li>Once you&rsquo;ve logged into your ChatGPT account, read through the terms and click on <b>Next</b>. Click on <b>Done</b> when you reach the last one.</li>

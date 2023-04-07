@@ -3,7 +3,7 @@
 !! Part 1: set the context
 <html>
 <p>It helps to give ChatGPT some context when asking it to refine an existing multiple choice assessment question. In her article <a id="mega-prompts-external-link-custom-1" class="external-link" href="https://drphilippahardman.substack.com/p/introducing-chatgpt-edu-mega-prompts?utm_source=profile&utm_medium=reader2" target="blank">&ldquo;Introducing: ChatGPT Edu-Mega-Prompts&rdquo;</a>, Dr Philippa Hardman suggests specifying a role, a task, and an output in your prompt to ChatGPT.</p>
-<ol>
+<ol start="1">
 <li>Give ChatGPT some context about the training. Edit this sample prompt to match your situation and enter it into ChatGPT.</li>
   <ul>
     <li><b>Role</b>: You are an expert in database design and adult learning. You are proficient at teaching database admins how to learn new software tools and at assessing their understanding.</li>

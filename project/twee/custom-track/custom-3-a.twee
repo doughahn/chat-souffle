@@ -3,7 +3,7 @@
 !! Refine part 3
 <html>
 <p>Now give ChatGPT specific instructions one at a time to tweak the question. For example:</p>
-<ol>
+<ol start="1">
   <li>Revise to make the length of each answer option more similar.</li>
   <li>Edit the answer option “[copy text here]” to be more plausible.</li>
 </ol>
