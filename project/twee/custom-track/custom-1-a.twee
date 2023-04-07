@@ -25,7 +25,7 @@
         <label for="custom-track-1-opt-3" class="pure-checkbox">
             <input type="radio" name="custom-track-1-choice" id="custom-track-1-opt-3" value="human-first-attempt-at-custom-distractor-was-adequate" onclick="checkOptionSelected('custom-track-1')" />Adequate
         </label>
-        <button type="button" onclick="sendFormXAPIStatementNoVoid('custom-track-1'); checkOptionSelected('custom-track-1'); customButtonHandler('custom assessment track 1 freeform')" id="custom-track-1-submit" class="pure-button pure-button-primary" disabled>Submit your choice</button>
+        <button type="button" onclick="sendFormXAPIStatementNoVoid('custom-track-1'); checkOptionSelected('custom-track-1'); customButtonHandler('criteria for effective custom distractors')" id="custom-track-1-submit" class="pure-button pure-button-primary" disabled>Submit your choice</button>
     </form>
 <br />
 <div class="dropdown-container">

@@ -15,7 +15,7 @@
         <label for="custom-track-4-opt-3" class="pure-checkbox">
             <input type="radio" name="custom-track-4-choice" id="custom-track-4-opt-3" value="human-edited-synthesis-is-better" onclick="checkOptionSelected('custom-track-4')" />Better
         </label>
-        <button type="button" onclick="sendFormXAPIStatementNoVoid('custom-track-4'); checkOptionSelected('custom-track-4'); customButtonHandler('custom assessment track 4 freeform')" id="custom-track-4-submit" class="pure-button pure-button-primary" disabled>Submit your choice</button>
+        <button type="button" onclick="sendFormXAPIStatementNoVoid('custom-track-4'); checkOptionSelected('custom-track-4'); customButtonHandler('custom track 5')" id="custom-track-4-submit" class="pure-button pure-button-primary" disabled>Submit your choice</button>
     </form>
 <br />
 <div class="dropdown-container">

@@ -1,14 +1,31 @@
-:: custom assessment track 1 freeform
+:: criteria for effective custom distractors
 <html><h5>Custom assessment <i class="fas fa-caret-right"></i></h5></html>
-!! Reflect on Part 1
+!! Criteria for effective distractors
 <html>
-<h3>Why do you think the new version changed the way it did or mostly stayed the same?</h3>
-<div class="textarea-Wrapper" data-parent="custom-track">
-  <textarea class="custom-textarea" id="custom-track-1-freeform" type="text" value="" oninput="checkTextareaNotEmpty('custom-track-1-freeform', 'send-custom-track-1-freeform', '/track-1-textarea')"></textarea>
+<h3>Use the criteria below to evaluate ChatGPT&rsquo;s assessment questions.</h3>
+<ul>
+    <li>Write options that are congruent in length.</li>
+    <li>Write options that use parallel grammatical structure (e.g. if answer(s) start with a verb, so should the distractors).</li>
+    <li>Avoid &ldquo;True/False,&rdquo; &ldquo;All of the Above,&rdquo; or &ldquo;Both A and B Only&rdquo; (or other such combinations).</li>
+    <li>Use plausible but incorrect distractors.</li>
+    <li>Use only truly correct answers.</li>
+    <li>Avoid negative phrasing.</li>
+</ul>
+<div class="tip-box">
+    <div class="tip-icon">
+        <i class="fas fa-pen"></i>
+    </div>
+    <div class="tip-content">
+        <h3 class="tip-title">Optional</h3>
+        <p>Review assessment writing best practices at these external resources before moving on:</p>
+        <ul>
+            <li><a id="vanderbilt-external-link-2" class="external-link" href="https://cft.vanderbilt.edu/guides-sub-pages/writing-good-multiple-choice-test-questions/" target="blank">Writing Good Multiple Choice Test Questions - Vanderbilt University Center for Teaching</a></li>
+            <li><a id="conneticut-external-link-2" class="external-link" href="https://kb.ecampus.uconn.edu/2020/09/30/writing-effective-multiple-choice-questions-2/" target="blank">Writing Effective Multiple Choice Questions - University of Connecticut Knowledge Base</a></li>
+        </ul>
+    </div>
 </div>
-<button class="pure-button pure-button-primary" id="send-custom-track-1-freeform" onclick="sendTextareaXAPIStatement('custom-track-1-freeform', 'send-custom-track-1-freeform', 'custom-track-1-textarea'); customButtonHandler('custom assessment track 2')" disabled>Send your thoughts</button>
+<div>
 <hr>
-  <div>
-      <a id="skip-custom-track-1-freeform" class="anchor-nav" onclick="customLinkHandler('custom assessment track 2')">Or, skip <i class="fas fa-arrow-right"></i></a>
-  </div>
+    <a id="provided-criteria" class="anchor-nav" onclick="customLinkHandler('custom assessment track 2')">On to Part 2!<i class="fas fa-arrow-right"></i></a>
+</div>
 </html>

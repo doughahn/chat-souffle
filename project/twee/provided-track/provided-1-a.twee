@@ -61,7 +61,7 @@ Your task: Using the information above, generate a multiple choice assessment wh
         <label for="provided-track-1-opt-3" class="pure-checkbox">
             <input type="radio" name="provided-track-1-choice" id="provided-track-1-opt-3" value="excellent-experience-using-chatGPT-with-first-copy-of-prompt" onclick="checkOptionSelected('provided-track-1')" />Excellent
         </label>
-        <button type="button" onclick="sendFormXAPIStatementNoVoid('provided-track-1'); checkOptionSelected('provided-track-1'); customButtonHandler('provided assessment track 1 freeform')" id="provided-track-1-submit" class="pure-button pure-button-primary" disabled>Submit your choice</button>
+        <button type="button" onclick="sendFormXAPIStatementNoVoid('provided-track-1'); checkOptionSelected('provided-track-1'); customButtonHandler('criteria for effective distractors')" id="provided-track-1-submit" class="pure-button pure-button-primary" disabled>Submit your choice</button>
     </form>
 </html>
 
