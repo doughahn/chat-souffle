@@ -19,10 +19,10 @@ function setupXAPIConfig() {
     };
 
     // Set environment to 'development' or 'production'
-    setupXAPIConfig.environment = 'production';
+    setupXAPIConfig.environment = 'development';
 
     // Change the configuration based on the environment
-    if (setupXAPIConfig.environment === 'development') {
+    if (setupXAPIConfig.environment === 'production') {
         ADL.XAPIWrapper.changeConfig(devConf);
     } else {
         ADL.XAPIWrapper.changeConfig(prodConf);

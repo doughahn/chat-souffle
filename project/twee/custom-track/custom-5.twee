@@ -5,13 +5,13 @@
 <h3>Congrats on completing a track! You can go back to different points in this module:</h3>
 <hr>
     <div>
-        <a id="start-custom-assessment-track" class="anchor-nav complete-track-2" onclick="customLinkHandler('custom assessment track 1'); handleXAPIClickTrack2(event);">I want to run this track again<i class="fas fa-arrow-right"></i></a>
+        <a id="start-custom-assessment-track-over-from-custom-track" class="anchor-nav complete-track-2" onclick="customLinkHandler('custom assessment track 1'); handleXAPIClickTrack2(event);">I want to run this track again<i class="fas fa-arrow-right"></i></a>
     </div>
     <div>
-        <a id="start-provided-assessment-over" class="anchor-nav complete-track-2" onclick="customLinkHandler('provided assessment track 1'); handleXAPIClickTrack2(event);">I want to do the provided assessment track<i class="fas fa-arrow-right"></i></a>
+        <a id="start-provided-assessment-from-custom-track" class="anchor-nav complete-track-2" onclick="customLinkHandler('provided assessment track 1'); handleXAPIClickTrack2(event);">I want to do the provided assessment track<i class="fas fa-arrow-right"></i></a>
     </div>
     <div>
-        <a id="finish-move-to-exit-from-assessment-track" class="anchor-nav complete-track-2" onclick="customLinkHandler('post survey 1'); handleXAPIClickTrack2(event);">Or, go on to complete this module by taking our survey.<i class="fas fa-arrow-right"></i></a>
+        <a id="finish-move-to-exit-from-from-custom-track" class="anchor-nav complete-track-2" onclick="customLinkHandler('post survey 1'); handleXAPIClickTrack2(event);">Or, go on to complete this module by taking our survey.<i class="fas fa-arrow-right"></i></a>
     </div>
 <p><i>You&rsquo;ll also get a chance to share more chatGPT experiments with other learners in a designated slack channel.</i></p>
 </html>

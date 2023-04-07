@@ -38,14 +38,14 @@ window.incrementTrackCompletions = function(iterationId, buttonId) {
       // Build the xAPI statement
       var statement = {
           "actor": {
-              "mbox": "mailto:learner@example.com"
+              "mbox": "team.chatsouffle@gmail.com"
           },
           "verb": {
               "id": "https://w3id.org/xapi/adb/verbs/completed",
               "display": {"en-US": "completed"}
           },
           "object": {
-              "id": "https://example.com/tracks/" + iterationId + "/button/" + buttonId,
+              "id": "https://doughahn.github.io/chat-souffle/" + iterationId + "/button/" + buttonId,
               "definition": {
                   "name": {"en-US": "Track " + iterationId + " - Button " + buttonId},
                   "description": {"en-US": "Loop # " + setup.trackCompletions + " completed"}
@@ -102,7 +102,7 @@ window.incrementTrackCompletionsTrack2 = function(iterationId, buttonId) {
               "display": {"en-US": "completed"}
           },
           "object": {
-              "id": "https://example.com/tracks/" + iterationId + "/button/" + buttonId,
+              "id": "https://doughahn.github.io/chat-souffle/" + iterationId + "/button/" + buttonId,
               "definition": {
                   "name": {"en-US": "Track " + iterationId + " - Button " + buttonId},
                   "description": {"en-US": "Loop # " + setup.trackCompletionsTrack2 + " completed"}

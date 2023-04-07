@@ -3,14 +3,14 @@
 !! You&rsquo;ve completed this track
 <html>
     <div>
-        <a id="start-provided-assessment-over" class="anchor-nav complete-track-1" onclick="customLinkHandler('provided assessment track 1'); handleXAPIClick(event);">I want to do the track again for practice<i class="fas fa-arrow-right"></i></a>
+        <a id="start-provided-assessment-over-from-provided-track" class="anchor-nav complete-track-1" onclick="customLinkHandler('provided assessment track 1'); handleXAPIClick(event);">I want to do the track again for practice<i class="fas fa-arrow-right"></i></a>
     </div>
 
     <div>
-        <a id="start-custom-assessment-track" class="anchor-nav complete-track-1" onclick="customLinkHandler('custom assessment track 1'); handleXAPIClick(event);">I want to try writing my own assessments<i class="fas fa-arrow-right"></i></a>
+        <a id="start-custom-assessment-track-from-provided-track" class="anchor-nav complete-track-1" onclick="customLinkHandler('custom assessment track 1'); handleXAPIClick(event);">I want to try writing my own assessments<i class="fas fa-arrow-right"></i></a>
     </div>
 
     <div>
-        <a id="finish-move-to-survey-from-assessment-track" class="anchor-nav complete-track-1" onclick="customLinkHandler('post survey 1'); handleXAPIClick(event);">Or, go on to complete this module by taking our survey<i class="fas fa-arrow-right"></i></a>
+        <a id="finish-move-to-survey-from-assessment-track-from-provided-track" class="anchor-nav complete-track-1" onclick="customLinkHandler('post survey 1'); handleXAPIClick(event);">Or, go on to complete this module by taking our survey<i class="fas fa-arrow-right"></i></a>
     </div>
 </html>
