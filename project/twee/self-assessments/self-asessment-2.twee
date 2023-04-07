@@ -1,6 +1,6 @@
 :: self assessment 2
 <html><h5>Self assessment <i class="fas fa-caret-right"></i></h5></html>
-!! Survey questions (2 of 3)
+!! Survey questions (2 of 4)
 <html>
 <h3>Which of the following best describes your experience using ChatGPT?</h3>
     <form id="survey-2" class="pure-form" data-parent="self-assessment-track">
