@@ -4,7 +4,6 @@
 <html>
 <p>Assessment is a huge topic. In this module, we&rsquo;ll narrow our focus to writing effective distractors for multiple choice questions.</p>
 <p>Below are some guidelines for ensuring quality distractors. Use the criteria below to evaluate ChatGPT&rsquo;s assessment questions.</p>
-
 <div class="tip-box">
     <div class="tip-icon">
         <i class="fas fa-pen"></i>
@@ -21,7 +20,7 @@
         </ul>
     </div>
 </div>
-<p>Review assessment writing best practices at these external resources before moving on:</p>
+<p><i>Optional:</i> review assessment writing best practices at these external resources before moving on:</p>
 <ul>
     <li><a id="vanderbilt-external-link" class="external-link" href="https://cft.vanderbilt.edu/guides-sub-pages/writing-good-multiple-choice-test-questions/" target="blank">Writing Good Multiple Choice Test Questions - Vanderbilt University Center for Teaching</a></li>
     <li><a id="conneticut-external-link" class="external-link" href="https://kb.ecampus.uconn.edu/2020/09/30/writing-effective-multiple-choice-questions-2/" target="blank">Writing Effective Multiple Choice Questions - University of Connecticut Knowledge Base</a></li>

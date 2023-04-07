@@ -3,11 +3,11 @@
 !! Set up ChatGPT
 <html>
     <ol>
-        <li>Go to <a id="openai-external-link" class="external-link" href="https://chat.openai.com/chat" target="blank">chat.OpenAi.com</a> and register for an account with an email address, or a Google or Microsoft account.</li> 
+        <li>Go to <a id="openai-external-link" class="external-link" href="https://chat.openai.com/chat" target="blank">chat.OpenAi.com</a> and register for an account with an email address, or a Google or Microsoft account. The paid upgrade is not required for this course.</li> 
         <li>If you haven&rsquo;t created an account, click on <b>Sign Up</b>. Otherwise, log in with your OpenAI credentials.</li>
         <li>Once you&rsquo;ve logged into your ChatGPT account, read through the terms and click on <b>Next</b>. Click on <b>Done</b> when you reach the last one.</li>
+        <li>That&rsquo;s it. Now you know how to access ChatGPT. If you need more detailed instructions, go to <a id="zdnet-external-link" class="external-link" href="https://www.zdnet.com/article/how-to-use-chatgpt/" target="_blank">ZDNET</a>.</li>
     </ol>
-    <p>That&rsquo;s it. Now you know how to access ChatGPT. If you need more detailed instructions, go to <a id="zdnet-external-link" class="external-link" href="https://www.zdnet.com/article/how-to-use-chatgpt/" target="_blank">ZDNET</a>.</p>
     <p><i>Warning! During peak times, you may be unable to create or access ChatGPT. If you&rsquo;re unable to create an account, you can try later or get a paid GPT 4 version. If you&rsquo;re unable to access your ChatGPT account, you can refresh the page or sign up to receive an email when it's available again.</i></p>
     <p>Lastly, you may want to install <a id="shareGPT-external-link" class="external-link" href="https://sharegpt.com/" target="blank">ShareGPT</a>, an open-source Chrome Extension, to share your ChatGPT conversations easily.</p>
     <hr>
