@@ -38,7 +38,8 @@ window.incrementTrackCompletions = function(iterationId, buttonId) {
       // Build the xAPI statement
       var statement = {
           "actor": {
-              "mbox": "mailto:learner@example.com"
+              "name": actor,
+              "mbox": "mailto:team.chatsouffle@gmail.com"
           },
           "verb": {
               "id": "https://w3id.org/xapi/adb/verbs/completed",
@@ -104,7 +105,8 @@ window.incrementTrackCompletionsTrack2 = function(iterationId, buttonId) {
       // Build the xAPI statement
       var statement = {
           "actor": {
-              "mbox": "mailto:learner@example.com"
+            "name": actor,
+            "mbox": "mailto:team.chatsouffle@gmail.com"
           },
           "verb": {
               "id": "https://w3id.org/xapi/adb/verbs/completed",
