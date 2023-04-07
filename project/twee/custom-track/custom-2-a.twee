@@ -3,17 +3,17 @@
 !! Refine part 2
 <html>
 <p>Now copy and paste your existing assessment question into the ChatGPT prompt and see what it produces.</p>
-<p>Evaluate the revised version based on the criteria for effective distractors (review criteria if needed below). Is the assessment now unacceptable/adequate/excellent in your opinion? </p>
+<p>Evaluate the revised version based on the criteria for effective distractors (review criteria below if needed). Is the assessment now worse/equal/better in your opinion?</p>
 <br >
     <form id="custom-track-2" class="pure-form" data-parent="custom-track">
         <label for="custom-track-2-opt-1" class="pure-checkbox">
-            <input type="radio" name="custom-track-2-choice" id="custom-track-2-opt-1" value="chatgpt-assessment-is-unacceptable" onclick="checkOptionSelected('custom-track-2')" />Unacceptable 
+            <input type="radio" name="custom-track-2-choice" id="custom-track-2-opt-1" value="chatgpt-assessment-is-worse" onclick="checkOptionSelected('custom-track-2')" />Worse 
         </label>
         <label for="custom-track-2-opt-2" class="pure-checkbox">
-            <input type="radio" name="custom-track-2-choice" id="custom-track-2-opt-2" value="chatgpt-assessment-is-equal" onclick="checkOptionSelected('custom-track-2')" />Adequate 
+            <input type="radio" name="custom-track-2-choice" id="custom-track-2-opt-2" value="chatgpt-assessment-is-equal" onclick="checkOptionSelected('custom-track-2')" />Equal 
         </label>
         <label for="custom-track-2-opt-3" class="pure-checkbox">
-            <input type="radio" name="custom-track-2-choice" id="custom-track-2-opt-3" value="chatgpt-assessment-is-better" onclick="checkOptionSelected('custom-track-2')" />Excellent
+            <input type="radio" name="custom-track-2-choice" id="custom-track-2-opt-3" value="chatgpt-assessment-is-better" onclick="checkOptionSelected('custom-track-2')" />Better
         </label>
         <button type="button" onclick="sendFormXAPIStatementNoVoid('custom-track-2'); checkOptionSelected('custom-track-2'); customButtonHandler('custom assessment track 2 freeform')" id="custom-track-2-submit" class="pure-button pure-button-primary" disabled>Submit your choice</button>
     </form>

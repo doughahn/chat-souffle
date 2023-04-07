@@ -4,16 +4,14 @@
 <html>
 <p>It helps to give ChatGPT some context when asking it to refine an existing multiple choice assessment question. In her article <a id="mega-prompts-external-link-custom-1" class="external-link" href="https://drphilippahardman.substack.com/p/introducing-chatgpt-edu-mega-prompts?utm_source=profile&utm_medium=reader2" target="blank">&ldquo;Introducing: ChatGPT Edu-Mega-Prompts&rdquo;</a>, Dr Philippa Hardman suggests specifying a role, a task, and an output in your prompt to ChatGPT.</p>
 <ol>
-<li>Give ChatGPT some context. Edit this sample prompt to match your situation and enter it into ChatGPT.</li>
+<li>Give ChatGPT some context about the training. Edit this sample prompt to match your situation and enter it into ChatGPT.</li>
   <ul>
     <li><b>Role</b>: You are an expert in database design and adult learning. You are proficient at teaching database admins how to learn new software tools and at assessing their understanding.</li>
     <li><b>Task</b>: Refine existing multiple choice assessment questions I provide so that they are more effective at accurately assessing the learner’s knowledge and understanding.</li>
     <li><b>Output</b>: Multiple choice assessment question with four answer options. Indicate which answer option is correct. Do not use “all of the above” or “none of the above” as answer options.</li>
   </ul>
-<li>Now identify a multiple choice assessment question you created which you want to improve. Don&rsquo;t enter it into ChatGPT yet.</li>
-<li>Evaluate it based on the criteria for effective distractors (review criteria below if needed).</li>
+<li>Evaluate your multiple choice question based on the criteria for effective distractors (review criteria below if needed). (Don&rsquo;t enter it into ChatGPT yet.)
 </ol>
-<br >
 <h3>Is the assessment unacceptable/weak/adequate in your opinion?</h3>
     <form id="custom-track-1" class="pure-form" data-parent="custom-track">
         <label for="custom-track-1-opt-1" class="pure-checkbox">
@@ -25,7 +23,7 @@
         <label for="custom-track-1-opt-3" class="pure-checkbox">
             <input type="radio" name="custom-track-1-choice" id="custom-track-1-opt-3" value="human-first-attempt-at-custom-distractor-was-adequate" onclick="checkOptionSelected('custom-track-1')" />Adequate
         </label>
-        <button type="button" onclick="sendFormXAPIStatementNoVoid('custom-track-1'); checkOptionSelected('custom-track-1'); customButtonHandler('criteria for effective custom distractors')" id="custom-track-1-submit" class="pure-button pure-button-primary" disabled>Submit your choice</button>
+        <button type="button" onclick="sendFormXAPIStatementNoVoid('custom-track-1'); checkOptionSelected('custom-track-1'); customButtonHandler('custom assessment track 2')" id="custom-track-1-submit" class="pure-button pure-button-primary" disabled>Submit your choice</button>
     </form>
 <br />
 <div class="dropdown-container">

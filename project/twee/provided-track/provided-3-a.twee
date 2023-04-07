@@ -5,7 +5,7 @@
 <p>Now test a prompt that applies prompt engineering techniques explained in the article 
 <a id="mega-prompts-external-link-procided-3" class="external-link" href="https://drphilippahardman.substack.com/p/introducing-chatgpt-edu-mega-prompts?utm_source=profile&utm_medium=reader2" target="blank">&ldquo;Introducing: ChatGPT Edu-Mega-Prompts&rdquo;</a> by Dr Philippa Hardman.</p>
 <p>The prompt specifies AI&rsquo;s role, describes the subject the and learner, identifies the instructional strategy, provides context and an example. It clearly outline the task and the desired outputs.</p>
-<p>Copy the entire prompt and paste it to ChatGPT to see what assessment it will produce:</p>
+<p>Copy the entire prompt and paste it to ChatGPT to see what assessment it will produce.</p>
 <div class="prompt-text-area"> 
     <div class="prompt-text-header">
         <h3><span class="light-gray-text">Prompt Text</span></h3>
@@ -46,7 +46,8 @@ Write feedback for each potential response. The feedback should be succinct and 
 Finally, suggest a resource for the defined learner type to look at which will help them to learn the correct version of the foundational knowledge.</pre>
     </div>
 </div>
-<h3>Which of the following best describes your experience using ChatGPT?</h3>
+<p>Evaluate it based on the criteria for effective distractors (review criteria below if needed).</p> 
+<h3>Is the new version is worse/equal/better than the original? Which of the following best describes your experience using ChatGPT?</h3>
     <form id="provided-track-3" class="pure-form" data-parent="provided-example-track">
         <label for="provided-track-3-opt-1" class="pure-checkbox">
             <input type="radio" name="provided-track-3-choice" id="provided-track-3-opt-1" value="worse-experience-with-mega-prompts" onclick="checkOptionSelected('provided-track-3')" />Worse
@@ -58,7 +59,37 @@ Finally, suggest a resource for the defined learner type to look at which will h
             <input type="radio" name="provided-track-3-choice" id="provided-track-3-opt-3" value="better-experience-with-mega-prompts" onclick="checkOptionSelected('provided-track-3')" />Better
         </label>
         <button type="button" onclick="sendFormXAPIStatement('provided-track-3'); checkOptionSelected('provided-track-3'); customButtonHandler('provided assessment track 3 freeform')" id="provided-track-3-submit" class="pure-button pure-button-primary" disabled>Submit your choice</button>
-    </form>
+    </form><br >
+<div class="dropdown-container">
+  <div class="dropdown-header" onclick="toggleContent()">
+    <h3><span class="light-gray-text">Review the criteria</span></h3>
+    <span class="arrow">&#9662;</span>
+  </div>
+  <div id="provided-track-3-a-content-dropdown" class="dropdown-text-content" style="display: none;">
+    <p>Use the criteria below to evaluate ChatGPT&rsquo;s assessment questions.</p>
+    <div class="tip-box">
+        <div class="tip-icon">
+            <i class="fas fa-pen"></i>
+        </div>
+        <div class="tip-content">
+            <h3 class="tip-title">Evaluation criteria</h3>
+                <ul>
+                <li>Write options that are congruent in length.</li>
+                <li>Write options that use parallel grammatical structure (e.g. if answer(s) start with a verb, so should the distractors).</li>
+                <li>Avoid &ldquo;True/False,&rdquo; “All of the Above,” or “Both A and B Only” (or other such combinations).</li>
+                <li>Use plausible but incorrect distractors.</li>
+                <li>Use only truly correct answers.</li>
+                <li>Avoid negative phrasing.</li>
+            </ul>
+        </div>
+    </div>
+    <p>Review assessment writing best practices at these external resources before moving on:</p>
+    <ul>
+        <li><a id="vanderbilt-external-link-review-1" class="external-link" href="https://cft.vanderbilt.edu/guides-sub-pages/writing-good-multiple-choice-test-questions/" target="blank">Writing Good Multiple Choice Test Questions - Vanderbilt University Center for Teaching</a></li>
+        <li><a id="conneticut-external-link-review-1" class="external-link" href="https://kb.ecampus.uconn.edu/2020/09/30/writing-effective-multiple-choice-questions-2/" target="blank">Writing Effective Multiple Choice Questions - University of Connecticut Knowledge Base</a></li>
+    </ul>
+  </div>
+</div>
 </html>
 
 <script>
@@ -85,4 +116,19 @@ setTimeout(function() {
     });
 }, 100);
 
+</script>
+
+<script>
+function toggleContent() {
+  const content = document.getElementById('provided-track-3-a-content-dropdown');
+  const arrow = document.querySelector('.arrow');
+
+  if (content.style.display === 'none') {
+    content.style.display = 'block';
+    arrow.classList.add('arrow-up');
+  } else {
+    content.style.display = 'none';
+    arrow.classList.remove('arrow-up');
+  }
+}
 </script>

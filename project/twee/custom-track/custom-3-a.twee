@@ -7,16 +7,16 @@
   <li>Revise to make the length of each answer option more similar.</li>
   <li>Edit the answer option “[copy text here]” to be more plausible.</li>
 </ol>
-<p>Give as many instructions as you like. When you&rsquo;ve tried everything you want to, evaluate the best revised version it produced based on the criteria for effective distractors (review criteria if needed). Is the assessment now unacceptable/adequate/excellent in your opinion?</p>
+<p>Give as many instructions as you like. When you&rsquo;ve tried everything you want to, evaluate the best revised version it produced based on the criteria for effective distractors (review criteria if needed). Is the assessment now worse/equal/better in your opinion? </p>
     <form id="custom-track-3" class="pure-form" data-parent="custom-track">
         <label for="custom-track-3-opt-1" class="pure-checkbox">
-            <input type="radio" name="custom-track-3-choice" id="custom-track-3-opt-1" value="after-trying-everything-chatgpt-assessment-is-unacceptable" onclick="checkOptionSelected('custom-track-3')" />Unacceptable 
+            <input type="radio" name="custom-track-3-choice" id="custom-track-3-opt-1" value="after-trying-everything-chatgpt-assessment-is-worse" onclick="checkOptionSelected('custom-track-3')" />Worse 
         </label>
         <label for="custom-track-3-opt-2" class="pure-checkbox">
-            <input type="radio" name="custom-track-3-choice" id="custom-track-3-opt-2" value="after-trying-everything-chatgpt-assessment-is-equal" onclick="checkOptionSelected('custom-track-3')" />Adequate 
+            <input type="radio" name="custom-track-3-choice" id="custom-track-3-opt-2" value="after-trying-everything-chatgpt-assessment-is-equal" onclick="checkOptionSelected('custom-track-3')" />Equal 
         </label>
         <label for="custom-track-3-opt-3" class="pure-checkbox">
-            <input type="radio" name="custom-track-3-choice" id="custom-track-3-opt-3" value="after-trying-everything-chatgpt-assessment-is-excellent" onclick="checkOptionSelected('custom-track-3')" />Excellent
+            <input type="radio" name="custom-track-3-choice" id="custom-track-3-opt-3" value="after-trying-everything-chatgpt-assessment-is-better" onclick="checkOptionSelected('custom-track-3')" />Better
         </label>
         <button type="button" onclick="sendFormXAPIStatementNoVoid('custom-track-3'); checkOptionSelected('custom-track-3'); customButtonHandler('custom assessment track 3 freeform')" id="custom-track-3-submit" class="pure-button pure-button-primary" disabled>Submit your choice</button>
     </form>

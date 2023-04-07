@@ -3,7 +3,7 @@
 !! Refine part 4
 <html>
 <p>Now, <b><i>without using ChatGPT</i></b>, take the best elements from the different iterations of the multiple choice question, combining them into the best possible assessment question. Avoid adding new material other than correcting for grammar and fluidity.</p>
-<p>Evaluate this human-edited version based on the criteria for effective distractors (review criteria if needed below). Is the new version is worse/equal/better than the original? </p>
+<p>Evaluate this human-edited version based on the criteria for effective distractors (review criteria below if needed). Is the new version is worse/equal/better than the original? </p>
 <br >
     <form id="custom-track-4" class="pure-form" data-parent="custom-track">
         <label for="custom-track-4-opt-1" class="pure-checkbox">

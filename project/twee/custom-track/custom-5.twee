@@ -13,5 +13,5 @@
     <div>
         <a id="finish-move-to-exit-from-assessment-track" class="anchor-nav" onclick="customLinkHandler('post survey 1'); handleXAPIClickTrack2(event);">Or, go on to complete this module by taking our survey.<i class="fas fa-arrow-right"></i></a>
     </div>
-<p>You&rsquo;ll also get a chance to share more chatGPT experiments with other learners in a designated slack channel.</p>
+<p><i>You&rsquo;ll also get a chance to share more chatGPT experiments with other learners in a designated slack channel.</i></p>
 </html>
