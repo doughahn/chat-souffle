@@ -19,7 +19,7 @@ function setupXAPIConfig() {
     };
 
     // Set environment to 'development' or 'production'
-    setupXAPIConfig.environment = 'development';
+    setupXAPIConfig.environment = 'production';
 
     // Change the configuration based on the environment
     if (setupXAPIConfig.environment === 'development') {
