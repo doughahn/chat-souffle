@@ -4,6 +4,7 @@ setup.trackCompletions = 0;
 setup.iterationActivities = {};
 setup.currentIterationId = null;
 setup.trackStartsTrack2 = 0;
+setup.trackCompletionsTrack2 = 0;
 
 // Save and load custom data in metadata
 Config.saves.onSave = function (save) {
@@ -60,7 +61,7 @@ window.incrementTrackCompletions = function(iterationId, buttonId) {
 // Add event listener for completion tracking
 window.addCompleteTrackListener = function() {
   // Target buttons with the shared class
-  var buttons = document.getElementsByClassName("complete-track-1");
+  var buttons = document.getElementsByClassName("complete-track-1", "complete-track-2");
 
   // Add event listeners to each button
   for (var i = 0; i < buttons.length; i++) {
@@ -75,12 +76,41 @@ window.addCompleteTrackListener = function() {
 
 // Handle button click for the second track
 window.handleButtonClickTrack2 = function(buttonId) {
-  setup.currentIterationId = "iteration_track2_" + (setup.trackStarts + 1);
-  window.incrementTrackCompletions(setup.currentIterationId, buttonId);
+  setup.currentIterationId = "iteration_track2_" + (setup.trackStartsTrack2 + 1);
+  window.incrementTrackCompletionsTrack2(setup.currentIterationId, buttonId);
 };
 
 // Handle xAPI click for the second track
 window.handleXAPIClickTrack2 = function(event) {
   var buttonId = event.target.id;
   window.handleButtonClickTrack2(buttonId);
+};
+
+// Increment track completions for the second track and build xAPI statement
+window.incrementTrackCompletionsTrack2 = function(iterationId, buttonId) {
+  setup.trackCompletionsTrack2++;
+  console.log("Track 2 completions: " + setup.trackCompletionsTrack2);
+
+  if (iterationId) {
+      // Build the xAPI statement
+      var statement = {
+          "actor": {
+              "mbox": "mailto:learner@example.com"
+          },
+          "verb": {
+              "id": "https://w3id.org/xapi/adb/verbs/completed",
+              "display": {"en-US": "completed"}
+          },
+          "object": {
+              "id": "https://example.com/tracks/" + iterationId + "/button/" + buttonId,
+              "definition": {
+                  "name": {"en-US": "Track " + iterationId + " - Button " + buttonId},
+                  "description": {"en-US": "Loop # " + setup.trackCompletionsTrack2 + " completed"}
+              }
+          }
+      };
+
+      // Send the xAPI statement
+      sendXAPIStatement(statement);
+  }
 };
