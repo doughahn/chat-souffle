@@ -54,7 +54,7 @@ setup.jsonExample = {
     },
     "result": {
         "score": {
-            "raw": "Still gathering data…"
+            "raw": "No one knows yet"
         },
         "response": "Thank you to everyone who got this far"
     }

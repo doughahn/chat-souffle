@@ -541,18 +541,23 @@ json-output {
 }
 
 /* Syntax highlighting */
-.json-key {
-  color: #a6e22e;
+.json-output {
+  font-family: monospace;
+  white-space: pre;
+  font-size: 16px;
 }
-
-.json-string {
-  color: #e6db74;
+.json-output .json-key {
+  color: #95a5a6; /* gray */
 }
-
-.json-number {
-  color: #ae81ff;
+.json-output .json-string {
+  color: #2ecc71; /* green */
 }
-
-.json-boolean {
-  color: #66d9ef;
+.json-output .json-number {
+  color: #8e44ad; /* purple */
+}
+.json-output .json-boolean {
+  color: #3498db; /* blue */
+}
+.json-output .json-null {
+  color: #95a5a6; /* gray */
 }
