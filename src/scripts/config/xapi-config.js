@@ -43,7 +43,7 @@ function displayDevWarningBanner() {
         warningBanner.style.fontWeight = 'bold';
         warningBanner.style.padding = '1rem';
         warningBanner.style.position = 'fixed';
-        warningBanner.style.top = '0';
+        warningBanner.style.bottom = '0';
         warningBanner.style.left = '0';
         warningBanner.style.width = '100%';
         warningBanner.style.zIndex = '1000';

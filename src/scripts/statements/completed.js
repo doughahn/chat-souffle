@@ -38,7 +38,7 @@ window.incrementTrackCompletions = function(iterationId, buttonId) {
       // Build the xAPI statement
       var statement = {
           "actor": {
-              "mbox": "team.chatsouffle@gmail.com"
+              "mbox": "mailto:learner@example.com"
           },
           "verb": {
               "id": "https://w3id.org/xapi/adb/verbs/completed",
@@ -60,14 +60,23 @@ window.incrementTrackCompletions = function(iterationId, buttonId) {
 
 // Add event listener for completion tracking
 window.addCompleteTrackListener = function() {
-  // Target buttons with the shared class
-  var buttons = document.getElementsByClassName("complete-track-1", "complete-track-2");
+  // Target buttons with the shared classes
+  var buttonsTrack1 = document.getElementsByClassName("complete-track-1");
+  var buttonsTrack2 = document.getElementsByClassName("complete-track-2");
 
-  // Add event listeners to each button
-  for (var i = 0; i < buttons.length; i++) {
-      buttons[i].addEventListener("click", function(event) {
+  // Add event listeners to each button for Track 1
+  for (var i = 0; i < buttonsTrack1.length; i++) {
+      buttonsTrack1[i].addEventListener("click", function(event) {
           var buttonId = event.target.id;
           window.handleButtonClick(buttonId);
+      });
+  }
+
+  // Add event listeners to each button for Track 2
+  for (var i = 0; i < buttonsTrack2.length; i++) {
+      buttonsTrack2[i].addEventListener("click", function(event) {
+          var buttonId = event.target.id;
+          window.handleButtonClickTrack2(buttonId);
       });
   }
 };
@@ -114,3 +123,8 @@ window.incrementTrackCompletionsTrack2 = function(iterationId, buttonId) {
       sendXAPIStatement(statement);
   }
 };
+
+// Add event listener for DOMContentLoaded
+document.addEventListener('DOMContentLoaded', function() {
+  window.addCompleteTrackListener();
+});
