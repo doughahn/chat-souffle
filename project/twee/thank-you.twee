@@ -17,5 +17,95 @@
     </div>
     <div>
         <a id="start-custom-assessment-track-from-thankyou" class="anchor-nav complete-track-1" onclick="customLinkHandler('custom assessment track 1'); handleXAPIClick(event);">I want to try writing my own assessments again<i class="fas fa-arrow-right"></i></a>
+    </div><br />
+<div class="prompt-text-area">
+    <div class="prompt-text-header">
+        <h3><span class="light-gray-text">Thank you</span></h3>
     </div>
+    <div class="prompt-text-content">
+        <pre id="json-container" class="json-output"></pre>
+    </div>
+</div>
 </html> 
+<<script>>
+setup.jsonExample = {
+    "actor": {
+        "mbox": "team.chatsouffle@gmail.com",
+        "name": "Chat Soufflé",
+        "objectType": "Team"
+    },
+    "verb": {
+        "id": "https://doughahn.github.io/chat-souffle/verbs/collaborating",
+        "display": {
+            "en-US": "collaborating"
+        }
+    },
+    "object": {
+        "id": "https://doughahn.github.io/chat-souffle/ingredients",
+        "definition": {
+            "name": {
+                "en-US": "Anya, Doug, Evan, Kelly, and Sam"
+            },
+            "description": {
+                "en-US": "Making recipes with xAPI, Twine, & Veracity"
+            }
+        },
+        "objectType": "A Learning Guild Team"
+    },
+    "result": {
+        "score": {
+            "raw": "Still gathering data…"
+        },
+        "response": "Thank you to everyone who got this far"
+    }
+};
+
+setup.typingSpeed = 35;
+
+setup.typeJSON = function(jsonString, index = 0) {
+    const jsonContainer = document.getElementById("json-container");
+    if (index < jsonString.length) {
+        let char = jsonString[index];
+        let span = document.createElement("span");
+
+        if (char === '"') {
+            const keyMatch = jsonString.substring(index).match(/^"([^"]+)":/);
+            if (keyMatch) {
+                span.classList.add("json-key");
+                char = keyMatch[0];
+                index += keyMatch[0].length - 1;
+            } else {
+                span.classList.add("json-string");
+                const strMatch = jsonString.substring(index).match(/"((?:[^"\\]|\\.)*)"/);
+                if (strMatch) {
+                    char = strMatch[0];
+                    index += strMatch[0].length - 1;
+                }
+            }
+        } else if (char.match(/\d/)) {
+            span.classList.add("json-number");
+            const numMatch = jsonString.substring(index).match(/-?\d+(\.\d+)?([eE][+-]?\d+)?/);
+            if (numMatch) {
+                char = numMatch[0];
+                index += numMatch[0].length - 1;
+            }
+        } else if (char.match(/true|false|null/)) {
+            span.classList.add("json-boolean");
+            const boolMatch = jsonString.substring(index).match(/true|false|null/);
+            if (boolMatch) {
+                char = boolMatch[0];
+                index += boolMatch[0].length - 1;
+            }
+        }
+
+        span.textContent = char;
+        jsonContainer.appendChild(span);
+        setTimeout(() => setup.typeJSON(jsonString, index + 1), setup.typingSpeed);
+    }
+};
+
+postdisplay["type-json"] = function() {
+    setup.typeJSON(JSON.stringify(setup.jsonExample, null, 2));
+    delete postdisplay["type-json"];
+};
+<</script>>

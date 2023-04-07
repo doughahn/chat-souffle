@@ -38,7 +38,7 @@ const ids = {
     
       var statement = {
         "actor": {
-          "mbox": "mailto:doughahn@gmail.com",
+          "mbox": "mailto:team.chatsouffle@gmail.com",
           "name": actor,
           "objectType": "Agent"
         },
@@ -76,7 +76,7 @@ const ids = {
 function sendButtonClickStatement(buttonId) {
     setupXAPIConfig();
   
-    var actorEmail = "doughahn@gmail.com";
+    var actorEmail = "team.chatsouffle@gmail.com";
     var actorName = actor
   
     // Retrieve the last statement ID from localStorage
@@ -151,7 +151,7 @@ window.handleButtonSurvey3toText = function () {
 function sendLinkClickStatement(linkId) {
     setupXAPIConfig();
 
-    var actorEmail = "doughahn@gmail.com";
+    var actorEmail = "team.chatsouffle@gmail.com";
     var actorName = actor;
 
     // Retrieve the last statement ID from localStorage
@@ -224,7 +224,7 @@ function sendLinkClickStatement(linkId) {
   window.send_completion = function () {
     setupXAPIConfig();
   
-    var actorEmail = "doughahn@gmail.com";
+    var actorEmail = "team.chatsouffle@gmail.com";
     var actorName = actor;
   
     // Retrieve the last statement ID from localStorage

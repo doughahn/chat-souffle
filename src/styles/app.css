@@ -524,3 +524,35 @@ a.link-external {
 #menu-item-saves {
   display:none;
 }
+
+/* json */
+
+json-output {
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: #2b2b2b;
+  color: #dcdcdc;
+  padding: 1em;
+  border-radius: 5px;
+  white-space: pre-wrap;
+}
+
+#json-container {
+  margin:0;
+}
+
+/* Syntax highlighting */
+.json-key {
+  color: #a6e22e;
+}
+
+.json-string {
+  color: #e6db74;
+}
+
+.json-number {
+  color: #ae81ff;
+}
+
+.json-boolean {
+  color: #66d9ef;
+}

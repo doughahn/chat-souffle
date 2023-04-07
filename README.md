@@ -56,7 +56,7 @@ replace formName and form-name with the form's names, and options.
 
   var statement = {
     "actor": {
-      "mbox": "mailto:doughahn@gmail.com",
+      "mbox": "mailto:team.chatsouffle@gmail.com",
       "name": actor,
       "objectType": "Agent"
     },

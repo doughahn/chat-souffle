@@ -7,7 +7,7 @@ function sendFormXAPIStatement(formId) {
     setupXAPIConfig();
   
     // Define actor email and name
-    var actorEmail = "doughahn@gmail.com";
+    var actorEmail = "team.chatsouffle@gmail.com";
     var actorName = actor;
 
     // Read the parent path name from the form's data attribute
@@ -125,7 +125,7 @@ window.sendFormXAPIStatement = sendFormXAPIStatement;
 function sendFormXAPIStatementNoVoid(formId) {
   setupXAPIConfig();
 
-  var actorEmail = "doughahn@gmail.com";
+  var actorEmail = "team.chatsouffle@gmail.com";
   var actorName = actor;
 
   // Read the parent path name from the form's data attribute

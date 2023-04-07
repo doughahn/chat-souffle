@@ -6,7 +6,7 @@ window.sendExternalLinkClickStatement = function(externalLinkID) {
   setupXAPIConfig();
 
   // Define the actor's email and name
-  var actorEmail = "doughahn@gmail.com";
+  var actorEmail = "team.chatsouffle@gmail.com";
   var actorName = actor;
 
   // Get the last statement ID from localStorage
