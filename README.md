@@ -1,6 +1,6 @@
 # Chat Soufflé
 
-This is a Twine project that integrates xAPI. It requires [Tweego](https://github.com/tmedwards/tweego) and uses [Snowman 2](https://videlais.github.io/snowman/#/) as it makes decent use of custom code rather than Twee shortcodes. 
+This is a Twine project that integrates xAPI. It requires [Tweego](https://github.com/tmedwards/tweego) and uses [Sugarcube 2](https://www.motoslave.net/sugarcube/2/docs/). 
 
 ## Tweego
 
