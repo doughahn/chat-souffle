@@ -189,6 +189,41 @@ footer .disclaimer {
           display:block;
           animation: fadeIn 200ms;
         }
+
+.image-container {
+  text-align: center;
+}
+
+figure {
+  position: relative;
+  display: inline-block;
+  max-width: 66%;
+  margin: 1rem auto;
+  text-align:center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px;
+  font-size:.66rem;
+  font-family: 'IBM Plex Mono', monospace;
+}
+@media only screen and (max-width: 480px) {
+  figure {
+    max-width: 100%;
+  }
+}
       </style>
   </head>
   <body>
@@ -220,6 +255,14 @@ footer .disclaimer {
                <p>To achieve this we'll set a cookie with an anonymous identifier in your browser to track you as an Actor &mdash; for example, <code>user51650404</code>. This way we can gather data on individual learners without collecting any personally identifiable information. When you click <em>Launch activity</em> we will set that cookie.</p>
             </div>
         <a class="" id="launch-souffle" href="souffle.html">Launch activity</a>
+<div class="container">
+<div class="image-container">
+  <figure>
+    <img src="souffle.jpg" alt="close up chat icon decoration on a freshly baked souffle.png">
+    <figcaption><b>Credit</b>: DALL·E 2023-04-12 11.00.28</figcaption>
+  </figure>
+</div>
+</div>
     </div>
          <footer>
             <p class="fineprint"><em>Disclaimer(s) around ChatGPT: Please note that ChatGPT is a language model designed to simulate human-like conversations, but it may not always provide accurate or appropriate responses. It should not be used as a primary source of information in any educational setting and should be used with caution.<em></p>
