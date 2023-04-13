@@ -10,23 +10,21 @@ This interactive LX is built in Twine, connected to a [Veracity LRS](https://lrs
 
 This is a Twine project that's pretty heavy on custom javascript, html, and css. It requires [Tweego](https://github.com/tmedwards/tweego) and uses [Sugarcube 2](https://www.motoslave.net/sugarcube/2/docs/). 
 
-### To get Tweego Up and Running
+## Get Tweego Up and Running
 
 You'll need [NodeJS](docs/installing-node.md) and should follow the [Installing Tweego](docs/installing-tweego.md) guide. We used the [Tweego boilerplate](https://github.com/ChapelR/tweego-setup) to start this project. Please refer to their readme for full documentation. 
 
-#### Installation
+### Installation
 
 Clone or download this repo.  Open a command prompt and navigate to the root directory (where the `package.json` file is) and run the command `npm install`. 
 
-#### Structure
-
-##### Compiler Output
+### Compiler Output
 
 `dist` is where Tweego's `index.html` file compiles to *by default*. You can change this in `/package.json.` 
 
 This project uses custom settings: an `index.html` in the root with a landing page, and the twine experience at `/souffle.html.` GitHub pages deploys from these files.
 
-##### Source Files
+### Source Files
 
 The `project` folder contains the passages. 
 
@@ -34,7 +32,7 @@ The `src` contains the source JavaScript and CSS. There are several JS files in 
 
 ![](https://i.imgur.com/2DCMXdF.png)
 
-##### Building the Project
+### Building the Project
 
 * `npm run build` Compiles everything with Tweego and drops the compiled `souffle.html` file in the `/` directory.)
 
