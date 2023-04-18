@@ -29,6 +29,7 @@ function setupXAPIConfig() {
     }
 }
 
+// Display dev warning
 
 function displayDevWarningBanner() {
     var warningBannerText = "Using Dev LRS";

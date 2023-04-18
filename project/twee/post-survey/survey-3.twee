@@ -5,7 +5,7 @@
 <h3>We&rsquo;ve kept you anonymous so far. This is a chance to leave us feedback about the course… and a way to get in touch!</h3>
 <p>If you leave your email, we may follow up with you for clarifications.</p>
     <div>
-        <a id="chose-to-fill-out-typeform" class="anchor-nav anchor-nav-external" href="https://yljg97xdvs4.typeform.com/to/ZPXZEfoC" target="blank"">Contact us on Typeform <i class="fas fa-arrow-right"></i></a>
+        <a id="chose-to-fill-out-typeform" class="anchor-nav anchor-nav-external" href="https://yljg97xdvs4.typeform.com/to/ZPXZEfoC" target="blank">Contact us on Typeform <i class="fas fa-arrow-right"></i></a>
     </div>
     <div>
         <a id="chose-to skip-typeform" class="anchor-nav" onclick="customLinkHandler('thank you')">Finish the course <i class="fas fa-arrow-right"></i></a>
