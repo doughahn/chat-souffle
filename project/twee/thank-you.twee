@@ -107,7 +107,7 @@ setup.typeJSON = function(jsonString, index = 0) {
 postdisplay["type-json"] = function() {
     setTimeout(() => {
         setup.typeJSON(JSON.stringify(setup.jsonExample, null, 2));
-    }, 2000); // 2000 milliseconds = 2 seconds
+    }, 1000); 
     delete postdisplay["type-json"];
 };
 <</script>>

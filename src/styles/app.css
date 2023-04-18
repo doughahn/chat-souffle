@@ -560,3 +560,93 @@ json-output {
 .json-output .json-null {
   color: #95a5a6; /* gray */
 }
+
+/* progress nodes */
+
+.progress-tracker-title {
+  margin:8rem 0 0 0;
+  text-transform:uppercase;
+  font-weight: bold;
+  font-style:normal;
+  font-size:1rem;
+  line-height:1.33;
+  color:#b7b7b7;
+}
+
+#progress-tracker {
+  display: flex;
+  flex-wrap: wrap;
+  background:#343541;
+  padding: 0 1.5rem 1.5rem 1rem;
+  border-radius:5px;
+  margin:.5rem 0 0 0;
+}
+
+.group {
+  width:100%;
+  position: relative;
+  margin-top:0;
+}
+
+.group div {
+  display:inline-block;
+  text-align: center; 
+  position: relative; 
+  margin-right:1rem;
+}
+
+.group h5 {
+  font-size:.8rem;
+  color:#b7b7b7;
+}
+.group div i {
+  font-size:.8rem;
+  color: #b7b7b7;
+  display: flex;
+  position:relative;
+  justify-content: center;
+  align-items: center;
+  z-index:2;
+}
+
+.group div:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 0; /* Adjust the position of the line */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index:1;
+  height: 3px;
+  width: 40px;
+  background-color: #b7b7b7; 
+  z-index:1;
+}
+
+.fa-solid.fa-circle.completed {
+  color: orange;
+}
+
+.group.setup {
+  margin-left:.5rem;
+}
+
+.group.track1,
+.group.track2 {
+  margin-left:1rem;
+}
+
+.group.postSurvey {
+  margin-left:1.5rem;
+}
+
+.group.postSurvey {
+  margin-left:2rem;
+}
+
+div.passage-container i.fa-solid.fa-circle.completed {
+  color: orange;
+}
+
+div.passage-container i.fa-solid.fa-circle.completed + div.passage-container i.fa-solid.fa-circle.completed {
+  border-left: 3px solid orange;
+}
