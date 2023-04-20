@@ -1,15 +1,11 @@
 :: custom assessment track 1
 <html><h5>Custom assessment <i class="fas fa-caret-right"></i></h5></html>
-!! Part 1: set the context
+!! Part 1: select and evaluate your MC question
 <html>
-<p>It helps to give ChatGPT some context when asking it to refine an existing multiple choice assessment question. In her article <a id="mega-prompts-external-link-custom-1" class="external-link" href="https://drphilippahardman.substack.com/p/introducing-chatgpt-edu-mega-prompts?utm_source=profile&utm_medium=reader2" target="blank">&ldquo;Introducing: ChatGPT Edu-Mega-Prompts&rdquo;</a>, Dr Philippa Hardman suggests specifying a role, a task, and an output in your prompt to ChatGPT.</p>
-<ol start="1">
-<li>Give ChatGPT some context about the training. Edit this sample prompt to match your situation and enter it into ChatGPT.</li>
-  <ul>
-    <li><b>Role</b>: You are an expert in database design and adult learning. You are proficient at teaching database admins how to learn new software tools and at assessing their understanding.</li>
-    <li><b>Task</b>: Refine existing multiple choice assessment questions I provide so that they are more effective at accurately assessing the learner’s knowledge and understanding.</li>
-    <li><b>Output</b>: Multiple choice assessment question with four answer options. Indicate which answer option is correct. Do not use “all of the above” or “none of the above” as answer options.</li>
-  </ul>
+<p>In this track, you&rsquo;ll focus on using ChatGPT to improve an existing multiple choice question. This could be a question you have developed or encountered in the past. You can select any question as long as it is not AI generated. </p>
+
+<p>Before you involve ChatGPT in revising your selected question, we want to get your opinion on your assessment item. That will give you a baseline from which to see how much ChatGPT helped you.</p>
+
 <li>Evaluate your multiple choice question based on the criteria for effective distractors (review criteria below if needed). (Don&rsquo;t enter it into ChatGPT yet.)
 </ol>
 <h3>Is the assessment unacceptable/weak/adequate in your opinion?</h3>

@@ -2,7 +2,16 @@
 <html><h5>Custom assessment <i class="fas fa-caret-right"></i></h5></html>
 !! Refine part 2
 <html>
-<p>Now copy and paste your existing assessment question into the ChatGPT prompt and see what it produces.</p>
+<p>Alright, now let&rsquo;s use ChatGPT to revise the question you just evaluated. It helps to give some context when asking ChatGPT to refine an existing multiple choice assessment question. In her article <a id="mega-prompts-external-link-provided-2a" class="external-link" href="https://drphilippahardman.substack.com/p/introducing-chatgpt-edu-mega-prompts?utm_source=profile&utm_medium=reader2" target="blank">&ldquo;Introducing: ChatGPT Edu-Mega-Prompts&rdquo;</a> Dr Philippa Hardman suggests specifying a role, a task, and an output in your prompt to ChatGPT.</p>
+<ol start="1">
+<li>Give ChatGPT some context about the training. Edit this sample prompt to match your situation and enter it into ChatGPT.</li>
+  <ul>
+    <li><b>Role</b>: You are an expert in database design and adult learning. You are proficient at teaching database admins how to learn new software tools and at assessing their understanding.</li>
+    <li><b>Task</b>: Refine existing multiple choice assessment questions I provide so that they are more effective at accurately assessing the learner’s knowledge and understanding.</li>
+    <li><b>Output</b>: Multiple choice assessment question with four answer options. Indicate which answer option is correct. Do not use “all of the above” or “none of the above” as answer options.</li>
+  </ul>
+<li>Evaluate your multiple choice question based on the criteria for effective distractors (review criteria below if needed). (Don&rsquo;t enter it into ChatGPT yet.)
+</ol>
 <p>Evaluate the revised version based on the criteria for effective distractors (review criteria below if needed). Is the assessment now worse/equal/better in your opinion?</p>
 <br >
     <form id="custom-track-2" class="pure-form" data-parent="custom-track">
