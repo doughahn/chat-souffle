@@ -72,7 +72,31 @@
     </ul>
   </div>
 </html>
+<script>
+setTimeout(function() {
+    const copyButtons = document.querySelectorAll(".copyButton");
 
+    copyButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            const text = this.parentElement.nextElementSibling.innerText;
+            navigator.clipboard.writeText(text)
+                .then(() => {
+                    console.log("Text copied to clipboard");
+                    const copiedMessage = this.nextElementSibling;
+                    setTimeout(() => {
+                        copiedMessage.classList.remove("show");
+                    }, 1000);
+                    this.innerText = "Copied";
+                    this.classList.add("copied");
+                })
+                .catch(err => {
+                    console.error("Error copying text: ", err);
+                });
+        });
+    });
+}, 100);
+
+</script>
 <script>
 function toggleContent() {
   const content = document.getElementById('custom-track-2-content-dropdown');
