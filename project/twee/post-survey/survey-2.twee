@@ -1,6 +1,6 @@
 :: post survey 2
 <html><h5>Survey <i class="fas fa-caret-right"></i></h5></html>
-!! Post-survey (2 of 2)
+!! Post-survey (2 of 3)
 <html>
 <h3>As a result of this activity, I&rsquo;m confident in ChatGPT&rsquo;s ability to compose effective assessments with prompt engineering.</h3>
     <form id="survey-2" class="pure-form" data-parent="post-survey">
