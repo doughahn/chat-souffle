@@ -20,10 +20,40 @@
           <div class="prompt-text-content">
       <pre class="monospaced-text">You are an expert in database design and adult learning. You are proficient at teaching database admins how to learn new software tools and at assessing their understanding.</pre>
           </div>
-      </div>
+      </div><br >
     </li>
-    <li><b>Task</b>: Refine existing multiple choice assessment questions I provide so that they are more effective at accurately assessing the learner’s knowledge and understanding.</li>
-    <li><b>Output</b>: Multiple choice assessment question with four answer options. Indicate which answer option is correct. Do not use “all of the above” or “none of the above” as answer options.</li>
+    <li><div class="prompt-text-area">
+          <div class="prompt-text-header">
+              <h3><span class="light-gray-text">Task</span></h3>
+              <button class="copyButton" title="Copy to Clipboard">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clipboard">
+                      <path d="M8 4H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10l-4-4h-6zM8 4h6v2H8V4zM8 6v2h6V6H8z"/>
+                  </svg>
+                  Copy
+              </button>
+              <span class="copiedMessage">Copied!</span>
+          </div>
+          <div class="prompt-text-content">
+      <pre class="monospaced-text">Refine existing multiple choice assessment questions I provide so that they are more effective at accurately assessing the learner’s knowledge and understanding.</pre>
+          </div>
+      </div>
+    </li><br >
+    <li><div class="prompt-text-area">
+          <div class="prompt-text-header">
+              <h3><span class="light-gray-text">Output</span></h3>
+              <button class="copyButton" title="Copy to Clipboard">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clipboard">
+                      <path d="M8 4H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10l-4-4h-6zM8 4h6v2H8V4zM8 6v2h6V6H8z"/>
+                  </svg>
+                  Copy
+              </button>
+              <span class="copiedMessage">Copied!</span>
+          </div>
+          <div class="prompt-text-content">
+      <pre class="monospaced-text">Multiple choice assessment question with four answer options. Indicate which answer option is correct. Do not use “all of the above” or “none of the above” as answer options.</pre>
+          </div>
+      </div>
+    </li><br >
   </ul>
 <li>Evaluate your multiple choice question based on the criteria for effective distractors (review criteria below if needed). (Don&rsquo;t enter it into ChatGPT yet.)
 </ol>
