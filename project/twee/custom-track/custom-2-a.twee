@@ -18,7 +18,7 @@
               <span class="copiedMessage">Copied!</span>
           </div>
           <div class="prompt-text-content">
-      <pre class="monospaced-text">You are an expert in database design and adult learning. You are proficient at teaching database admins how to learn new software tools and at assessing their understanding.</pre>
+      <pre class="monospaced-text">Role: You are an expert in database design and adult learning. You are proficient at teaching database admins how to learn new software tools and at assessing their understanding.</pre>
           </div>
       </div><br >
     </li>
@@ -34,7 +34,7 @@
               <span class="copiedMessage">Copied!</span>
           </div>
           <div class="prompt-text-content">
-      <pre class="monospaced-text">Refine existing multiple choice assessment questions I provide so that they are more effective at accurately assessing the learner’s knowledge and understanding.</pre>
+      <pre class="monospaced-text">Task: Refine existing multiple choice assessment questions I provide so that they are more effective at accurately assessing the learner’s knowledge and understanding.</pre>
           </div>
       </div>
     </li><br >
@@ -50,7 +50,7 @@
               <span class="copiedMessage">Copied!</span>
           </div>
           <div class="prompt-text-content">
-      <pre class="monospaced-text">Multiple choice assessment question with four answer options. Indicate which answer option is correct. Do not use “all of the above” or “none of the above” as answer options.</pre>
+      <pre class="monospaced-text">Output: Multiple choice assessment question with four answer options. Indicate which answer option is correct. Do not use “all of the above” or “none of the above” as answer options.</pre>
           </div>
       </div>
     </li><br >
